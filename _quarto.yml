@@ -13,10 +13,5 @@ website:
         href: https://twitter.com
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: lumen
     css: styles.css
-
-
-
