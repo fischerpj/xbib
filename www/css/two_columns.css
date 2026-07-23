@@ -1,0 +1,18 @@
+.sidebar-layout {
+  display: grid;
+  /* 33% for sidebar, 67% for remaining space */
+  grid-template-columns: 33% 67%;
+  /* Optional: adds a consistent gap between columns */
+  column-gap: 30px; 
+  align-items: start;
+}
+
+.sidebar {
+  /* Optional: styling for the 33% sidebar */
+  border-right: 1px solid #dee2e6;
+  padding-right: 20px;
+}
+
+.reveal .slides section h2  {
+  text-align: right;
+}

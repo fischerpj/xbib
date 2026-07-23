@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "xbib",
+    "section": "",
+    "text": "qu’est-ce qui nous arrive?\n\n\nexpliqué par le Psaume 44\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJul 23, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJul 20, 2026\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/ps44/index.html#part-1",
+    "href": "posts/ps44/index.html#part-1",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "Part 1",
+    "text": "Part 1\n\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n   A(RAPPEL D'AUTREFOIS) --&gt; C(CHOC DE LA DISCORDANCE)\n   B(URGENCE PRESENTE) --&gt; C\n   C --&gt; D(L'ABERRATION EXPLIQUEE)\n   C --&gt; E(LE SEUL RECOURS)"
+  },
+  {
+    "objectID": "posts/ps44/index.html#difficile-repérage",
+    "href": "posts/ps44/index.html#difficile-repérage",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "Difficile repérage",
+    "text": "Difficile repérage\n\n\nCoeur\n\n\n\n44 Au chef de chœur. Des descendants de Koré, cantique.\n\n2 O Dieu, …"
+  },
+  {
+    "objectID": "posts/ps44/index.html#nous-avons-entendu",
+    "href": "posts/ps44/index.html#nous-avons-entendu",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "Nous avons entendu …",
+    "text": "Nous avons entendu …\n\n\n\n\nqui a des oreilles ?\noù sont les pères ?\noù vont les conversations ?\n\n\n\n\n … nous avons entendu de nos oreilles, nos pères nous ont raconté tout ce que tu as accompli à leur époque, par le passé.\n 3 De ta main tu as chassé des nations pour qu’ils puissent s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre"
+  },
+  {
+    "objectID": "posts/ps44/index.html#pourquoi",
+    "href": "posts/ps44/index.html#pourquoi",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "pourquoi ?",
+    "text": "pourquoi ?\n\n\nLeft Column (1/3)\n\nKey point one\n\n\n\n\n4 En effet, ce n’est pas par leur épée qu’ils se sont emparés du pays, ce n’est pas leur bras qui les a sauvés,\n mais c’est ta main droite, c’est ton bras, c’est la lumière de ton visage, parce que tu les aimais."
+  },
+  {
+    "objectID": "posts/ps44/index.html#je-crois-pareillement",
+    "href": "posts/ps44/index.html#je-crois-pareillement",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "je crois pareillement",
+    "text": "je crois pareillement\n\n\n\n\n\n\n5 O Dieu, tu es mon roi:\n ordonne la délivrance de Jacob!"
+  },
+  {
+    "objectID": "posts/ps44/index.html#je-crois-pareillement-1",
+    "href": "posts/ps44/index.html#je-crois-pareillement-1",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "je crois pareillement",
+    "text": "je crois pareillement\n\n\n\n\n\n\n6 Grâce à toi nous renversons nos ennemis, grâce à ton nom nous écrasons nos adversaires,\n 7 car ce n’est pas en mon arc que je me confie, ce n’est pas mon épée qui me sauvera,\n 8 mais c’est toi qui nous délivres de nos ennemiset qui fais rougir de honte ceux qui nous détestent."
+  },
+  {
+    "objectID": "posts/ps44/index.html#je-crois-pareillement-2",
+    "href": "posts/ps44/index.html#je-crois-pareillement-2",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "je crois pareillement",
+    "text": "je crois pareillement\n\n\n\n\n\n\n9 Nous chantons la louange de Dieu chaque jour,\n et nous célébrerons éternellement ton nom."
+  },
+  {
+    "objectID": "posts/ps44/index.html#pourquoi1",
+    "href": "posts/ps44/index.html#pourquoi1",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "pourquoi1 ?",
+    "text": "pourquoi1 ?\n\n\n\n\n\n\n– Pause.\n 10 Cependant tu nous as repoussés, tu nous as couverts de honte,tu ne sors plus avec nos armées.\n 11 Tu nous fais reculer devant l’ennemi, et ceux qui nous détestent se partagent nos dépouilles."
+  },
+  {
+    "objectID": "posts/ps44/index.html#pourquoi1-1",
+    "href": "posts/ps44/index.html#pourquoi1-1",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "pourquoi1 ?",
+    "text": "pourquoi1 ?\n\n\n\n\n\n\n12 Tu nous livres comme des brebis de boucherie,tu nous disperses parmi les nations.\n 13 Tu vends ton peuple pour rien, tu ne l’estimes pas à une grande valeur."
+  },
+  {
+    "objectID": "posts/ps44/index.html#pourquoi-2",
+    "href": "posts/ps44/index.html#pourquoi-2",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "pourquoi 2?",
+    "text": "pourquoi 2?\n\n\n\n\n\n\n14 Tu nous exposes aux insultes de nos voisins, à la moquerie et aux railleries de ceux qui nous entourent.\n 15 Tu fais de nous le sujet d’un proverbe parmi les nations, on hoche la tête sur nous parmi les peuples."
+  },
+  {
+    "objectID": "posts/ps44/index.html#pourquoi-2-1",
+    "href": "posts/ps44/index.html#pourquoi-2-1",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "pourquoi 2?",
+    "text": "pourquoi 2?\n\n\n\n\n\n\n16 Mon humiliation est toujours devant moi, et la honte couvre mon visage\n 17 à la voix de celui qui m’insulte et me déshonore, à la vue de l’ennemi avide de vengeance."
+  },
+  {
+    "objectID": "posts/ps44/index.html#une-injustice",
+    "href": "posts/ps44/index.html#une-injustice",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "une injustice",
+    "text": "une injustice\n\n\n\n\n\n\n18 Tout cela nous arrive alors que nous ne t’avons pas oublié et que nous n’avons pas violé ton alliance.\n 19 Nous n’avons pas fait marche arrière dans notre cœur, nous ne nous sommes pas écartés de ton sentier.\n 20 Pourtant, tu nous as écrasés dans le territoire des chacalset tu nous as couverts de l’ombre de la mort."
+  },
+  {
+    "objectID": "posts/ps44/index.html#la-cause",
+    "href": "posts/ps44/index.html#la-cause",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "la cause",
+    "text": "la cause\n\n\n\n\n\n\n21 Si nous avions oublié le nom de notre Dieu et tendu nos mains vers un dieu étranger,\n22 Dieu ne le saurait-il pas, lui qui connaît les secrets du cœur?\n 23 Mais c’est à cause de toi qu’on nous met à mort à longueur de journée, qu’on nous considère comme des brebis destinées à la boucherie."
+  },
+  {
+    "objectID": "posts/ps44/index.html#lultime-pétition",
+    "href": "posts/ps44/index.html#lultime-pétition",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "l’ultime pétition",
+    "text": "l’ultime pétition\n\n\n\n\n\n\n24 Lève-toi Pourquoi dors-tu, Seigneur?\nRéveille-toi, ne nous repousse pas pour toujours!\n25 Pourquoi te caches-tu?\nPourquoi oublies-tu notre misère et notre oppression\n26 quand nous sommes affalés dans la poussière,quand nous rampons par terre?"
+  },
+  {
+    "objectID": "posts/ps44/index.html#lultime-pétition-1",
+    "href": "posts/ps44/index.html#lultime-pétition-1",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "l’ultime pétition",
+    "text": "l’ultime pétition\n\n\n\n\n\n\n27 Lève-toi pour nous secourir,\n délivre-nous à cause de ta bonté!"
+  }
+]
