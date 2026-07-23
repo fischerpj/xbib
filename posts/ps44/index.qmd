@@ -5,13 +5,16 @@ format:
   revealjs:
     theme: [solarized]
     css: /www/css/two_columns.css
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 <!-- ================================================================comment -->
+
 ## Part 1
 
-:::: columns
-
+:::::: columns
 ::: {.column width="35%"}
 ![](www/img/France_road_sign_A4.svg.png){width="150"}
 :::
@@ -19,7 +22,7 @@ format:
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
+::: {.column .smaller width="55%"}
 ```{mermaid}
 flowchart TD
    A(RAPPEL D'AUTREFOIS) --> C(CHOC DE LA DISCORDANCE)
@@ -28,12 +31,29 @@ flowchart TD
    C --> E(LE SEUL RECOURS)
 ```
 :::
-::::
+::::::
+
+<!-- ================================================================comment -->
+
+## TOC
+
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+![](ps44_toc.png)
+:::
+::::::
 
 <!-- A1================================================================comment -->
+
 ## Difficile repérage
 
-:::: columns
+:::::: columns
 ::: {.column width="35%"}
 **Coeur**
 :::
@@ -41,21 +61,21 @@ flowchart TD
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_44 Au chef de chœur. Des descendants de Koré, cantique._ 
+::: {.column .smaller width="55%"}
+*44 Au chef de chœur. Des descendants de Koré, cantique.*
 
 <br><br>
 
-_2 O Dieu, ..._
+*2 O Dieu, ...*
 :::
-::::
+::::::
 
 <!-- A2================================================================comment -->
+
 ## Nous avons entendu ...
 
-::::: columns
+:::::: columns
 ::: {.column width="35%"}
-
 <br>
 
 - qui a des oreilles ?
@@ -68,20 +88,20 @@ _2 O Dieu, ..._
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-<br>
-_... nous avons entendu de nos oreilles, nos pères nous ont raconté tout ce que tu as accompli à leur époque, par le passé._
+::: {.column .smaller width="55%"}
+<br> *... nous avons entendu de nos oreilles, nos pères nous ont raconté
+tout ce que tu as accompli à leur époque, par le passé.*
 
-<br>
-_3 De ta main tu as chassé des nations pour qu’ils puissent s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre_
+<br> *3 De ta main tu as chassé des nations pour qu’ils puissent
+s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre*
 :::
-
-:::::
+::::::
 
 <!-- A3================================================================comment -->
+
 ## pourquoi ?
 
-::::: columns
+:::::: columns
 ::: {.column width="35%"}
 ### Left Column (1/3)
 
@@ -91,228 +111,241 @@ _3 De ta main tu as chassé des nations pour qu’ils puissent s’établir, tu 
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_4 En effet, ce n’est pas par leur épée qu’ils se sont emparés du pays, ce n’est pas leur bras qui les a sauvés,_
+::: {.column .smaller width="55%"}
+*4 En effet, ce n’est pas par leur épée qu’ils se sont emparés du pays,
+ce n’est pas leur bras qui les a sauvés,*
 
-<br>
-_mais c’est ta main droite, c’est ton bras, c’est la lumière de ton visage, parce que tu les aimais._
+<br> *mais c’est ta main droite, c’est ton bras, c’est la lumière de ton
+visage, parce que tu les aimais.*
 :::
-
-:::::
+::::::
 
 <!-- B1================================================================comment -->
+
 ## je crois pareillement
-::::: columns
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_5 O Dieu, tu es mon roi:_
+::: {.column .smaller width="55%"}
+*5 O Dieu, tu es mon roi:*
 
-<br>
-_ordonne la délivrance de Jacob!_
+<br> *ordonne la délivrance de Jacob!*
 :::
-
-:::::
+::::::
 
 <!-- B2================================================================comment -->
+
 ## je crois pareillement
-::::: columns
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_6 Grâce à toi nous renversons nos ennemis, grâce à ton nom nous écrasons nos adversaires,_
+::: {.column .smaller width="55%"}
+*6 Grâce à toi nous renversons nos ennemis, grâce à ton nom nous
+écrasons nos adversaires,*
 
-<br>
-_7 car ce n’est pas en mon arc que je me confie, ce n’est pas mon épée qui me sauvera,_ 
+<br> *7 car ce n’est pas en mon arc que je me confie, ce n’est pas mon
+épée qui me sauvera,*
 
-<br>
-_8 mais c’est toi qui nous délivres de nos ennemiset qui fais rougir de honte ceux qui nous détestent._ 
+<br> *8 mais c’est toi qui nous délivres de nos ennemiset qui fais
+rougir de honte ceux qui nous détestent.*
 :::
-
-:::::
+::::::
 
 <!-- B3================================================================comment -->
+
 ## je crois pareillement
-::::: columns
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_9 Nous chantons la louange de Dieu chaque jour,_
+::: {.column .smaller width="55%"}
+*9 Nous chantons la louange de Dieu chaque jour,*
 
-<br>
-_et nous célébrerons éternellement ton nom._
+<br> *et nous célébrerons éternellement ton nom.*
 :::
-
-:::::
+::::::
 
 <!-- C1===============================================================comment -->
+
 ## pourquoi1 ?
-::::: columns
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_– Pause._
+::: {.column .smaller width="55%"}
+*– Pause.*
 
-<br>
-_10 Cependant tu nous as repoussés, tu nous as couverts de honte,tu ne sors plus avec nos armées._
+<br> *10 Cependant tu nous as repoussés, tu nous as couverts de honte,tu
+ne sors plus avec nos armées.*
 
-<br>
-_11 Tu nous fais reculer devant l’ennemi, et ceux qui nous détestent se partagent nos dépouilles._ 
+<br> *11 Tu nous fais reculer devant l’ennemi, et ceux qui nous
+détestent se partagent nos dépouilles.*
 :::
-
-:::::
+::::::
 
 <!-- C2================================================================comment -->
+
 ## pourquoi1 ?
-::::: columns
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_12 Tu nous livres comme des brebis de boucherie,tu nous disperses parmi les nations._
+::: {.column .smaller width="55%"}
+*12 Tu nous livres comme des brebis de boucherie,tu nous disperses parmi
+les nations.*
 
-<br>
-_13 Tu vends ton peuple pour rien, tu ne l’estimes pas à une grande valeur._
+<br> *13 Tu vends ton peuple pour rien, tu ne l’estimes pas à une grande
+valeur.*
 :::
-
-:::::
+::::::
 
 <!-- C3================================================================comment -->
+
 ## pourquoi 2?
-::::: columns
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_14 Tu nous exposes aux insultes de nos voisins, à la moquerie et aux railleries de ceux qui nous entourent._
+::: {.column .smaller width="55%"}
+*14 Tu nous exposes aux insultes de nos voisins, à la moquerie et aux
+railleries de ceux qui nous entourent.*
 
-<br>
-_15 Tu fais de nous le sujet d’un proverbe parmi les nations, on hoche la tête sur nous parmi les peuples._
+<br> *15 Tu fais de nous le sujet d’un proverbe parmi les nations, on
+hoche la tête sur nous parmi les peuples.*
 :::
-
-:::::
+::::::
 
 <!-- D1================================================================comment -->
+
 ## pourquoi 2?
-::::: columns
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_16 Mon humiliation est toujours devant moi, et la honte couvre mon visage_
+::: {.column .smaller width="55%"}
+*16 Mon humiliation est toujours devant moi, et la honte couvre mon
+visage*
 
-<br>
-_17 à la voix de celui qui m’insulte et me déshonore, à la vue de l’ennemi avide de vengeance. _
+<br> *17 à la voix de celui qui m’insulte et me déshonore, à la vue de
+l’ennemi avide de vengeance.*
 :::
-
-:::::
+::::::
 
 <!-- D2================================================================comment -->
+
 ## une injustice
-::::: columns
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_18 Tout cela nous arrive alors que nous ne t’avons pas oublié et que nous n’avons pas violé ton alliance._
+::: {.column .smaller width="55%"}
+*18 Tout cela nous arrive alors que nous ne t’avons pas oublié et que
+nous n’avons pas violé ton alliance.*
 
-<br>
-_19 Nous n’avons pas fait marche arrière dans notre cœur, nous ne nous sommes pas écartés de ton sentier._
+<br> *19 Nous n’avons pas fait marche arrière dans notre cœur, nous ne
+nous sommes pas écartés de ton sentier.*
 
-<br>
-_20 Pourtant, tu nous as écrasés dans le territoire des chacalset tu nous as couverts de l’ombre de la mort._
+<br> *20 Pourtant, tu nous as écrasés dans le territoire des chacalset
+tu nous as couverts de l’ombre de la mort.*
 :::
-
-:::::
+::::::
 
 <!-- D3================================================================comment -->
+
 ## la cause
-::::: columns
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column width="55%" .smaller}
-_21 Si nous avions oublié le nom de notre Dieu et tendu nos mains vers un dieu étranger,_
+::: {.column .smaller width="55%"}
+*21 Si nous avions oublié le nom de notre Dieu et tendu nos mains vers
+un dieu étranger,*
 
-_22 Dieu ne le saurait-il pas, lui qui connaît les secrets du cœur?_
+*22 Dieu ne le saurait-il pas, lui qui connaît les secrets du cœur?*
 
-<br>
-_23 Mais c’est à cause de toi qu’on nous met à mort à longueur de journée, qu’on nous considère comme des brebis destinées à la boucherie._
+<br> *23 Mais c’est à cause de toi qu’on nous met à mort à longueur de
+journée, qu’on nous considère comme des brebis destinées à la
+boucherie.*
 :::
-
-:::::
+::::::
 
 <!-- E1================================================================comment -->
-## l'ultime pétition 
-::::: columns
+
+## l'ultime pétition
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column .smaller width="55%"  }
-_24 Lève-toi_
-_Pourquoi dors-tu, Seigneur?_
+::: {.column .smaller width="55%"}
+*24 Lève-toi* *Pourquoi dors-tu, Seigneur?*
 
-_Réveille-toi, ne nous repousse pas pour toujours!_
+*Réveille-toi, ne nous repousse pas pour toujours!*
 
-_25 Pourquoi te caches-tu?_
+*25 Pourquoi te caches-tu?*
 
-_Pourquoi oublies-tu notre misère et notre oppression_
+*Pourquoi oublies-tu notre misère et notre oppression*
 
-_26 quand nous sommes affalés dans la poussière,quand nous rampons par terre?_
+*26 quand nous sommes affalés dans la poussière,quand nous rampons par
+terre?*
 :::
-
-:::::
+::::::
 
 <!-- E2================================================================comment -->
-## l'ultime pétition 
-::::: columns
+
+## l'ultime pétition
+
+:::::: columns
 ::: {.column width="35%"}
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column .smaller width="55%"  }
-_27 Lève-toi pour nous secourir,_
+::: {.column .smaller width="55%"}
+*27 Lève-toi pour nous secourir,*
 
-<br>
-_délivre-nous à cause de ta bonté!_
+<br> *délivre-nous à cause de ta bonté!*
 :::
-
-:::::
-
-
+::::::
