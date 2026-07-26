@@ -15,27 +15,31 @@ data = ({
   name: "root",
   children: [
     { 
-      name: "Bibles", 
+      name: "Bible Tools", 
       children: [
-        {name: "BibleGateway", value: 100, url: "https://www.biblegateway.com/"}, 
-        {name: "BibleStudyTools", value: 60, url: "https://www.biblestudytools.com/"}, 
-        {name: "BlueLetterBible", value: 50, url: " https://www.blueletterbible.org/"}, 
+        {name: "BGW", desc: "most translations in one place", value: 100, url: "https://www.biblegateway.com/"}, 
+        {name: "BST", desc: "clean free all-in-one tool", value: 60, url: "https://www.biblestudytools.com/"}, 
+        {name: "BLB", desc: "original Hebrew or Greek word study", value: 50, url: " https://www.blueletterbible.org/"}, 
+        {name: "StudyLight", desc: "most commentaries for free", value: 50, url: "https://www.studylight.org/"}, 
+        {name: "Pulpit", desc: "from Biblical Studies.org", value: 50, url: "https://biblicalstudies.org.uk/commentaries_pulpit-commentary.php"}, 
+        {name: "e-Sword", desc: "toto here", value: 50, url: "https://www.e-sword.net/"}, 
+        
       ] 
     },
     { 
       name: "My", 
       children: [
-        {name: "xminpi", value: 80, url: "https://xminpi.netlify.app/"}, 
-        {name: "ynot", value: 90, url: "https://fischerpj.github.io/ynot/"}, 
-        {name: "resvlt", value: 50, url: "https://fischerpj.github.io/resvlt/"},
-        {name: "xbib", value: 50, url: "https://fischerpj.github.io/xbib/"}
+        {name: "xminpi", desc: "toto here", value: 80, url: "https://xminpi.netlify.app/"}, 
+        {name: "ynot", desc: "toto here", value: 90, url: "https://fischerpj.github.io/ynot/"}, 
+        {name: "resvlt", desc: "toto here", value: 50, url: "https://fischerpj.github.io/resvlt/"},
+        {name: "xbib", desc: "toto here", value: 50, url: "https://fischerpj.github.io/xbib/"}
       ] 
     },
     { 
       name: "DevOps", 
       children: [
-        {name: "Docker", value: 70, url: "https://www.docker.com"}, 
-        {name: "K8s", value: 110, url: "https://kubernetes.io"}
+        {name: "Docker", desc: "toto here", value: 70, url: "https://www.docker.com"}, 
+        {name: "K8s", desc: "toto here", value: 110, url: "https://kubernetes.io"}
       ] 
     }
   ]
@@ -103,7 +107,7 @@ chart = {
     .on("mouseover", function(event, d) {
       d3.select(this).attr("fill-opacity", 1);
       tooltip.style("visibility", "visible")
-             .html(`<strong>${d.data.name}</strong><br/>Value: ${d.value}`);
+             .html(`<strong>${d.data.name}</strong><br/>Desc: ${d.data.desc}`);
     })
     .on("mousemove", function(event) {
       tooltip.style("top", (event.pageY - 10) + "px")
@@ -129,3 +133,11 @@ chart = {
   return svg.node();
 }
 ```
+
+<hr>
+- You want to see Scripture's connections visually → ScriptureVerse
+- OK You need original Hebrew or Greek word study → Blue Letter Bible
+- OK You want the most translations in one place → Bible Gateway Plus
+- OK You want a clean free all-in-one tool → BibleStudyTools.com
+- You're preparing sermons or academic papers → Logos Bible Software
+- You prefer offline, desktop-based study → e-Sword
