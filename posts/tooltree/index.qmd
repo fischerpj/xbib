@@ -23,6 +23,7 @@ data = ({
         {name: "StudyLight", desc: "most commentaries for free", value: 50, url: "https://www.studylight.org/"}, 
         {name: "Pulpit", desc: "from Biblical Studies.org", value: 50, url: "https://biblicalstudies.org.uk/commentaries_pulpit-commentary.php"}, 
         {name: "e-Sword", desc: "toto here", value: 50, url: "https://www.e-sword.net/"}, 
+        {name: "Expositor's", desc: "toto here", value: 50, url: "https://zondervanacademic.com/products/series/the-expositors-bible-commentary"}, 
         
       ] 
     },
@@ -30,8 +31,8 @@ data = ({
       name: "My", 
       children: [
         {name: "xminpi", desc: "toto here", value: 80, url: "https://xminpi.netlify.app/"}, 
-        {name: "ynot", desc: "toto here", value: 90, url: "https://fischerpj.github.io/ynot/"}, 
-        {name: "resvlt", desc: "toto here", value: 50, url: "https://fischerpj.github.io/resvlt/"},
+        {name: "ynot", desc: "vRun", value: 90, url: "https://fischerpj.github.io/ynot/posts/verseRun/"}, 
+        {name: "resvlt", desc: "refui", value: 50, url: "https://fischerpj.github.io/resvlt/posts/refui.html"},
         {name: "xbib", desc: "toto here", value: 50, url: "https://fischerpj.github.io/xbib/"}
       ] 
     },
@@ -39,7 +40,7 @@ data = ({
       name: "DevOps", 
       children: [
         {name: "Docker", desc: "toto here", value: 70, url: "https://www.docker.com"}, 
-        {name: "K8s", desc: "toto here", value: 110, url: "https://kubernetes.io"}
+        {name: "JupyterLite", desc: "toto here", value: 110, url: "https://fischerpj.github.io/jupil/lab/index.html"}
       ] 
     }
   ]
