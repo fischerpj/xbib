@@ -1,6 +1,7 @@
 ---
 title: random
 format: html
+image: dice.jpg
 execute:
   echo: false
 ---
