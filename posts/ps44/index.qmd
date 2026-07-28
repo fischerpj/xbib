@@ -1,6 +1,7 @@
 ---
 title: "qu'est-ce qui nous arrive? "
 subtitle: "expliqué par le Psaume 44"
+image: "France_road_sign_A4.svg.png"
 format:
   revealjs:
     theme: [solarized]
@@ -16,7 +17,7 @@ editor:
 
 :::::: columns
 ::: {.column width="35%"}
-![](www/img/France_road_sign_A4.svg.png){width="150"}
+![](France_road_sign_A4.svg.png){width="150"}
 :::
 
 ::: {.column width="8%"}
