@@ -1,0 +1,115 @@
+/* --- Structure --- */
+  .callout-flex-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+/* --- The Wrapper (Crucial for relative positioning) --- */
+  .hover-callout-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+/* --- The Buttons (Triggers) --- */
+  .callout-trigger {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #4a90e2;
+    background-color: transparent;
+    color: #4a90e2;
+      transition: all 0.3s ease;
+  }
+
+.callout-trigger:hover {
+  background-color: #4a90e2;
+    color: white;
+}
+
+.callout-trigger.alt {
+  border-color: #e63946;
+    color: #e63946;
+}
+
+.callout-trigger.alt:hover {
+  background-color: #e63946;
+    color: white;
+}
+
+/* --- The Floating Callout (Initial State: Hidden) --- */
+  .floating-callout {
+    position: absolute;
+    width: 300px;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd;
+    z-index: 1000;
+    
+    /* Initial State for Transition */
+      opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+    pointer-events: none; /* Prevents callout from blocking clicks when fading out */
+  }
+
+/* --- Show Callout on Trigger Hover --- */
+  .hover-callout-wrapper:hover .floating-callout {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Remove delay when showing */
+      transform: translate(0, 0) scale(1);
+  }
+
+/* --- Positioning Classes --- */
+  
+  /* Float Top-Right of the button */
+  .floating-callout.top-right {
+    bottom: 110%; /* Place above the button */
+      left: 50%; /* Center start */
+      transform: translate(0, -15px) scale(0.95); /* Slight rise and scale when hidden */
+  }
+
+/* Float Bottom-Left of the button */
+  .floating-callout.bottom-left {
+    top: 110%; /* Place below the button */
+      right: 50%; /* Align end */
+      transform: translate(0, 15px) scale(0.95); /* Slight fall when hidden */
+  }
+
+/* --- Styling Inside Callout --- */
+  .floating-callout h4 {
+    margin-top: 0;
+    color: #333;
+      margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+.floating-callout ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.green {
+  background-color: #2ecc71;
+}

@@ -17,9 +17,10 @@ data = ({
     { 
       name: "Bible Tools", 
       children: [
-        {name: "BGW", desc: "most translations in one place", value: 100, url: "https://www.biblegateway.com/"}, 
+        {name: "BGW", desc: "search passage, keyword in most translations", value: 100, url: "https://www.biblegateway.com/"},
+        {name: "BLB", desc: "Hebrew-Greek Strong Numbers + Dictionnaries", value: 70, url: " https://www.blueletterbible.org/"}, 
         {name: "BST", desc: "clean free all-in-one tool", value: 60, url: "https://www.biblestudytools.com/"}, 
-        {name: "BLB", desc: "original Hebrew or Greek word study", value: 50, url: " https://www.blueletterbible.org/"}, 
+
         {name: "StudyLight", desc: "most commentaries for free", value: 50, url: "https://www.studylight.org/"}, 
         {name: "Pulpit", desc: "from Biblical Studies.org", value: 50, url: "https://biblicalstudies.org.uk/commentaries_pulpit-commentary.php"}, 
         {name: "e-Sword", desc: "toto here", value: 50, url: "https://www.e-sword.net/"}, 

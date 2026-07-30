@@ -1,0 +1,44 @@
+---
+title: "Quarto Reveal Hovering"
+format:
+  revealjs:
+    theme: [solarized]
+    css: two_columns.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Alternate Text on Hover
+
+<div class="container">
+
+<div class="hover-swap" data-hover="Secret feature revealed!">
+
+### Feature A
+*(Hover to reveal details)*
+
+</div>
+
+<div class="hover-swap" data-hover="Zero extra JavaScript needed!">
+
+### Feature B
+*(Hover to reveal details)*
+
+</div>
+
+</div>
+
+# Inline Hover Swap
+
+You can also reveal alternate text inline inside paragraphs:
+
+* **Term 1:** Hover over <span class="hover-text" data-hover="a type of software container">Docker</span> for a definition.
+* **Term 2:** Hover over <span class="hover-text" data-hover="JavaScript syntax extension">JSX</span> for a explanation.
+
+\
+
+::: {.hover-button data-hover="Action Confirmed! 🚀"}
+Hover over this button
+:::
+

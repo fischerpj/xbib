@@ -1,5 +1,5 @@
 ---
-title: "qu'est-ce qui nous arrive? "
+title: "qu'est-ce qui nous arrive?"
 subtitle: "expliqué par le Psaume 44"
 image: "France_road_sign_A4.svg.png"
 format:
@@ -13,27 +13,301 @@ editor:
 
 <!-- ================================================================comment -->
 
-## Part 1
+## le Psaume 44
 
 :::::: columns
 ::: {.column width="35%"}
-![](France_road_sign_A4.svg.png){width="150"}
+repérage difficile?
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
-```{mermaid}
-flowchart TD
-   A(RAPPEL D'AUTREFOIS) --> C(CHOC DE LA DISCORDANCE)
-   B(URGENCE PRESENTE) --> C
-   C --> D(L'ABERRATION EXPLIQUEE)
-   C --> E(LE SEUL RECOURS)
-```
 :::
 ::::::
 
+:::{.notes}
+:::
+
+<!-- ================================================================comment -->
+
+## la défaite du chrétien priant
+
+:::::: columns
+::: {.column width="35%"}
+le problème humain
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+:::
+::::::
+
+:::{.notes}
+:::
+
+<!-- ================================================================comment -->
+
+## le ressort après la pause
+
+:::::: columns
+::: {.column width="35%"}
+la solution divine
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+:::
+::::::
+
+:::{.notes}
+:::
+
+<!-- ================================================================comment -->
+
+## 1. feedback
+
+:::::: columns
+::: {.column width="35%"}
+la prière-
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+:::
+::::::
+
+:::{.notes}
+:::
+
+<!-- ================================================================comment -->
+
+## 2. l'imitation
+
+:::::: columns
+::: {.column width="35%"}
+la prière-
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+:::
+::::::
+
+:::{.notes}
+:::
+
+<!-- ================================================================comment -->
+
+## 3. l'agent de la défaite
+
+:::::: columns
+::: {.column width="37%"}
+la souveraineté divine
+:::
+
+::: {.column width="6%"}
+:::
+
+::: {.column .smaller width="55%"}
+:::
+::::::
+
+:::{.notes}
+:::
+
+<!-- ================================================================comment -->
+
+## 4. la protestation
+
+:::::: columns
+::: {.column width="35%"}
+l'injustice écartée
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+:::
+::::::
+
+:::{.notes}
+:::
+
+<!-- ================================================================comment -->
+
+## 5. la cause première 
+
+:::::: columns
+::: {.column width="35%"}
+en Christ!
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+:::
+::::::
+
+:::{.notes}
+:::
+
+<!-- ================================================================comment -->
+
+## 6. réveillez Dieu
+
+:::::: columns
+::: {.column width="35%"}
+qui ne dort pas!
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+:::
+::::::
+
+:::{.notes}
+:::
+
+<!-- ================================================================comment -->
+
+## 7. avance l'argument 
+
+:::::: columns
+::: {.column width="35%"}
+de Sa propre bonté
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+:::
+::::::
+
+:::{.notes}
+:::
+<!-- ================================================================comment -->
+
+## template: start of unofficial
+
+:::::: columns
+::: {.column width="35%"}
+
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+
+:::
+::::::
+
+:::{.notes}
+:::
+
+
+<!-- ================================================================comment -->
+
+## la grande idée
+
+:::::: columns
+::: {.column width="35%"}
+![](France_road_sign_A4.svg.png){width="100"}
+```{mermaid}
+flowchart TD
+   A["<div title=" en souvenir **de la fidélité divine** prouvée par l\\'histoire passée,">RAPPEL D'AUTREFOIS</div>"] --> C(CHOC DE LA DISCORDANCE)
+   B(URGENCE PRESENTE) --> C
+   C --> D(L'ABERRATION EXPLIQUEE)
+   C --> E(LE SEUL RECOURS)
+   
+   click A callback "hello"
+```
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+
+<span>
+1. **de la fidélité divine** dans l'histoire passée, j'attends, dans l'épreuve actuelle, **une pareille délivrance**
+2. cependant **la défaite honteuse** supplante le triomphe escompté, sans être le fruit du péché,  
+3. la souveraineté de Dieu nous **associe à Christ** jusqu'à l'ignominie.
+4. et nous **plaidons** avec audace, auprès de Dieu **Sa propre bonté** pour nous secourir. 
+</span>
+
+:::
+::::::
+
+:::{.notes}
+#### 1. Introduction (Purpose: orient the listener)
+
+- Present the **context** of the passage (historical, literary).
+
+- State the dominant theme or **tension** the sermon will address.
+
+- Give the sermon’s main idea (the **“Big Idea / Question”** or “Proposition”).
+
+#### 2. Exposition of the Text (Verse-by-verse or section-by-section)
+This is the backbone. Each movement explains what the text says and means.
+
+Usually structured as:
+
+Point 1 — What the text says (explanation)
+**Explain** key words, phrases, and ideas. Show how this part fits the passage’s flow.
+
+Point 2 — Why it matters (theological significance)
+**Connect** the text to biblical theology. Show what God is revealing about Himself, humanity, or salvation.
+
+Point 3 — How it applies (implication for life)
+Concrete, specific **application**. Often includes examples, warnings, encouragements.
+
+Each point follows the same mini‑pattern: **Explanation → Illustration → Application**
+
+#### 🧩 3. Illustrations (woven throughout)
+Clarify difficult concepts.
+
+Make abstract truths concrete.
+
+Should illuminate the text, not distract from it.
+
+#### 🎯 4. Application (specific, actionable, text‑rooted)
+Application can be:
+
+Personal (heart, habits, character)
+
+Communal (church life)
+
+Missional (witness, service)
+
+Ethical (choices, behavior)
+
+Good expository preaching ties each application directly to the text, not to general moral advice.
+
+#### 5. Conclusion
+Restate the main idea.
+
+Summarize the key movements of the text.
+
+Call for a response (faith, obedience, trust, repentance).
+
+End with prayer or reflection.
+:::
 <!-- ================================================================comment -->
 
 ## TOC
@@ -50,13 +324,95 @@ flowchart TD
 :::
 ::::::
 
+:::{.notes}
+🧱 Expository Sermon Skeleton — Psalm 44
+Theme: When God feels absent, faith remembers, laments, and pleads.
+
+Big Idea: God’s past faithfulness becomes the foundation for honest lament and bold prayer in present suffering.
+
+I. Remembering God’s Past Faithfulness (vv. 1–8)
+Explanation:  
+Israel recalls what God did for their ancestors—victories, deliverance, covenant love. Their confidence was not in themselves but in God’s power.
+
+Illustration:  
+A family photo album: remembering who you are by remembering where you came from.
+
+Application:
+
+Faith begins with remembering.
+
+Rehearse God’s past works in Scripture and in your own life.
+
+Gratitude strengthens trust before hardship arrives.
+
+II. Lamenting Present Confusion and Pain (vv. 9–16)
+Explanation:  
+The psalm shifts sharply: despite their faithfulness, they feel abandoned. They suffer defeat, humiliation, and shame. This is not rebellion—it is honest lament.
+
+Illustration:  
+A believer who keeps serving faithfully yet faces unexpected loss.
+
+Application:
+
+Scripture gives permission to say, “God, this doesn’t make sense.”
+
+Lament is not unbelief; it is faith refusing to pretend.
+
+Bring your confusion to God instead of burying it.
+
+III. Affirming Covenant Loyalty Despite Suffering (vv. 17–22)
+Explanation:  
+Israel insists they have not turned away from God. Their suffering is not due to sin. Verse 22 becomes a key text later quoted by Paul (Rom 8:36).
+
+Illustration:  
+A soldier who remains loyal even when the battle seems unwinnable.
+
+Application:
+
+Obedience is not a guarantee of ease.
+
+Faithfulness matters even when God feels silent.
+
+Suffering can be part of God’s mysterious purposes.
+
+IV. Pleading Boldly for God’s Intervention (vv. 23–26)
+Explanation:  
+The psalm ends with a cry: “Awake… Rise up… Redeem us.”  
+This is bold, urgent prayer grounded in God’s steadfast love.
+
+Illustration:  
+A child calling out in the night—not because they doubt the parent’s love, but because they trust it.
+
+Application:
+
+Pray boldly when God feels distant.
+
+Anchor your pleas in God’s character, not your performance.
+
+Hope persists even when circumstances contradict it.
+
+Conclusion
+Remember God’s past works.
+
+Lament honestly before Him.
+
+Remain faithful even in confusion.
+
+Cry out boldly for His help.
+Psalm 44 teaches that mature faith is not silent, stoic, or simplistic—it remembers, wrestles, and pleads.
+:::
+
 <!-- A1================================================================comment -->
 
 ## Difficile repérage
 
 :::::: columns
 ::: {.column width="35%"}
-**Coeur**
+
+- difficile repérage
+<br><br><br>
+
+- la vraie prière
 :::
 
 ::: {.column width="8%"}
@@ -70,6 +426,10 @@ flowchart TD
 *2 O Dieu, ...*
 :::
 ::::::
+
+:::{.notes}
+speaker notes here
+:::
 
 <!-- A2================================================================comment -->
 
@@ -277,11 +637,11 @@ l’ennemi avide de vengeance.*
 *18 Tout cela nous arrive alors que nous ne t’avons pas oublié et que
 nous n’avons pas violé ton alliance.*
 
-*19 Nous n’avons pas fait marche arrière dans notre cœur, nous ne
-nous sommes pas écartés de ton sentier.*
+*19 Nous n’avons pas fait marche arrière dans notre cœur, nous ne nous
+sommes pas écartés de ton sentier.*
 
-*20 Pourtant, tu nous as écrasés dans le territoire des chacalset
-tu nous as couverts de l’ombre de la mort.*
+*20 Pourtant, tu nous as écrasés dans le territoire des chacalset tu
+nous as couverts de l’ombre de la mort.*
 :::
 ::::::
 

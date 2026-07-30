@@ -1,0 +1,50 @@
+---
+title: "Floating Callout Hover"
+subtitle: "Quarto RevealJS Presentation"
+format:
+  revealjs:
+    theme: solarized
+    css: styles.css
+---
+
+# Floating Callout on Hover
+
+Hover over the buttons below to see detailed information:
+
+
+```{=html}
+
+<!-- Container to manage layout -->
+<div class="callout-flex-container">
+
+  <!-- BUTTON 1 WRAPPER -->
+  <div class="hover-callout-wrapper">
+    <button class="callout-trigger">View Summary</button>
+    
+    <!-- THE FLOATING CALLOUT (Initially Hidden) -->
+    <div class="floating-callout top-right">
+      <h4>Quarterly Report</h4>
+      <ul>
+        <li>Revenue: +12%</li>
+        <li>Users: +5k</li>
+        <li>Churn: -2%</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BUTTON 2 WRAPPER -->
+  <div class="hover-callout-wrapper">
+    <button class="callout-trigger alt">Check Status</button>
+    
+    <!-- THE FLOATING CALLOUT (Initially Hidden) -->
+    <div class="floating-callout bottom-left">
+      <h4>System Status</h4>
+      <div class="status-indicator">
+        <span class="dot green"></span> All systems operational
+      </div>
+      <p><small>Last check: 1 min ago</small></p>
+    </div>
+  </div>
+
+</div>
+```

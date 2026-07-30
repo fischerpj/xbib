@@ -1,0 +1,135 @@
+.sidebar-layout {
+  display: grid;
+  /* 33% for sidebar, 67% for remaining space */
+  grid-template-columns: 33% 67%;
+  /* Optional: adds a consistent gap between columns */
+  column-gap: 30px; 
+  align-items: start;
+}
+
+.sidebar {
+  /* Optional: styling for the 33% sidebar */
+  border-right: 1px solid #dee2e6;
+  padding-right: 20px;
+}
+
+.reveal .slides section h2  {
+  text-align: right;
+}
+
+/* Container layout for cards */
+.container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* --- Card Text Swap --- */
+.hover-swap {
+  position: relative;
+  flex: 1;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hide original content on hover */
+.hover-swap:hover > * {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Display alternate text on hover */
+.hover-swap:hover::after {
+  content: attr(data-hover);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: bold;
+  color: #1d3557;
+  font-size: 1.2rem;
+}
+
+.hover-swap:hover {
+  background-color: #e8f4f8;
+  border-color: #4a90e2;
+}
+
+/* --- Inline Text Swap --- */
+.hover-text {
+  position: relative;
+  display: inline-block;
+  color: #4a90e2;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 2px dashed #4a90e2;
+}
+
+.hover-text:hover {
+  color: transparent; /* Hides original inline word */
+}
+
+.hover-text:hover::after {
+  content: attr(data-hover);
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  color: #e63946;
+  font-weight: bold;
+}
+
+/* --- Button Text Swap --- */
+.hover-button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: #2b2d42;
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.hover-button:hover {
+  background-color: #4a90e2;
+  color: transparent; /* Hides main text */
+  position: relative;
+}
+
+.hover-button:hover::after {
+  content: attr(data-hover);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* --- The Buttons (Triggers) --- */
+  .callout-trigger {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #4a90e2;
+    background-color: transparent;
+    color: #4a90e2;
+      transition: all 0.3s ease;
+  }
+  
+.callout-trigger.alt {
+  border-color: #e63946;
+    color: #e63946;
+}
