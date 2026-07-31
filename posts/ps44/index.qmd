@@ -5,7 +5,7 @@ image: "France_road_sign_A4.svg.png"
 format:
   revealjs:
     theme: [solarized]
-    css: /www/css/two_columns.css
+    css: /www/styles/two_columns.css
 editor: 
   markdown: 
     wrap: 72
@@ -17,17 +17,19 @@ editor:
 
 :::::: columns
 ::: {.column width="35%"}
-repérage difficile?
+![](/www/img/geolocalisation.png){width="125"}
+
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
+repérage difficile ?
 :::
 ::::::
 
-:::{.notes}
+::: notes
 :::
 
 <!-- ================================================================comment -->
@@ -36,45 +38,51 @@ repérage difficile?
 
 :::::: columns
 ::: {.column width="35%"}
-le problème humain
+![A. Dürer, 1508](/www/img/praying_hands.jpg){width="350"}
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
+le problème humain ![Varsovie 1943](/www/img/la_fouille.jpg){.absolute
+bottom="0" right="0" width="450"}
 :::
 ::::::
 
-:::{.notes}
+::: notes
 :::
 
 <!-- ================================================================comment -->
 
-## le ressort après la pause
+## après la pause, les réponses
 
 :::::: columns
 ::: {.column width="35%"}
+![](/www/img/pause_icon_134502.webp)
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+<!-- ![](/www/img/ressort.jpg){width="250"} -->
+
 la solution divine
 :::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-:::
 ::::::
 
-:::{.notes}
+::: notes
 :::
 
 <!-- ================================================================comment -->
 
-## 1. feedback
+## 1. la prière-feedback
 
 :::::: columns
 ::: {.column width="35%"}
-la prière-
+![rétroaction](/www/img/boucle_feedback.jpg){fig-align="left"
+width="175"}
 :::
 
 ::: {.column width="8%"}
@@ -84,16 +92,16 @@ la prière-
 :::
 ::::::
 
-:::{.notes}
+::: notes
 :::
 
 <!-- ================================================================comment -->
 
-## 2. l'imitation
+## 2. la prière-imitation
 
 :::::: columns
 ::: {.column width="35%"}
-la prière-
+![](/www/img/A-A.jpg){width="200"}
 :::
 
 ::: {.column width="8%"}
@@ -103,7 +111,7 @@ la prière-
 :::
 ::::::
 
-:::{.notes}
+::: notes
 :::
 
 <!-- ================================================================comment -->
@@ -112,17 +120,18 @@ la prière-
 
 :::::: columns
 ::: {.column width="37%"}
-la souveraineté divine
+![](/www/img/couronne.png){width="175"}
 :::
 
 ::: {.column width="6%"}
 :::
 
 ::: {.column .smaller width="55%"}
+la souveraineté divine
 :::
 ::::::
 
-:::{.notes}
+::: notes
 :::
 
 <!-- ================================================================comment -->
@@ -131,36 +140,38 @@ la souveraineté divine
 
 :::::: columns
 ::: {.column width="35%"}
-l'injustice écartée
+![](/www/img/balance.png){width="175"}
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
+l'injustice écartée
 :::
 ::::::
 
-:::{.notes}
+::: notes
 :::
 
 <!-- ================================================================comment -->
 
-## 5. la cause première 
+## 5. la cause première
 
 :::::: columns
 ::: {.column width="35%"}
-en Christ!
+![](/www/img/croix.png){width="150"}
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
+en Christ!
 :::
 ::::::
 
-:::{.notes}
+::: notes
 :::
 
 <!-- ================================================================comment -->
@@ -169,57 +180,58 @@ en Christ!
 
 :::::: columns
 ::: {.column width="35%"}
-qui ne dort pas!
+![](/www/img/reveilmatin.png){width="175"}
+
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
+qui ne dort pas!
 :::
 ::::::
 
-:::{.notes}
+::: notes
 :::
 
 <!-- ================================================================comment -->
 
-## 7. avance l'argument 
+## 7. plaide l'argument
 
 :::::: columns
 ::: {.column width="35%"}
-de Sa propre bonté
+![](/www/img/hands.webp){width="175"}
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
+de Sa propre bonté
 :::
 ::::::
 
-:::{.notes}
+::: notes
 :::
+
 <!-- ================================================================comment -->
 
 ## template: start of unofficial
 
 :::::: columns
 ::: {.column width="35%"}
-
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
-
 :::
 ::::::
 
-:::{.notes}
+::: notes
 :::
-
 
 <!-- ================================================================comment -->
 
@@ -228,6 +240,7 @@ de Sa propre bonté
 :::::: columns
 ::: {.column width="35%"}
 ![](France_road_sign_A4.svg.png){width="100"}
+
 ```{mermaid}
 flowchart TD
    A["<div title=" en souvenir **de la fidélité divine** prouvée par l\\'histoire passée,">RAPPEL D'AUTREFOIS</div>"] --> C(CHOC DE LA DISCORDANCE)
@@ -243,43 +256,48 @@ flowchart TD
 :::
 
 ::: {.column .smaller width="55%"}
-
-<span>
-1. **de la fidélité divine** dans l'histoire passée, j'attends, dans l'épreuve actuelle, **une pareille délivrance**
-2. cependant **la défaite honteuse** supplante le triomphe escompté, sans être le fruit du péché,  
-3. la souveraineté de Dieu nous **associe à Christ** jusqu'à l'ignominie.
-4. et nous **plaidons** avec audace, auprès de Dieu **Sa propre bonté** pour nous secourir. 
-</span>
-
+1.  **de la fidélité divine** dans l'histoire passée, j'attends, dans
+    l'épreuve actuelle, **une pareille délivrance** 2. cependant **la
+    défaite honteuse** supplante le triomphe escompté, sans être le
+    fruit du péché,\
+2.  la souveraineté de Dieu nous **associe à Christ** jusqu'à
+    l'ignominie. 4. et nous **plaidons** avec audace, auprès de Dieu
+    **Sa propre bonté** pour nous secourir.
 :::
 ::::::
 
-:::{.notes}
+::: notes
 #### 1. Introduction (Purpose: orient the listener)
 
 - Present the **context** of the passage (historical, literary).
 
 - State the dominant theme or **tension** the sermon will address.
 
-- Give the sermon’s main idea (the **“Big Idea / Question”** or “Proposition”).
+- Give the sermon’s main idea (the **“Big Idea / Question”** or
+  “Proposition”).
 
 #### 2. Exposition of the Text (Verse-by-verse or section-by-section)
-This is the backbone. Each movement explains what the text says and means.
+
+This is the backbone. Each movement explains what the text says and
+means.
 
 Usually structured as:
 
-Point 1 — What the text says (explanation)
-**Explain** key words, phrases, and ideas. Show how this part fits the passage’s flow.
+Point 1 — What the text says (explanation) **Explain** key words,
+phrases, and ideas. Show how this part fits the passage’s flow.
 
-Point 2 — Why it matters (theological significance)
-**Connect** the text to biblical theology. Show what God is revealing about Himself, humanity, or salvation.
+Point 2 — Why it matters (theological significance) **Connect** the text
+to biblical theology. Show what God is revealing about Himself,
+humanity, or salvation.
 
-Point 3 — How it applies (implication for life)
-Concrete, specific **application**. Often includes examples, warnings, encouragements.
+Point 3 — How it applies (implication for life) Concrete, specific
+**application**. Often includes examples, warnings, encouragements.
 
-Each point follows the same mini‑pattern: **Explanation → Illustration → Application**
+Each point follows the same mini‑pattern: **Explanation → Illustration →
+Application**
 
 #### 🧩 3. Illustrations (woven throughout)
+
 Clarify difficult concepts.
 
 Make abstract truths concrete.
@@ -287,6 +305,7 @@ Make abstract truths concrete.
 Should illuminate the text, not distract from it.
 
 #### 🎯 4. Application (specific, actionable, text‑rooted)
+
 Application can be:
 
 Personal (heart, habits, character)
@@ -297,9 +316,11 @@ Missional (witness, service)
 
 Ethical (choices, behavior)
 
-Good expository preaching ties each application directly to the text, not to general moral advice.
+Good expository preaching ties each application directly to the text,
+not to general moral advice.
 
 #### 5. Conclusion
+
 Restate the main idea.
 
 Summarize the key movements of the text.
@@ -308,6 +329,7 @@ Call for a response (faith, obedience, trust, repentance).
 
 End with prayer or reflection.
 :::
+
 <!-- ================================================================comment -->
 
 ## TOC
@@ -324,18 +346,21 @@ End with prayer or reflection.
 :::
 ::::::
 
-:::{.notes}
-🧱 Expository Sermon Skeleton — Psalm 44
-Theme: When God feels absent, faith remembers, laments, and pleads.
+::: notes
+🧱 Expository Sermon Skeleton — Psalm 44 Theme: When God feels absent,
+faith remembers, laments, and pleads.
 
-Big Idea: God’s past faithfulness becomes the foundation for honest lament and bold prayer in present suffering.
+Big Idea: God’s past faithfulness becomes the foundation for honest
+lament and bold prayer in present suffering.
 
-I. Remembering God’s Past Faithfulness (vv. 1–8)
-Explanation:  
-Israel recalls what God did for their ancestors—victories, deliverance, covenant love. Their confidence was not in themselves but in God’s power.
+I. Remembering God’s Past Faithfulness (vv. 1–8) Explanation:\
+Israel recalls what God did for their ancestors—victories, deliverance,
+covenant love. Their confidence was not in themselves but in God’s
+power.
 
-Illustration:  
-A family photo album: remembering who you are by remembering where you came from.
+Illustration:\
+A family photo album: remembering who you are by remembering where you
+came from.
 
 Application:
 
@@ -345,11 +370,12 @@ Rehearse God’s past works in Scripture and in your own life.
 
 Gratitude strengthens trust before hardship arrives.
 
-II. Lamenting Present Confusion and Pain (vv. 9–16)
-Explanation:  
-The psalm shifts sharply: despite their faithfulness, they feel abandoned. They suffer defeat, humiliation, and shame. This is not rebellion—it is honest lament.
+II. Lamenting Present Confusion and Pain (vv. 9–16) Explanation:\
+    The psalm shifts sharply: despite their faithfulness, they feel
+    abandoned. They suffer defeat, humiliation, and shame. This is not
+    rebellion—it is honest lament.
 
-Illustration:  
+Illustration:\
 A believer who keeps serving faithfully yet faces unexpected loss.
 
 Application:
@@ -361,10 +387,12 @@ Lament is not unbelief; it is faith refusing to pretend.
 Bring your confusion to God instead of burying it.
 
 III. Affirming Covenant Loyalty Despite Suffering (vv. 17–22)
-Explanation:  
-Israel insists they have not turned away from God. Their suffering is not due to sin. Verse 22 becomes a key text later quoted by Paul (Rom 8:36).
+     Explanation:\
+     Israel insists they have not turned away from God. Their suffering
+     is not due to sin. Verse 22 becomes a key text later quoted by Paul
+     (Rom 8:36).
 
-Illustration:  
+Illustration:\
 A soldier who remains loyal even when the battle seems unwinnable.
 
 Application:
@@ -375,13 +403,13 @@ Faithfulness matters even when God feels silent.
 
 Suffering can be part of God’s mysterious purposes.
 
-IV. Pleading Boldly for God’s Intervention (vv. 23–26)
-Explanation:  
-The psalm ends with a cry: “Awake… Rise up… Redeem us.”  
-This is bold, urgent prayer grounded in God’s steadfast love.
+IV. Pleading Boldly for God’s Intervention (vv. 23–26) Explanation:\
+    The psalm ends with a cry: “Awake… Rise up… Redeem us.”\
+    This is bold, urgent prayer grounded in God’s steadfast love.
 
-Illustration:  
-A child calling out in the night—not because they doubt the parent’s love, but because they trust it.
+Illustration:\
+A child calling out in the night—not because they doubt the parent’s
+love, but because they trust it.
 
 Application:
 
@@ -391,15 +419,14 @@ Anchor your pleas in God’s character, not your performance.
 
 Hope persists even when circumstances contradict it.
 
-Conclusion
-Remember God’s past works.
+Conclusion Remember God’s past works.
 
 Lament honestly before Him.
 
 Remain faithful even in confusion.
 
-Cry out boldly for His help.
-Psalm 44 teaches that mature faith is not silent, stoic, or simplistic—it remembers, wrestles, and pleads.
+Cry out boldly for His help. Psalm 44 teaches that mature faith is not
+silent, stoic, or simplistic—it remembers, wrestles, and pleads.
 :::
 
 <!-- A1================================================================comment -->
@@ -408,9 +435,7 @@ Psalm 44 teaches that mature faith is not silent, stoic, or simplistic—it reme
 
 :::::: columns
 ::: {.column width="35%"}
-
-- difficile repérage
-<br><br><br>
+- difficile repérage <br><br><br>
 
 - la vraie prière
 :::
@@ -427,7 +452,7 @@ Psalm 44 teaches that mature faith is not silent, stoic, or simplistic—it reme
 :::
 ::::::
 
-:::{.notes}
+::: notes
 speaker notes here
 :::
 

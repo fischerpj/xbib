@@ -14,4 +14,4 @@ website:
 format:
   html:
     theme: lumen
-    css: styles.css
+    css: /styles/styles.css
