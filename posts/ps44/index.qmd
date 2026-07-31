@@ -17,7 +17,7 @@ editor:
 
 :::::: columns
 ::: {.column width="35%"}
-![](/www/img/geolocalisation.png){width="125"}
+![repérage difficile?](/www/img/geolocalisation.png){width="125"}
 
 :::
 
@@ -25,7 +25,11 @@ editor:
 :::
 
 ::: {.column .smaller width="55%"}
-repérage difficile ?
+*44 Au chef de chœur. Des descendants de Koré, cantique.*
+
+<br><br>
+
+*2 O Dieu, ...*
 :::
 ::::::
 
@@ -38,15 +42,23 @@ repérage difficile ?
 
 :::::: columns
 ::: {.column width="35%"}
-![A. Dürer, 1508](/www/img/praying_hands.jpg){width="350"}
+![A. Dürer, 1508](/www/img/praying_hands.jpg){width="250"}
+![Varsovie 1943](/www/img/la_fouille.jpg){width="250"}
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
-le problème humain ![Varsovie 1943](/www/img/la_fouille.jpg){.absolute
-bottom="0" right="0" width="450"}
+le problème humain 
+
+1.  **de la fidélité divine** dans l'histoire passée, j'attends, dans
+    l'épreuve actuelle, **une pareille délivrance** 
+    
+2. cependant **la défaite honteuse** supplante le triomphe escompté, sans être le
+    fruit du péché,
+
+
 :::
 ::::::
 
@@ -69,6 +81,11 @@ bottom="0" right="0" width="450"}
 <!-- ![](/www/img/ressort.jpg){width="250"} -->
 
 la solution divine
+
+3. la souveraineté de Dieu nous **associe à Christ** jusqu'à
+    l'ignominie. 
+4. et nous **plaidons** avec audace, auprès de Dieu
+    **Sa propre bonté** pour nous secourir.
 :::
 ::::::
 
@@ -89,11 +106,46 @@ width="175"}
 :::
 
 ::: {.column .smaller width="55%"}
+<br> *2 **O Dieu**, ... nous avons entendu de **nos oreilles**, **nos pères** nous ont raconté
+tout ce que **tu as accompli** à leur époque, par le passé.*
+
+<br> *3 De ta main tu as chassé des nations pour qu’ils puissent
+s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre*
 :::
 ::::::
 
 ::: notes
+1. la vraie prière
+
+- s'adresse au seul Dieu vivant
+- suite au témoignage des pères à ceux qui ont des oreilles pour entendre
+- et dit: "Je reconnais la main de Dieu dans l'histoire"
+
+- calibrons notre compréhension avec les histoires de la Bible et créons les occasions de témoignage pour raconter ce que Dieu a fait pour nous.
+
+2. mon âme a soif du Dieu vivant, je tends mes mains vers Toi, du fond de la détresse, jour et nuit
 :::
+
+<!-- ================================================================comment -->
+
+## 1b. pourquoi #1
+
+:::::: columns
+::: {.column width="35%"}
+
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+*4 En effet, ce n’est pas par leur épée qu’ils se sont emparés du pays,
+ce n’est **pas leur bras** qui les a sauvés,*
+
+<br> *mais c’est ta main droite, c’est ton bras, c’est la lumière de ton
+visage, **parce que tu les aimais**.*
+:::
+::::::
 
 <!-- ================================================================comment -->
 
@@ -108,10 +160,14 @@ width="175"}
 :::
 
 ::: {.column .smaller width="55%"}
+*5 O Dieu, tu es mon roi:*
+
+<br> *ordonne la délivrance de Jacob!*
 :::
 ::::::
 
 ::: notes
+
 :::
 
 <!-- ================================================================comment -->
@@ -256,13 +312,8 @@ flowchart TD
 :::
 
 ::: {.column .smaller width="55%"}
-1.  **de la fidélité divine** dans l'histoire passée, j'attends, dans
-    l'épreuve actuelle, **une pareille délivrance** 2. cependant **la
-    défaite honteuse** supplante le triomphe escompté, sans être le
-    fruit du péché,\
-2.  la souveraineté de Dieu nous **associe à Christ** jusqu'à
-    l'ignominie. 4. et nous **plaidons** avec audace, auprès de Dieu
-    **Sa propre bonté** pour nous secourir.
+
+
 :::
 ::::::
 
@@ -444,11 +495,7 @@ silent, stoic, or simplistic—it remembers, wrestles, and pleads.
 :::
 
 ::: {.column .smaller width="55%"}
-*44 Au chef de chœur. Des descendants de Koré, cantique.*
 
-<br><br>
-
-*2 O Dieu, ...*
 :::
 ::::::
 
@@ -475,11 +522,7 @@ speaker notes here
 :::
 
 ::: {.column .smaller width="55%"}
-<br> *... nous avons entendu de nos oreilles, nos pères nous ont raconté
-tout ce que tu as accompli à leur époque, par le passé.*
 
-<br> *3 De ta main tu as chassé des nations pour qu’ils puissent
-s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre*
 :::
 ::::::
 
@@ -498,11 +541,7 @@ s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre*
 :::
 
 ::: {.column .smaller width="55%"}
-*4 En effet, ce n’est pas par leur épée qu’ils se sont emparés du pays,
-ce n’est pas leur bras qui les a sauvés,*
 
-<br> *mais c’est ta main droite, c’est ton bras, c’est la lumière de ton
-visage, parce que tu les aimais.*
 :::
 ::::::
 
@@ -518,9 +557,7 @@ visage, parce que tu les aimais.*
 :::
 
 ::: {.column .smaller width="55%"}
-*5 O Dieu, tu es mon roi:*
 
-<br> *ordonne la délivrance de Jacob!*
 :::
 ::::::
 

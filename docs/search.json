@@ -81,7 +81,7 @@
     "href": "posts/exposition/index.html#mouvement-1",
     "title": "l’exposition biblique",
     "section": "Mouvement 1",
-    "text": "Mouvement 1\n\n\n\n\nExplain\nIllustrate\nApply\n\n\n\n\n\nla vraie prière\n\n\ns’adresse au seul Dieu vivant\net bien informée\nelle dit: “Je …”\n… fais appel à Toi\n\n\nje tends mes mains vers Toi, mon âme a soif du Dieu vivant\ndu fond de la détresse, jour et nuit\n\n\n\nspeaker note"
+    "text": "Mouvement 1\n\n\n\n\nExplain\nIllustrate\nApply\n\n\n\n\n\n\n\nspeaker note"
   },
   {
     "objectID": "posts/random/index.html",
@@ -95,35 +95,42 @@
     "href": "posts/ps44/index.html#le-psaume-44",
     "title": "qu’est-ce qui nous arrive?",
     "section": "le Psaume 44",
-    "text": "le Psaume 44\n\n\n\n\n\n\nrepérage difficile ?"
+    "text": "le Psaume 44\n\n\n\n\n\nrepérage difficile?\n\n\n\n\n\n44 Au chef de chœur. Des descendants de Koré, cantique.\n\n2 O Dieu, …"
   },
   {
     "objectID": "posts/ps44/index.html#la-défaite-du-chrétien-priant",
     "href": "posts/ps44/index.html#la-défaite-du-chrétien-priant",
     "title": "qu’est-ce qui nous arrive?",
     "section": "la défaite du chrétien priant",
-    "text": "la défaite du chrétien priant\n\n\n\n\n\nA. Dürer, 1508\n\n\n\n\n\nle problème humain"
+    "text": "la défaite du chrétien priant\n\n\n \n\n\n\nle problème humain\n\nde la fidélité divine dans l’histoire passée, j’attends, dans l’épreuve actuelle, une pareille délivrance\ncependant la défaite honteuse supplante le triomphe escompté, sans être le fruit du péché,"
   },
   {
     "objectID": "posts/ps44/index.html#après-la-pause-les-réponses",
     "href": "posts/ps44/index.html#après-la-pause-les-réponses",
     "title": "qu’est-ce qui nous arrive?",
     "section": "après la pause, les réponses",
-    "text": "après la pause, les réponses\n\n\n\n\n\n\n\nla solution divine"
+    "text": "après la pause, les réponses\n\n\n\n\n\n\n\nla solution divine\n\nla souveraineté de Dieu nous associe à Christ jusqu’à l’ignominie.\net nous plaidons avec audace, auprès de Dieu Sa propre bonté pour nous secourir."
   },
   {
     "objectID": "posts/ps44/index.html#la-prière-feedback",
     "href": "posts/ps44/index.html#la-prière-feedback",
     "title": "qu’est-ce qui nous arrive?",
     "section": "1. la prière-feedback",
-    "text": "1. la prière-feedback\n\n\n\n\n\nrétroaction"
+    "text": "1. la prière-feedback\n\n\n\n\n\nrétroaction\n\n\n\n\n\n 2 O Dieu, … nous avons entendu de nos oreilles, nos pères nous ont raconté tout ce que tu as accompli à leur époque, par le passé.\n 3 De ta main tu as chassé des nations pour qu’ils puissent s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre\n\n\n\nla vraie prière\n\n\ns’adresse au seul Dieu vivant\nsuite au témoignage des pères à ceux qui ont des oreilles pour entendre\net dit: “Je reconnais la main de Dieu dans l’histoire”\ncalibrons notre compréhension avec les histoires de la Bible et créons les occasions de témoignage pour raconter ce que Dieu a fait pour nous.\n\n\nmon âme a soif du Dieu vivant, je tends mes mains vers Toi, du fond de la détresse, jour et nuit"
+  },
+  {
+    "objectID": "posts/ps44/index.html#b.-pourquoi-1",
+    "href": "posts/ps44/index.html#b.-pourquoi-1",
+    "title": "qu’est-ce qui nous arrive?",
+    "section": "1b. pourquoi #1",
+    "text": "1b. pourquoi #1\n\n\n\n\n\n\n4 En effet, ce n’est pas par leur épée qu’ils se sont emparés du pays, ce n’est pas leur bras qui les a sauvés,\n mais c’est ta main droite, c’est ton bras, c’est la lumière de ton visage, parce que tu les aimais."
   },
   {
     "objectID": "posts/ps44/index.html#la-prière-imitation",
     "href": "posts/ps44/index.html#la-prière-imitation",
     "title": "qu’est-ce qui nous arrive?",
     "section": "2. la prière-imitation",
-    "text": "2. la prière-imitation"
+    "text": "2. la prière-imitation\n\n\n\n\n\n\n5 O Dieu, tu es mon roi:\n ordonne la délivrance de Jacob!"
   },
   {
     "objectID": "posts/ps44/index.html#lagent-de-la-défaite",
@@ -172,7 +179,7 @@
     "href": "posts/ps44/index.html#la-grande-idée",
     "title": "qu’est-ce qui nous arrive?",
     "section": "la grande idée",
-    "text": "la grande idée\n\n\n\n\n\n\n\n\nflowchart TD\n   A[\"&lt;div title=\" en souvenir **de la fidélité divine** prouvée par l\\\\'histoire passée,\"&gt;RAPPEL D'AUTREFOIS&lt;/div&gt;\"] --&gt; C(CHOC DE LA DISCORDANCE)\n   B(URGENCE PRESENTE) --&gt; C\n   C --&gt; D(L'ABERRATION EXPLIQUEE)\n   C --&gt; E(LE SEUL RECOURS)\n   \n   click A callback \"hello\"\n\n\n\n\n\n\n\n\n\n\nde la fidélité divine dans l’histoire passée, j’attends, dans l’épreuve actuelle, une pareille délivrance 2. cependant la défaite honteuse supplante le triomphe escompté, sans être le fruit du péché,\n\nla souveraineté de Dieu nous associe à Christ jusqu’à l’ignominie. 4. et nous plaidons avec audace, auprès de Dieu Sa propre bonté pour nous secourir.\n\n\n\n1. Introduction (Purpose: orient the listener)\n\nPresent the context of the passage (historical, literary).\nState the dominant theme or tension the sermon will address.\nGive the sermon’s main idea (the “Big Idea / Question” or “Proposition”).\n\n2. Exposition of the Text (Verse-by-verse or section-by-section)\nThis is the backbone. Each movement explains what the text says and means.\nUsually structured as:\nPoint 1 — What the text says (explanation) Explain key words, phrases, and ideas. Show how this part fits the passage’s flow.\nPoint 2 — Why it matters (theological significance) Connect the text to biblical theology. Show what God is revealing about Himself, humanity, or salvation.\nPoint 3 — How it applies (implication for life) Concrete, specific application. Often includes examples, warnings, encouragements.\nEach point follows the same mini‑pattern: Explanation → Illustration → Application\n🧩 3. Illustrations (woven throughout)\nClarify difficult concepts.\nMake abstract truths concrete.\nShould illuminate the text, not distract from it.\n🎯 4. Application (specific, actionable, text‑rooted)\nApplication can be:\nPersonal (heart, habits, character)\nCommunal (church life)\nMissional (witness, service)\nEthical (choices, behavior)\nGood expository preaching ties each application directly to the text, not to general moral advice.\n5. Conclusion\nRestate the main idea.\nSummarize the key movements of the text.\nCall for a response (faith, obedience, trust, repentance).\nEnd with prayer or reflection."
+    "text": "la grande idée\n\n\n\n\n\n\n\n\nflowchart TD\n   A[\"&lt;div title=\" en souvenir **de la fidélité divine** prouvée par l\\\\'histoire passée,\"&gt;RAPPEL D'AUTREFOIS&lt;/div&gt;\"] --&gt; C(CHOC DE LA DISCORDANCE)\n   B(URGENCE PRESENTE) --&gt; C\n   C --&gt; D(L'ABERRATION EXPLIQUEE)\n   C --&gt; E(LE SEUL RECOURS)\n   \n   click A callback \"hello\"\n\n\n\n\n\n\n\n\n\n\n\n\n1. Introduction (Purpose: orient the listener)\n\nPresent the context of the passage (historical, literary).\nState the dominant theme or tension the sermon will address.\nGive the sermon’s main idea (the “Big Idea / Question” or “Proposition”).\n\n2. Exposition of the Text (Verse-by-verse or section-by-section)\nThis is the backbone. Each movement explains what the text says and means.\nUsually structured as:\nPoint 1 — What the text says (explanation) Explain key words, phrases, and ideas. Show how this part fits the passage’s flow.\nPoint 2 — Why it matters (theological significance) Connect the text to biblical theology. Show what God is revealing about Himself, humanity, or salvation.\nPoint 3 — How it applies (implication for life) Concrete, specific application. Often includes examples, warnings, encouragements.\nEach point follows the same mini‑pattern: Explanation → Illustration → Application\n🧩 3. Illustrations (woven throughout)\nClarify difficult concepts.\nMake abstract truths concrete.\nShould illuminate the text, not distract from it.\n🎯 4. Application (specific, actionable, text‑rooted)\nApplication can be:\nPersonal (heart, habits, character)\nCommunal (church life)\nMissional (witness, service)\nEthical (choices, behavior)\nGood expository preaching ties each application directly to the text, not to general moral advice.\n5. Conclusion\nRestate the main idea.\nSummarize the key movements of the text.\nCall for a response (faith, obedience, trust, repentance).\nEnd with prayer or reflection."
   },
   {
     "objectID": "posts/ps44/index.html#toc",
@@ -186,28 +193,28 @@
     "href": "posts/ps44/index.html#difficile-repérage",
     "title": "qu’est-ce qui nous arrive?",
     "section": "Difficile repérage",
-    "text": "Difficile repérage\n\n\n\ndifficile repérage \nla vraie prière\n\n\n\n\n44 Au chef de chœur. Des descendants de Koré, cantique.\n\n2 O Dieu, …\n\n\nspeaker notes here"
+    "text": "Difficile repérage\n\n\n\ndifficile repérage \nla vraie prière\n\n\n\n\n\n\n\nspeaker notes here"
   },
   {
     "objectID": "posts/ps44/index.html#nous-avons-entendu",
     "href": "posts/ps44/index.html#nous-avons-entendu",
     "title": "qu’est-ce qui nous arrive?",
     "section": "Nous avons entendu …",
-    "text": "Nous avons entendu …\n\n\n\n\nqui a des oreilles ?\noù sont les pères ?\noù vont les conversations ?\n\n\n\n\n … nous avons entendu de nos oreilles, nos pères nous ont raconté tout ce que tu as accompli à leur époque, par le passé.\n 3 De ta main tu as chassé des nations pour qu’ils puissent s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre"
+    "text": "Nous avons entendu …\n\n\n\n\nqui a des oreilles ?\noù sont les pères ?\noù vont les conversations ?"
   },
   {
     "objectID": "posts/ps44/index.html#pourquoi",
     "href": "posts/ps44/index.html#pourquoi",
     "title": "qu’est-ce qui nous arrive?",
     "section": "pourquoi ?",
-    "text": "pourquoi ?\n\n\nLeft Column (1/3)\n\nKey point one\n\n\n\n\n4 En effet, ce n’est pas par leur épée qu’ils se sont emparés du pays, ce n’est pas leur bras qui les a sauvés,\n mais c’est ta main droite, c’est ton bras, c’est la lumière de ton visage, parce que tu les aimais."
+    "text": "pourquoi ?\n\n\nLeft Column (1/3)\n\nKey point one"
   },
   {
     "objectID": "posts/ps44/index.html#je-crois-pareillement",
     "href": "posts/ps44/index.html#je-crois-pareillement",
     "title": "qu’est-ce qui nous arrive?",
     "section": "je crois pareillement",
-    "text": "je crois pareillement\n\n\n\n\n\n\n5 O Dieu, tu es mon roi:\n ordonne la délivrance de Jacob!"
+    "text": "je crois pareillement"
   },
   {
     "objectID": "posts/ps44/index.html#je-crois-pareillement-1",
