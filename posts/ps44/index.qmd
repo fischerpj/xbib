@@ -50,7 +50,7 @@ editor:
 :::
 
 ::: {.column .smaller width="55%"}
-le problème humain 
+(le problème humain) 
 
 1.  **de la fidélité divine** dans l'histoire passée, j'attends, dans
     l'épreuve actuelle, **une pareille délivrance** 
@@ -79,13 +79,12 @@ le problème humain
 
 ::: {.column .smaller width="55%"}
 <!-- ![](/www/img/ressort.jpg){width="250"} -->
-
-la solution divine
+(la solution divine) 
 
 3. la souveraineté de Dieu nous **associe à Christ** jusqu'à
     l'ignominie. 
-4. et nous **plaidons** avec audace, auprès de Dieu
-    **Sa propre bonté** pour nous secourir.
+4. nous **plaidons** donc avec audace, auprès de Dieu
+    **Sa propre bonté** pour nous secourir encore.
 :::
 ::::::
 
@@ -94,7 +93,7 @@ la solution divine
 
 <!-- ================================================================comment -->
 
-## 1. la prière-feedback
+## type-1: la prière-feedback
 
 :::::: columns
 ::: {.column width="35%"}
@@ -106,8 +105,8 @@ width="175"}
 :::
 
 ::: {.column .smaller width="55%"}
-<br> *2 **O Dieu**, ... nous avons entendu de **nos oreilles**, **nos pères** nous ont raconté
-tout ce que **tu as accompli** à leur époque, par le passé.*
+<br> *2 **O Dieu<sup>1</sup>**, ... nous avons entendu de **nos oreilles<sup>2</sup>**, **nos pères<sup>3</sup>** nous ont raconté
+tout ce que **tu as accompli<sup>4</sup>** à leur époque, par le passé.*
 
 <br> *3 De ta main tu as chassé des nations pour qu’ils puissent
 s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre*
@@ -115,11 +114,11 @@ s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre*
 ::::::
 
 ::: notes
-1. la vraie prière
+la vraie prière
 
-- s'adresse au seul Dieu vivant
-- suite au témoignage des pères à ceux qui ont des oreilles pour entendre
-- et dit: "Je reconnais la main de Dieu dans l'histoire"
+1. s'adresse au seul Dieu vivant
+2. à des oreilles pour entendre 3. le témoignage des pères
+4. et des yeux pour voir la main de Dieu dans l'histoire"
 
 - calibrons notre compréhension avec les histoires de la Bible et créons les occasions de témoignage pour raconter ce que Dieu a fait pour nous.
 
@@ -128,7 +127,7 @@ s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre*
 
 <!-- ================================================================comment -->
 
-## 1b. pourquoi #1
+## type-1: raisons
 
 :::::: columns
 ::: {.column width="35%"}
@@ -140,16 +139,16 @@ s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre*
 
 ::: {.column .smaller width="55%"}
 *4 En effet, ce n’est pas par leur épée qu’ils se sont emparés du pays,
-ce n’est **pas leur bras** qui les a sauvés,*
+ce n’est **pas leur bras<sup>5</sup>** qui les a sauvés,*
 
 <br> *mais c’est ta main droite, c’est ton bras, c’est la lumière de ton
-visage, **parce que tu les aimais**.*
+visage, **parce que tu les aimais<sup>6</sup>**.*
 :::
 ::::::
 
 <!-- ================================================================comment -->
 
-## 2. la prière-imitation
+## type-2: la prière-imitation
 
 :::::: columns
 ::: {.column width="35%"}
@@ -160,9 +159,9 @@ visage, **parce que tu les aimais**.*
 :::
 
 ::: {.column .smaller width="55%"}
-*5 O Dieu, tu es mon roi:*
+*5 O **Dieu**<sup>1</sup>, tu es **mon roi**<sup>2</sup>:*
 
-<br> *ordonne la délivrance de Jacob!*
+<br> *ordonne **la délivrance**<sup>3</sup> de Jacob!*
 :::
 ::::::
 
@@ -170,6 +169,130 @@ visage, **parce que tu les aimais**.*
 
 :::
 
+<!-- B2================================================================comment -->
+
+## type-2: fondements
+
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+*6 **Grâce à toi<sup>4</sup>** nous renversons nos ennemis, grâce à ton nom nous
+écrasons nos adversaires,*
+
+<br> *7 car ce n’est pas en mon arc que je me confie, ce n’est **pas mon
+épée<sup>5</sup>** qui me sauvera,*
+
+<br> *8 mais c’est toi qui nous délivres de nos ennemis et qui fais
+rougir de honte ceux qui nous détestent.*
+:::
+::::::
+
+<!-- B3================================================================comment -->
+
+## suite
+
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+*9 Nous chantons **la louange<sup>6</sup>** de Dieu chaque jour,*
+
+<br> *et nous célébrerons éternellement ton nom.*
+:::
+::::::
+
+<!-- C1===============================================================comment -->
+
+## abandonnés,
+
+:::::: columns
+::: {.column width="35%"}
+![](/www/img/roseau.png){width="150"}
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+*– Pause.*
+
+<br> *10 Cependant <u>tu</u> nous as repoussés, <u>tu</u> nous as couverts de honte, <u>tu</u>
+ne sors plus avec nos armées.*
+
+<br> *11 <u>tu</u> nous fais reculer devant l’ennemi, et ceux qui nous
+détestent se partagent nos dépouilles.*
+:::
+::::::
+
+<!-- C2================================================================comment -->
+
+## vendus,
+
+:::::: columns
+::: {.column width="35%"}
+![30 pièces](/www/img/argent.png){fig-align="left"  width="200"}
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+*12 <u>tu</u> nous livres comme des brebis de boucherie, <u>tu</u> nous disperses parmi
+les nations.*
+
+<br> *13 <u>tu</u> vends ton peuple pour rien, <u>tu</u> ne l’estimes pas à une grande
+valeur.*
+:::
+::::::
+
+<!-- C3================================================================comment -->
+
+## insultés,
+
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+*14 <u>tu</u> nous exposes aux insultes de nos voisins, à la moquerie et aux
+railleries de ceux qui nous entourent.*
+
+<br> *15 <u>tu</u> fais de nous le sujet d’un proverbe parmi les nations, on
+hoche la tête sur nous parmi les peuples.*
+:::
+::::::
+
+<!-- D1================================================================comment -->
+
+## honteux
+
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+*16 Mon humiliation est toujours devant moi, et la honte couvre mon
+visage*
+
+<br> *17 à la voix de celui qui m’insulte et me déshonore, à la vue de
+l’ennemi avide de vengeance.*
+:::
+::::::
 <!-- ================================================================comment -->
 
 ## 3. l'agent de la défaite
@@ -189,6 +312,7 @@ la souveraineté divine
 
 ::: notes
 :::
+
 
 <!-- ================================================================comment -->
 
@@ -253,7 +377,7 @@ qui ne dort pas!
 
 <!-- ================================================================comment -->
 
-## 7. plaide l'argument
+## 7. type-3: la prière-plaidoyer
 
 :::::: columns
 ::: {.column width="35%"}
@@ -486,9 +610,6 @@ silent, stoic, or simplistic—it remembers, wrestles, and pleads.
 
 :::::: columns
 ::: {.column width="35%"}
-- difficile repérage <br><br><br>
-
-- la vraie prière
 :::
 
 ::: {.column width="8%"}
@@ -573,14 +694,6 @@ speaker notes here
 :::
 
 ::: {.column .smaller width="55%"}
-*6 Grâce à toi nous renversons nos ennemis, grâce à ton nom nous
-écrasons nos adversaires,*
-
-<br> *7 car ce n’est pas en mon arc que je me confie, ce n’est pas mon
-épée qui me sauvera,*
-
-<br> *8 mais c’est toi qui nous délivres de nos ennemis et qui fais
-rougir de honte ceux qui nous détestent.*
 :::
 ::::::
 
@@ -596,9 +709,6 @@ rougir de honte ceux qui nous détestent.*
 :::
 
 ::: {.column .smaller width="55%"}
-*9 Nous chantons la louange de Dieu chaque jour,*
-
-<br> *et nous célébrerons éternellement ton nom.*
 :::
 ::::::
 
@@ -614,13 +724,6 @@ rougir de honte ceux qui nous détestent.*
 :::
 
 ::: {.column .smaller width="55%"}
-*– Pause.*
-
-<br> *10 Cependant tu nous as repoussés, tu nous as couverts de honte,tu
-ne sors plus avec nos armées.*
-
-<br> *11 Tu nous fais reculer devant l’ennemi, et ceux qui nous
-détestent se partagent nos dépouilles.*
 :::
 ::::::
 
@@ -636,11 +739,6 @@ détestent se partagent nos dépouilles.*
 :::
 
 ::: {.column .smaller width="55%"}
-*12 Tu nous livres comme des brebis de boucherie,tu nous disperses parmi
-les nations.*
-
-<br> *13 Tu vends ton peuple pour rien, tu ne l’estimes pas à une grande
-valeur.*
 :::
 ::::::
 
@@ -656,11 +754,6 @@ valeur.*
 :::
 
 ::: {.column .smaller width="55%"}
-*14 Tu nous exposes aux insultes de nos voisins, à la moquerie et aux
-railleries de ceux qui nous entourent.*
-
-<br> *15 Tu fais de nous le sujet d’un proverbe parmi les nations, on
-hoche la tête sur nous parmi les peuples.*
 :::
 ::::::
 
