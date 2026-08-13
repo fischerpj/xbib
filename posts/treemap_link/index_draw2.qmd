@@ -1,0 +1,145 @@
+---
+title: "Second Redraw Clickable Treemap"
+subtitle: "ojs d3.treemap dynamic redraw"
+author: "gp"
+date: "2026-05-06"
+categories: [techno]
+format: html
+execute: 
+  echo: false
+---
+
+```{ojs}
+// --- 1. REDRAW BUTTON & DATA GENERATOR ---
+viewof redraw = Inputs.button("Redraw Treemap")
+
+data = {
+  redraw; // Reactive dependency: re-runs when button is clicked
+
+  const labels = ['Guerre', 'Maladie', 'Finances', 'Relations', 'Moi', 'Persécution', 'Catastrophes', 'Cqrd', 'Spirituel'];
+
+  const metadata = {
+    'Guerre': { desc: 'Impact des conflits et guerres', url: 'https://example.com/guerre' },
+    'Maladie': { desc: 'Sujets liés à la santé et aux maladies', url: 'https://example.com/maladie' },
+    'Finances': { desc: 'Gestion financière et épreuves économiques', url: 'https://example.com/finances' },
+    'Relations': { desc: 'Défis relationnels et sociaux', url: 'https://example.com/relations' },
+    'Moi': { desc: 'Développement personnel et état d\'esprit', url: 'https://example.com/moi' },
+    'Persécution': { desc: 'Expériences de discrimination ou persécution', url: 'https://example.com/persecution' },
+    'Catastrophes': { desc: 'Impact des événements naturels ou accidents', url: 'https://example.com/catastrophes' },
+    'Cqrd': { desc: 'Catégorie CQRD', url: 'https://example.com/cqrd' },
+    'Spirituel': { desc: 'Vie spirituelle et croyances', url: 'https://example.com/spirituel' }
+  };
+
+const minRatio = 0.05; // 5% minimum floor per item
+  const count = labels.length;
+  const remainingBudget = 1 - (minRatio * count); // Remaining weight to distribute (55% for 9 items)
+
+  // 1. Generate random weights
+  const rawData = labels.map(label => ({
+    label,
+    random: Math.random()
+  }));
+
+  const totalRandom = rawData.reduce((acc, d) => acc + d.random, 0);
+
+  return {
+    name: "root",
+    children: [
+      {
+        name: "Categories",
+        children: rawData.map(d => ({
+          name: d.label,
+          value: d.random / totalRandom,
+          desc: metadata[d.label].desc,
+          url: metadata[d.label].url
+        }))
+      }
+    ]
+  };
+}
+
+// --- 2. CONFIGURATION ---
+width = 800
+
+height = 500
+
+fontSize = "18px"
+
+// --- 3. HIERARCHY CALCULATION ---
+root = {
+  const h = d3.hierarchy(data)
+      .sum(d => d.value)
+      .sort((a, b) => b.value - a.value);
+  
+  return d3.treemap()
+      .size([width, height])
+      .paddingInner(2)
+      (h);
+}
+
+// --- 4. TOOLTIP ELEMENT ---
+tooltip = d3.select("body").append("div")
+    .style("position", "absolute")
+    .style("visibility", "hidden")
+    .style("background", "rgba(0, 0, 0, 0.85)")
+    .style("color", "#fff")
+    .style("padding", "8px 12px")
+    .style("border-radius", "4px")
+    .style("font-size", "12px")
+    .style("pointer-events", "none")
+    .style("z-index", "1000")
+    .style("font-family", "sans-serif")
+
+// --- 5. CHART RENDERING ---
+chart = {
+  const svg = d3.create("svg")
+      .attr("viewBox", [0, 0, width, height])
+      .attr("width", "100%")
+      .attr("height", "auto")
+      .style("font", "12px sans-serif");
+
+  const leaf = svg.selectAll("g")
+    .data(root.leaves())
+    .join("g")
+    .attr("transform", d => `translate(${d.x0},${d.y0})`);
+
+  const link = leaf.append("a")
+    .attr("xlink:href", d => d.data.url)
+    .attr("target", "_blank")
+    .style("cursor", "pointer");
+
+  link.append("rect")
+    .attr("fill", (d, i) => d3.schemeTableau10[i % 10])
+    .attr("fill-opacity", 0.7)
+    .attr("width", d => d.x1 - d.x0)
+    .attr("height", d => d.y1 - d.y0)
+    .attr("stroke", "white")
+    .on("mouseover", function(event, d) {
+      d3.select(this).attr("fill-opacity", 1);
+      tooltip.style("visibility", "visible")
+             .html(`<strong>${d.data.name}</strong><br/>${d.data.desc}<br/><em>Value: ${(d.value * 100).toFixed(1)}%</em>`);
+    })
+    .on("mousemove", function(event) {
+      tooltip.style("top", (event.pageY - 10) + "px")
+             .style("left", (event.pageX + 10) + "px");
+    })
+    .on("mouseout", function() {
+      d3.select(this).attr("fill-opacity", 0.7);
+      tooltip.style("visibility", "hidden");
+    });
+
+  link.append("text")
+    .attr("x", d => (d.x1 - d.x0) / 2)
+    .attr("y", d => (d.y1 - d.y0) / 2)
+    .attr("dy", "0.35em")
+    .attr("text-anchor", "middle")
+    .attr("fill", "white")
+    .style("font-size", fontSize)
+    .style("font-weight", "bold")
+    .style("pointer-events", "none")
+    .text(d => (d.x1 - d.x0 > 50 && d.y1 - d.y0 > 25) ? d.data.name : "");
+
+  return svg.node();
+}
+```
+

@@ -1,0 +1,43 @@
+---
+title: "généalogie de Lévi"
+subtitle: ""
+format:
+  revealjs:
+    theme: solarized
+    css: styles.css
+---
+
+```{r}
+library(highcharter)
+
+nodes <- list(
+  list(id = "root", name = "Racine"),
+  list(id = "A", name = "Enfant A"),
+  list(id = "B", name = "Enfant B"),
+  list(id = "C", name = "Petit-enfant C"),
+  list(id = "D", name = "Petit-enfant D")
+)
+
+links <- list(
+  list(from = "root", to = "A"),
+  list(from = "root", to = "B"),
+  list(from = "A", to = "C"),
+  list(from = "A", to = "D")
+)
+
+highchart() %>%
+  hc_chart(inverted = TRUE) %>%   # ← rend l’arbre inversé
+  hc_add_series(
+    type = "treegraph",
+    data = nodes,
+    edges = links,
+    dataLabels = list(
+      style = list(fontSize = "14px")
+    ),
+    marker = list(radius = 10)
+  ) %>%
+  hc_title(text = "Arbre inversé simple (highcharter)")
+
+
+```
+

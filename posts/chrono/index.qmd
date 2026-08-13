@@ -1,0 +1,183 @@
+---
+title: "Chronologye"
+subtitle: "Visual Timeline"
+format:
+  revealjs:
+    theme: solarized
+    css: styles.css
+---
+
+# Floating Callout on Hover
+
+```{r eval=FALSE}
+library(vistime)
+library(highcharter)
+
+# Define timeline events as a list of lists
+timeline_data <- list(
+  list(
+    name = "Project Kickoff",
+    date = "2026-01-15",
+    description = "Initial alignment meeting and scoping."
+  ),
+  list(
+    name = "Alpha Release",
+    date = "2026-04-10",
+    description = "Core features deployed for internal review."
+  ),
+  list(
+    name = "Beta Testing",
+    date = "2026-08-01",
+    description = "User acceptance testing and bug fixes."
+  ),
+  list(
+    name = "Official Launch",
+    date = "2026-11-20",
+    description = "Public rollout and deployment."
+  )
+)
+
+# Build the timeline chart
+highchart() %>% 
+  hc_chart(type = "timeline") %>% 
+  hc_title(text = "Project Timeline Example") %>% 
+  hc_add_series(
+    data = timeline_data,
+    name = "Timeline Events"
+  )
+
+
+
+```
+
+```{r eval=FALSE}
+library(highcharter)
+
+# Define timeline data including superposed start milestones and intervals
+superposed_timeline_data <- list(
+  # --- Phase 1 & its starting Milestone ---
+  list(
+    name = "Milestone: Kickoff",
+    date = "2026-01-15",
+    description = "Zero-duration start milestone.",
+    x = datetime_to_timestamp(as.Date("2026-01-15")),
+    marker = list(
+      symbol = "circle",     # Zero-duration circle marker
+      radius = 9,
+      fillColor = "#f45b5b",
+      lineWidth = 2,
+      lineColor = "#FFFFFF"
+    )
+  ),
+  list(
+    name = "Phase 1: Architecture & Setup",
+    date = "2026-01-15",
+    description = "Duration interval block following kickoff.",
+    x = datetime_to_timestamp(as.Date("2026-01-15")),
+    marker = list(
+      symbol = "square",     # Rectangular base timeline block
+      radius = 7,
+      fillColor = "#2b908f"
+    )
+  ),
+  
+  # --- Phase 2 & its starting Milestone ---
+  list(
+    name = "Milestone: Alpha Lock",
+    date = "2026-04-10",
+    description = "Zero-duration transition milestone.",
+    x = datetime_to_timestamp(as.Date("2026-04-10")),
+    marker = list(
+      symbol = "circle",     # Zero-duration circle marker
+      radius = 9,
+      fillColor = "#f45b5b",
+      lineWidth = 2,
+      lineColor = "#FFFFFF"
+    )
+  ),
+  list(
+    name = "Phase 2: Core Development",
+    date = "2026-04-10",
+    description = "Duration interval block for implementation.",
+    x = datetime_to_timestamp(as.Date("2026-04-10")),
+    marker = list(
+      symbol = "square",     # Rectangular base timeline block
+      radius = 7,
+      fillColor = "#2b908f"
+    )
+  )
+)
+
+# Build the chart with a datetime axis to properly align superposed points
+highchart() %>% 
+  hc_chart(type = "timeline") %>% 
+  hc_title(text = "Timeline with Superposed Zero-Duration Milestones at Intervals") %>% 
+  hc_xAxis(type = "datetime") %>% 
+  hc_add_series(
+    data = superposed_timeline_data,
+    name = "Roadmap Schedule"
+  )
+
+```
+
+
+
+
+```{r}
+library(highcharter)
+library(dplyr)
+
+# 1. Prepare historical blocks/events data spanning -3000 to 2100
+timeline_data <- data.frame(
+  name = c(
+    "Early Bronze Age", 
+    "Classical Antiquity", 
+    "Middle Ages", 
+    "Modern Era", 
+    "Contemporary Era"
+  ),
+  label = c(
+    "-3000 BC: Civilization rises", 
+    "500 BC: Rise of Empires", 
+    "500 AD: Medieval Period", 
+    "1500 AD: Age of Discovery", 
+    "2000+ AD: Digital Age"
+  ),
+  description = c(
+    "Emergence of writing systems, early bronze metallurgy, and first major city-states in Mesopotamia and Egypt.",
+    "Dominated by Greco-Roman civilization, the Han Dynasty, and major philosophical shifts across Eurasia.",
+    "Characterized by feudalism, major religious expansions, and significant architectural feats.",
+    "Marked by the scientific revolution, industrialization, and global exploration.",
+    "Defined by rapid technological advancement, information age, and space exploration."
+  ),
+  x = c(-3000, -500, 500, 1500, 2000) # Numeric year mapping (negative for BCE)
+)
+
+# 2. Build the Highcharter Timeline
+highchart() %>%
+  hc_chart(type = "timeline") %>%
+  hc_title(text = "World History Timeline (-3000 to 2100)") %>%
+  hc_subtitle(text = "Interactive chronological blocks across millennia") %>%
+  hc_add_series(
+    data = timeline_data,
+    type = "timeline",
+    hcaes(x = x, name = name, label = label, description = description),
+    dataLabels = list(
+      allowOverlap = TRUE,
+      format = '<b>{point.name}</b><br>{point.label}'
+    )
+  ) %>%
+  hc_tooltip(
+    useHTML = TRUE,
+    headerFormat = "",
+    pointFormat = '<b>{point.name} ({point.x})</b><br>{point.description}'
+  ) %>%
+  hc_xAxis(
+    type = "linear",
+    title = list(text = "Year (Negative = BCE, Positive = CE)")
+  )
+
+
+
+```
+

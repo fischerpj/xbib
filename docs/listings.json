@@ -2,6 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/genealogie/index.html",
+      "/posts/genealogie/index_best.html",
+      "/posts/chrono/index.html",
       "/posts/exposition/index.html",
       "/posts/random/index.html",
       "/posts/ps44/index.html",
@@ -9,9 +12,12 @@
       "/posts/hover/index.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html",
+      "/posts/treemap_link/index_draw2.html",
+      "/posts/treemap_link/index_redraw.html",
       "/posts/treemap_link/index.html",
       "/posts/tooltree/index.html",
-      "/posts/treemap/index.html"
+      "/posts/treemap/index.html",
+      "/posts/tree_stats/index.html"
     ]
   }
 ]

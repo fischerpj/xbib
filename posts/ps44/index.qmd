@@ -4,6 +4,10 @@ subtitle: "expliqué par le Psaume 44"
 image: "France_road_sign_A4.svg.png"
 format:
   revealjs:
+    multiplex:
+      secret: "17860396705995074245"
+      id: "e0b4a6bcc5337383"
+      url: "http://localhost:1948"
     theme: [solarized]
     css: /www/styles/two_columns.css
 editor: 
@@ -13,37 +17,12 @@ editor:
 
 <!-- ================================================================comment -->
 
-## le Psaume 44
-
-:::::: columns
-::: {.column width="35%"}
-![repérage difficile?](/www/img/geolocalisation.png){width="125"}
-
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-*44 Au chef de chœur. Des descendants de Koré, cantique.*
-
-<br><br>
-
-*2 O Dieu, ...*
-:::
-::::::
-
-::: notes
-:::
-
-<!-- ================================================================comment -->
-
 ## la défaite du chrétien priant
 
 :::::: columns
 ::: {.column width="35%"}
 ![A. Dürer, 1508](/www/img/praying_hands.jpg){width="250"}
-![Varsovie 1943](/www/img/la_fouille.jpg){width="250"}
+![Varsovie 1943](/www/img/la_fouille.jpg){width="300"}
 :::
 
 ::: {.column width="8%"}
@@ -63,53 +42,183 @@ editor:
 ::::::
 
 ::: notes
+FCF: lorsqu'à notre prière sincère, Dieu répond négativement, notre grand désarroi va-t-il éteindre notre prière et notre foi?
 :::
 
 <!-- ================================================================comment -->
 
-## après la pause, les réponses
+## la grande idée
+
+:::::: columns
+::: {.column width="28%"}
+![](/www/img/pause_icon_134502.webp)
+
+après la pause, les explications divines
+
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="62%"}
+<!-- ![](/www/img/ressort.jpg){width="250"} -->
+
+le passage du souvenir des délivrances divines du passé et de la situation de détresse présente au plaidoyer audacieux pour le secours de Dieu s'explique
+
+- par la souveraineté de Dieu qui nous **associe à Christ** jusqu'à l'ignominie. 
+- par l'argument de **Sa propre bonté** pour nous secourir encore
+
+:::
+::::::
+
+::: notes
+
+Explain how the psalm moves from memory of God’s past deliverance to present suffering to a plea for God’s intervention.
+
+:::
+
+<!-- ================================================================comment -->
+
+## le Psaume 44
 
 :::::: columns
 ::: {.column width="35%"}
-![](/www/img/pause_icon_134502.webp)
+![repérage difficile?](/www/img/geolocalisation.png){width="125"}
+Un **maskil** est un psaume didactique, c’est‑à‑dire un chant conçu pour instruire, enseigner.
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
-<!-- ![](/www/img/ressort.jpg){width="250"} -->
-(la solution divine) 
+*44 Au chef de chœur. Des descendants de Koré, cantique.*
 
-3. la souveraineté de Dieu nous **associe à Christ** jusqu'à
-    l'ignominie. 
-4. nous **plaidons** donc avec audace, auprès de Dieu
-    **Sa propre bonté** pour nous secourir encore.
+<br><br>
+
 :::
 ::::::
 
 ::: notes
 :::
 
+
+
+
+<!-- ================================================================comment -->
+## généalogie de Lévi
+:::::: columns
+::: {.column width="25%"}
+- Moïse et Koré 
+- cousins au service de Dieu.
+- comme Jean-Baptiste et Jésus ?
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column .smaller width="69%"}
+```{mermaid}
+flowchart TD
+   A["<div title='3e fils de Jacob-Israêl, tribu mise à part pour le service du sanctuaire, sans territoire si ce n est 48 villes dont 6 de refuge'><b>LEVI</b></div>"] --> B(Guershom)
+   A --> C(**KEHATH**)
+   A --> D(Merari)
+
+   %% --- Sous-graph Kehath ---
+      C --> E(Amram)
+      C --> F(Jitsehar)
+      C --> G(Hébron)
+      C --> H(Uziel)
+
+      E --> I(Aaron)
+      E --> J(**MOÏSE**)
+      E --> K(Myriam)
+
+      F --> N(**KORE&dagger;**)
+      N --> O(Assir)
+      N --> P(Elkana)
+      N --> Q(Abiasaph)
+
+      P --> R(   ...   )
+
+   %% --- Sous-graph Merari ---
+%%      D --> L(Machli)
+%%      D --> M(Muschi)
+```
+
+:::
+::::::
+::: notes
+:::
+
+<!-- ================================================================comment -->
+## descendants de Koré
+:::::: columns
+::: {.column width="25%"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column .smaller width="69%"}
+Ils ne sont ni des gens d'armes, ni fonctionnaires, ni mercenaires 
+mais des **portiers-gardiens** du temple et de ses trésors, des **chantres**, 
+des hommes du Dieu de leur vie, guidés par la fidélité à leur Seigneur, habités du souvenir des oeuvres de l'Eternel, 
+des hommes de coeur, émotionnels, des artistes maniant la harpe, la flûte, le chant et la poésie. 
+:::
+::::::
+::: notes
+ce sont des serviteurs épris de vérité et de justice, sensibles à la soif spirituelle, interrogés par les paradoxes, insultés par leurs contemporains irreligieux, mais concernés par le sort désastreux échu à leur peuple, 
+un groupe solidaire d'hommes de prière relevant le défi de l'intercession pour une cause apparement perdue, soucieux de transmettre à la génération suivante la véritable connaissance de Dieu, et qui s'accrochent à conserver toujours l' espérance du salut parce qu'ils ont reconnu l'amour indéfectible de Dieu pour son peuple.
+4. descendant de Koré 
+du temps de Moise, de Samuel/David, de Josaphat, d Ezechias, de retour d exil a Babylone
+
+1. Moïse (L'Exode) :  autour de 1250 av. J.-C. au temps du règne du pharaon Ramsès II.
+​2. Le roi David : ~1010 à 970 av. J.-C.
+​3. Le roi Josaphat : ~873 à 849 av. J.-C.
+​4. Le roi Ézéchias : ~716 à 687 av. J.-C. célèbre pour ses réformes religieuses et pour avoir résiste au siège du roi assyrien Sennachérib en 701 av. J.-C.
+​5. Le retour d'exil : ~538 av. J.-C. par l edit du roi Cyrus
+:::
+
+<!-- ================================================================comment -->
+## descendants de Koré
+:::::: columns
+::: {.column width="10%"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column .smaller width="84%"}
+Ils incarnent les serviteurs épris de vérité et de justice, sensibles à la soif spirituelle, interrogés par les paradoxes, insultés par leurs contemporains irreligieux, mais concernés par le sort désastreux échu à leur peuple, 
+Ils forment un groupe solidaire d'hommes de prière relevant le défi de l'intercession pour une cause apparement perdue, soucieux de transmettre à la génération suivante la véritable connaissance de Dieu, et qui s'accrochent à conserver toujours l'espérance du salut parce qu'ils ont reconnu l'amour indéfectible de Dieu pour son peuple.
+:::
+::::::
+::: notes
+
+:::
+
 <!-- ================================================================comment -->
 
-## type-1: la prière-feedback
+## type-1: la prière d'apprentissage
 
 :::::: columns
-::: {.column width="35%"}
-![rétroaction](/www/img/boucle_feedback.jpg){fig-align="left"
+::: {.column width="43%"}
+
+![Reconnaître](/www/img/boucle_feedback.jpg){fig-align="left"
 width="175"}
+
+- Dieu écrit l'Histoire que
+- nous racontons à nos enfants
 :::
 
-::: {.column width="8%"}
+::: {.column width="3%"}
 :::
 
-::: {.column .smaller width="55%"}
+::: {.column .smaller width="54%"}
 <br> *2 **O Dieu<sup>1</sup>**, ... nous avons entendu de **nos oreilles<sup>2</sup>**, **nos pères<sup>3</sup>** nous ont raconté
 tout ce que **tu as accompli<sup>4</sup>** à leur époque, par le passé.*
 
-<br> *3 De ta main tu as chassé des nations pour qu’ils puissent
-s’établir, tu as frappé des peuples pour qu’ils puissent s’étendre*
+
 :::
 ::::::
 
@@ -122,15 +231,72 @@ la vraie prière
 
 - calibrons notre compréhension avec les histoires de la Bible et créons les occasions de témoignage pour raconter ce que Dieu a fait pour nous.
 
+- histoire que Dieu a écrite: Paque / Cene / Réforme, réveils;
 2. mon âme a soif du Dieu vivant, je tends mes mains vers Toi, du fond de la détresse, jour et nuit
 :::
 
 <!-- ================================================================comment -->
 
-## type-1: raisons
+## où sont les pères ?
+
+:::::: columns
+::: {.column width="30%"}
+- créons des conversations spirituelles
+- racontons les miracles de notre temps
+- avec la persuasion du témoignage personnel
+
+:::
+
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="60%"}
+« Lorsque ton fils te demandera un jour : Que signifient ces préceptes, ... »  Deut6:20
+
+<br>
+«Nous **ne le cacherons point** à leurs enfants; nous raconterons **à la génération future les louanges de l’Éternel**, sa puissance et les merveilles qu’il a faites. » Ps78:4
+:::
+::::::
+
+<!-- ================================================================comment -->
+
+## les interventions passées
+
+:::::: columns
+::: {.column width="40%"}
+- pour Israël, arraché à l'Egypte, transplanté comme une vigne en Canaan
+- pour l'Europe, libérée des indulgences par les réformateurs et de l'athéisme par les revivalistes
+- où sont pour nous, les miracles d'antan ?
+
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="50%"}
+<br> *3 De ta main tu as **chassé** des nations pour qu’ils puissent
+s’établir, tu as frappé des peuples pour qu’ils puissent **s’étendre** *
+:::
+
+::: notes
+libéré de la vie insoutenable en Egypte, transplanté comme une vigne du meilleur cépage au pays promis à Abraham,   / coeur nouveau P:histoire que Dieu a écrite: Paque / Cene / Réforme, réveils, aujourd'hui
+:::
+::::::
+
+<!-- ================================================================comment -->
+
+## par quelle puissance ?
 
 :::::: columns
 ::: {.column width="35%"}
+### nous savons
+
+Le **salut** est le fruit
+
+- non pas de nos efforts
+- mais de Sa faveur imméritée
+- de Jésus qui pardonne les péchés
 
 :::
 
@@ -145,6 +311,90 @@ ce n’est **pas leur bras<sup>5</sup>** qui les a sauvés,*
 visage, **parce que tu les aimais<sup>6</sup>**.*
 :::
 ::::::
+
+<!-- ================================================================comment -->
+## la prière d'application
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+:::
+::::::
+::: notes
+délivré de la vie insoutenable en Egypte, transplanté comme une vigne du meilleur cépage au pays promis à Abraham,   / coeur nouveau P:histoire que Dieu a écrite: Paque / Cene / Réforme, réveils, aujourd'hui
+:::
+<!-- ================================================================comment -->
+## la prière d'objection
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+:::
+::::::
+::: notes
+:::
+
+<!-- ================================================================comment -->
+## la clarification de Dieu
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+:::
+::::::
+::: notes
+:::
+<!-- ================================================================comment -->
+## la prière de plaidoyer
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+:::
+::::::
+::: notes
+:::
+
+
+<!-- ================================================================comment -->
+## template
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+:::
+::::::
+::: notes
+4. descendant de Koré ils ne sont pas des gens d'armes, ni fonctionnaire, ni mercenaire mais des portiers-gardiens du temple et de ses trésors, et des chantres , des hommes du Dieu de leur vie,  guidés par la fidélité à leur seigneur, habités du souvenir des oeuvres de l'Eternel, des hommes de coeur, émotionnels, des artistes maniant la harpe, la flute, le chant et la poésie,  épris de vérité et de justice, sensibles à la soif spirituelle, interrogés par les paradoxes, insultés par ses contemporains irreligieux,  mais concernés par le sort désastreux échu à leur peuple, un groupe solidaire d'hommes de prière relevant le défi de l'intercession pour une cause apparement perdue, soucieux de transmettre à la génération suivante la véritable connaissance de Dieu, et qui s accroche à conserver toujours l' espérance du salut parce qu'ils ont reconnu l'amour indéfectible de D pour son peuple.
+
+du temps de Moise, de Samuel/David, de Josaphat, d Ezechias, de retour d exil a Babylone
+
+1. Moïse (L'Exode) :  autour de 1250 av. J.-C. au temps du règne du pharaon Ramsès II.
+​2. Le roi David : ~1010 à 970 av. J.-C.
+​3. Le roi Josaphat : ~873 à 849 av. J.-C.
+​4. Le roi Ézéchias : ~716 à 687 av. J.-C. célèbre pour ses réformes religieuses et pour avoir résiste au siège du roi assyrien Sennachérib en 701 av. J.-C.
+​5. Le retour d'exil : ~538 av. J.-C. par l edit du roi Cyrus
+:::
+
+
+
+
+
 
 <!-- ================================================================comment -->
 
@@ -191,6 +441,162 @@ visage, **parce que tu les aimais<sup>6</sup>**.*
 rougir de honte ceux qui nous détestent.*
 :::
 ::::::
+
+<!-- ================================================================comment -->
+
+## où sont les ennemis ?
+
+:::::: columns
+::: {.column width="35%"}
+
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+```{ojs}
+// --- 1. REDRAW BUTTON & DATA GENERATOR ---
+
+data = {
+  redraw; // Reactive dependency: re-runs when button is clicked
+
+  const labels = ['Guerre', 'Maladie', 'Finances', 'Relations', 'Moi', 'Persécution', 'Catastrophes', 'Cqrd', 'Spirituel'];
+
+  const metadata = {
+    'Guerre': { desc: 'Impact des conflits et guerres', url: 'https://example.com/guerre' },
+    'Maladie': { desc: 'Sujets liés à la santé et aux maladies', url: 'https://example.com/maladie' },
+    'Finances': { desc: 'Gestion financière et épreuves économiques', url: 'https://example.com/finances' },
+    'Relations': { desc: 'Défis relationnels et sociaux', url: 'https://example.com/relations' },
+    'Moi': { desc: 'Développement personnel et état d\'esprit', url: 'https://example.com/moi' },
+    'Persécution': { desc: 'Expériences de discrimination ou de persécution', url: 'https://example.com/persecution' },
+    'Catastrophes': { desc: 'Impact des événements naturels ou accidents', url: 'https://example.com/catastrophes' },
+    'Cqrd': { desc: 'Catégorie CQRD', url: 'https://example.com/cqrd' },
+    'Spirituel': { desc: 'Vie et action spirituelles', url: 'https://example.com/spirituel' }
+  };
+
+const minRatio = 0.10; // 5% minimum floor per item
+  const count = labels.length;
+  const remainingBudget = 1 - (minRatio); // Remaining weight to distribute (55% for 9 items)
+
+  // 1. Generate random weights
+  const rawData = labels.map(label => ({
+    label,
+    random: minRatio + remainingBudget*Math.random()
+  }));
+
+  const totalRandom = rawData.reduce((acc, d) => acc + d.random, 0);
+
+  return {
+    name: "root",
+    children: [
+      {
+        name: "Categories",
+        children: rawData.map(d => ({
+          name: d.label,
+          value: d.random ,
+          desc: metadata[d.label].desc,
+          url: metadata[d.label].url
+        }))
+      }
+    ]
+  };
+}
+
+// --- 2. CONFIGURATION ---
+width = 800
+
+height = 500
+
+fontSize = "24px"
+
+// --- 3. HIERARCHY CALCULATION ---
+root = {
+  const h = d3.hierarchy(data)
+      .sum(d => d.value)
+      .sort((a, b) => b.value - a.value);
+  
+  return d3.treemap()
+      .size([width, height])
+      .paddingInner(2)
+      (h);
+}
+
+// --- 4. TOOLTIP ELEMENT ---
+tooltip = d3.select("body").append("div")
+    .style("position", "absolute")
+    .style("visibility", "hidden")
+    .style("background", "rgba(0, 0, 0, 0.85)")
+    .style("color", "#fff")
+    .style("padding", "8px 12px")
+    .style("border-radius", "4px")
+    .style("font-size", "12px")
+    .style("pointer-events", "none")
+    .style("z-index", "1000")
+    .style("font-family", "sans-serif")
+
+// --- 5. CHART RENDERING ---
+chart = {
+  const svg = d3.create("svg")
+      .attr("viewBox", [0, 0, width, height])
+      .attr("width", "100%")
+      .attr("height", "auto")
+      .style("font", "12px sans-serif");
+
+  const leaf = svg.selectAll("g")
+    .data(root.leaves())
+    .join("g")
+    .attr("transform", d => `translate(${d.x0},${d.y0})`);
+
+  const link = leaf.append("a")
+    .attr("xlink:href", d => d.data.url)
+    .attr("target", "_blank")
+    .style("cursor", "pointer");
+
+  link.append("rect")
+    .attr("fill", (d, i) => d3.schemeTableau10[i % 10])
+    .attr("fill-opacity", 0.7)
+    .attr("width", d => d.x1 - d.x0)
+    .attr("height", d => d.y1 - d.y0)
+    .attr("stroke", "white")
+    .on("mouseover", function(event, d) {
+      d3.select(this).attr("fill-opacity", 1);
+      tooltip.style("visibility", "visible")
+             .html(`<strong>${d.data.name}</strong><br/>${d.data.desc}<br/><em>Value: ${(d.value * 100).toFixed(1)}%</em>`);
+    })
+    .on("mousemove", function(event) {
+      tooltip.style("top", (event.pageY - 10) + "px")
+             .style("left", (event.pageX + 10) + "px");
+    })
+    .on("mouseout", function() {
+      d3.select(this).attr("fill-opacity", 0.7);
+      tooltip.style("visibility", "hidden");
+    });
+
+  link.append("text")
+    .attr("x", d => (d.x1 - d.x0) / 2)
+    .attr("y", d => (d.y1 - d.y0) / 2)
+    .attr("dy", "0.35em")
+    .attr("text-anchor", "middle")
+    .attr("fill", "white")
+    .attr("fill", "black") // <--- CHANGED FONT COLOR TO BLACK
+    .style("font-size", fontSize)
+    .style("font-weight", "bold")
+    .style("pointer-events", "none")
+    .text(d => (d.x1 - d.x0 > 50 && d.y1 - d.y0 > 25) ? d.data.name : "");
+
+  return svg.node();
+}
+viewof redraw = Inputs.button("Anew")
+
+```
+
+:::
+::::::
+
+::: notes
+:::
+
 
 <!-- B3================================================================comment -->
 

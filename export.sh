@@ -14,4 +14,6 @@ echo $TARGET
 SOURCE="docs"
 cp -r -v "$SOURCE" "$TARGET"
 
+cp -v posts/ps44/index-speaker.html "$TARGET/docs"
+
 echo "Successfully copied $SOURCE to $TARGET"

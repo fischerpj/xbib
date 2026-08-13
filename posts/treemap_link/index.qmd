@@ -1,5 +1,6 @@
 ---
 title: "OJS Treemap-Clickable"
+subtitle: "ojs d3.treemap"
 author: "gp"
 date: "2026-05-06"
 categories: [techno]
@@ -130,3 +131,4 @@ chart = {
   return svg.node();
 }
 ```
+

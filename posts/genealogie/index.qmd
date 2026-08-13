@@ -1,0 +1,67 @@
+---
+title: "généalogie de Lévi"
+subtitle: ""
+format:
+  revealjs:
+    theme: solarized
+    css: styles.css
+---
+
+```{=html}
+<style>
+  /* Hide subgraphs initially */
+  #diagram .subgraph {
+    display: none;
+    transition: all 0.25s ease;
+  }
+
+  /* White background for subgraphs */
+  #diagram .subgraph > rect {
+    fill: white !important;
+    stroke: #ccc !important;
+  }
+
+  /* Make clickable nodes visually distinct */
+  .toggle rect, .toggle polygon {
+    cursor: pointer;
+    stroke: #0077cc !important;
+    fill: #e6f2ff !important;
+  }
+</style>
+```
+
+```{mermaid}
+flowchart TD
+   A["<div title='3e fils de Jacob-Israêl, tribu mise à part pour le service du sanctuaire, sans territoire si ce n est 48 villes dont 6 de refuge'>**LEVI**</div>"] --> B(Guershom)
+   A --> C(**KEHATH**)
+   A --> D(Merari)
+
+   %% --- Sous-graph Kehath ---
+      C --> E(Amram)
+      C --> F(Jitsehar)
+      C --> G(Hébron)
+      C --> H(Uziel)
+
+      E --> I(Aaron)
+      E --> J(**MOÏSE**)
+      E --> K(Myriam)
+
+      F --> N(**KORE**)
+      N --> O(Assir)
+      N --> P(Elkana)
+      N --> Q(Abiasaph)
+
+   %% --- Sous-graph Merari ---
+%%      D --> L(Machli)
+%%      D --> M(Muschi)
+
+
+```
+
+
+
+Ainsi, Moïse est arrière-petit-fils de Lévi, petit-fils de Kehath, fils d’Amram et Jokébed.Exode 6:16–20.
+Cette lignée est importante car les Kehathites auront un rôle central dans le service du tabernacle. 
+
+Koré apparaît dans la même généalogie, car il est lui aussi un descendant de Lévi, mais par une autre branche.
+Les données viennent de Exode 6:21–24 .
