@@ -522,15 +522,28 @@
 </div></div>
 <!-- ================================================================comment -->
 </section>
-<section id="la-prière-dapplication" class="slide level2">
-<h2>la prière d’application</h2>
+<section id="type-2-la-prière-dapplication" class="slide level2">
+<h2>type-2: la prière d’application</h2>
 <div class="columns">
-<div class="column" style="width:35%;">
+<div class="column" style="width:47%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="../../www/img/A-A.jpg" width="200"></p>
+<figcaption>imitation</figcaption>
+</figure>
+</div>
+<p>la vraie prière</p>
+<ul>
+<li>s’adresse au Dieu-Roi</li>
+<li>devient personnelle</li>
+<li>détecte la détresse</li>
+<li>appelle à l’aide</li>
+</ul>
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-
+</div><div class="column smaller" style="width:47%;">
+<p><br> <em>5 O <strong>Dieu</strong><sup>1</sup>, tu es <strong>mon roi</strong><sup>2</sup>:</em></p>
+<p><br> <em>ordonne <strong>la délivrance</strong><sup>3</sup> de Jacob!</em></p>
 </div></div>
 <aside class="notes">
 <p>délivré de la vie insoutenable en Egypte, transplanté comme une vigne du meilleur cépage au pays promis à Abraham, / coeur nouveau P:histoire que Dieu a écrite: Paque / Cene / Réforme, réveils, aujourd’hui</p>
@@ -545,6 +558,317 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<!-- ================================================================comment -->
+</section>
+<section id="où-sont-les-ennemis" class="slide level2">
+<h2>où sont les ennemis ?</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+
+</div><div class="column" style="width:8%;">
+
+</div><div class="column smaller" style="width:55%;">
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="366" data-source-offset="-46"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 365;"><span id="cb1-366"><a></a>data <span class="op">=</span> {</span>
+<span id="cb1-367"><a></a>  redraw<span class="op">;</span> <span class="co">// Reactive dependency: re-runs when button is clicked</span></span>
+<span id="cb1-368"><a></a></span>
+<span id="cb1-369"><a></a>  <span class="kw">const</span> labels <span class="op">=</span> [<span class="st">'Guerre'</span><span class="op">,</span> <span class="st">'Maladie'</span><span class="op">,</span> <span class="st">'Finances'</span><span class="op">,</span> <span class="st">'Relations'</span><span class="op">,</span> <span class="st">'Moi'</span><span class="op">,</span> <span class="st">'Persécution'</span><span class="op">,</span> <span class="st">'Catastrophes'</span><span class="op">,</span> <span class="st">'Cqrd'</span><span class="op">,</span> <span class="st">'Spirituel'</span>]<span class="op">;</span></span>
+<span id="cb1-370"><a></a></span>
+<span id="cb1-371"><a></a>  <span class="kw">const</span> metadata <span class="op">=</span> {</span>
+<span id="cb1-372"><a></a>    <span class="st">'Guerre'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Impact des conflits et guerres'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/guerre'</span> }<span class="op">,</span></span>
+<span id="cb1-373"><a></a>    <span class="st">'Maladie'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Sujets liés à la santé et aux maladies'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/maladie'</span> }<span class="op">,</span></span>
+<span id="cb1-374"><a></a>    <span class="st">'Finances'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Gestion financière et épreuves économiques'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/finances'</span> }<span class="op">,</span></span>
+<span id="cb1-375"><a></a>    <span class="st">'Relations'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Défis relationnels et sociaux'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/relations'</span> }<span class="op">,</span></span>
+<span id="cb1-376"><a></a>    <span class="st">'Moi'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Développement personnel et état d</span><span class="sc">\'</span><span class="st">esprit'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/moi'</span> }<span class="op">,</span></span>
+<span id="cb1-377"><a></a>    <span class="st">'Persécution'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Expériences de discrimination ou de persécution'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/persecution'</span> }<span class="op">,</span></span>
+<span id="cb1-378"><a></a>    <span class="st">'Catastrophes'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Impact des événements naturels ou accidents'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/catastrophes'</span> }<span class="op">,</span></span>
+<span id="cb1-379"><a></a>    <span class="st">'Cqrd'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Catégorie CQRD'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/cqrd'</span> }<span class="op">,</span></span>
+<span id="cb1-380"><a></a>    <span class="st">'Spirituel'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Vie et action spirituelles'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/spirituel'</span> }</span>
+<span id="cb1-381"><a></a>  }<span class="op">;</span></span>
+<span id="cb1-382"><a></a></span>
+<span id="cb1-383"><a></a><span class="kw">const</span> minRatio <span class="op">=</span> <span class="fl">0.10</span><span class="op">;</span> <span class="co">// 5% minimum floor per item</span></span>
+<span id="cb1-384"><a></a>  <span class="kw">const</span> count <span class="op">=</span> labels<span class="op">.</span><span class="at">length</span><span class="op">;</span></span>
+<span id="cb1-385"><a></a>  <span class="kw">const</span> remainingBudget <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> (minRatio)<span class="op">;</span> <span class="co">// Remaining weight to distribute (55% for 9 items)</span></span>
+<span id="cb1-386"><a></a></span>
+<span id="cb1-387"><a></a>  <span class="co">// 1. Generate random weights</span></span>
+<span id="cb1-388"><a></a>  <span class="kw">const</span> rawData <span class="op">=</span> labels<span class="op">.</span><span class="fu">map</span>(label <span class="kw">=&gt;</span> ({</span>
+<span id="cb1-389"><a></a>    label<span class="op">,</span></span>
+<span id="cb1-390"><a></a>    <span class="dt">random</span><span class="op">:</span> minRatio <span class="op">+</span> remainingBudget<span class="op">*</span><span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()</span>
+<span id="cb1-391"><a></a>  }))<span class="op">;</span></span>
+<span id="cb1-392"><a></a></span>
+<span id="cb1-393"><a></a>  <span class="kw">const</span> totalRandom <span class="op">=</span> rawData<span class="op">.</span><span class="fu">reduce</span>((acc<span class="op">,</span> d) <span class="kw">=&gt;</span> acc <span class="op">+</span> d<span class="op">.</span><span class="at">random</span><span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span>
+<span id="cb1-394"><a></a></span>
+<span id="cb1-395"><a></a>  <span class="cf">return</span> {</span>
+<span id="cb1-396"><a></a>    <span class="dt">name</span><span class="op">:</span> <span class="st">"root"</span><span class="op">,</span></span>
+<span id="cb1-397"><a></a>    <span class="dt">children</span><span class="op">:</span> [</span>
+<span id="cb1-398"><a></a>      {</span>
+<span id="cb1-399"><a></a>        <span class="dt">name</span><span class="op">:</span> <span class="st">"Categories"</span><span class="op">,</span></span>
+<span id="cb1-400"><a></a>        <span class="dt">children</span><span class="op">:</span> rawData<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> ({</span>
+<span id="cb1-401"><a></a>          <span class="dt">name</span><span class="op">:</span> d<span class="op">.</span><span class="at">label</span><span class="op">,</span></span>
+<span id="cb1-402"><a></a>          <span class="dt">value</span><span class="op">:</span> d<span class="op">.</span><span class="at">random</span> <span class="op">,</span></span>
+<span id="cb1-403"><a></a>          <span class="dt">desc</span><span class="op">:</span> metadata[d<span class="op">.</span><span class="at">label</span>]<span class="op">.</span><span class="at">desc</span><span class="op">,</span></span>
+<span id="cb1-404"><a></a>          <span class="dt">url</span><span class="op">:</span> metadata[d<span class="op">.</span><span class="at">label</span>]<span class="op">.</span><span class="at">url</span></span>
+<span id="cb1-405"><a></a>        }))</span>
+<span id="cb1-406"><a></a>      }</span>
+<span id="cb1-407"><a></a>    ]</span>
+<span id="cb1-408"><a></a>  }<span class="op">;</span></span>
+<span id="cb1-409"><a></a>}</span>
+<span id="cb1-410"><a></a></span>
+<span id="cb1-411"><a></a><span class="co">// --- 2. CONFIGURATION ---</span></span>
+<span id="cb1-412"><a></a>width <span class="op">=</span> <span class="dv">800</span></span>
+<span id="cb1-413"><a></a></span>
+<span id="cb1-414"><a></a>height <span class="op">=</span> <span class="dv">500</span></span>
+<span id="cb1-415"><a></a></span>
+<span id="cb1-416"><a></a>fontSize <span class="op">=</span> <span class="st">"24px"</span></span>
+<span id="cb1-417"><a></a></span>
+<span id="cb1-418"><a></a><span class="co">// --- 3. HIERARCHY CALCULATION ---</span></span>
+<span id="cb1-419"><a></a><span class="bu">root</span> <span class="op">=</span> {</span>
+<span id="cb1-420"><a></a>  <span class="kw">const</span> h <span class="op">=</span> d3<span class="op">.</span><span class="fu">hierarchy</span>(data)</span>
+<span id="cb1-421"><a></a>      <span class="op">.</span><span class="fu">sum</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">value</span>)</span>
+<span id="cb1-422"><a></a>      <span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> b<span class="op">.</span><span class="at">value</span> <span class="op">-</span> a<span class="op">.</span><span class="at">value</span>)<span class="op">;</span></span>
+<span id="cb1-423"><a></a>  </span>
+<span id="cb1-424"><a></a>  <span class="cf">return</span> d3<span class="op">.</span><span class="fu">treemap</span>()</span>
+<span id="cb1-425"><a></a>      <span class="op">.</span><span class="fu">size</span>([width<span class="op">,</span> height])</span>
+<span id="cb1-426"><a></a>      <span class="op">.</span><span class="fu">paddingInner</span>(<span class="dv">2</span>)</span>
+<span id="cb1-427"><a></a>      (h)<span class="op">;</span></span>
+<span id="cb1-428"><a></a>}</span>
+<span id="cb1-429"><a></a></span>
+<span id="cb1-430"><a></a><span class="co">// --- 4. TOOLTIP ELEMENT ---</span></span>
+<span id="cb1-431"><a></a>tooltip <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"body"</span>)<span class="op">.</span><span class="fu">append</span>(<span class="st">"div"</span>)</span>
+<span id="cb1-432"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"position"</span><span class="op">,</span> <span class="st">"absolute"</span>)</span>
+<span id="cb1-433"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"visibility"</span><span class="op">,</span> <span class="st">"hidden"</span>)</span>
+<span id="cb1-434"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"background"</span><span class="op">,</span> <span class="st">"rgba(0, 0, 0, 0.85)"</span>)</span>
+<span id="cb1-435"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"color"</span><span class="op">,</span> <span class="st">"#fff"</span>)</span>
+<span id="cb1-436"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"padding"</span><span class="op">,</span> <span class="st">"8px 12px"</span>)</span>
+<span id="cb1-437"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"border-radius"</span><span class="op">,</span> <span class="st">"4px"</span>)</span>
+<span id="cb1-438"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"font-size"</span><span class="op">,</span> <span class="st">"12px"</span>)</span>
+<span id="cb1-439"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"pointer-events"</span><span class="op">,</span> <span class="st">"none"</span>)</span>
+<span id="cb1-440"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"z-index"</span><span class="op">,</span> <span class="st">"1000"</span>)</span>
+<span id="cb1-441"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"font-family"</span><span class="op">,</span> <span class="st">"sans-serif"</span>)</span>
+<span id="cb1-442"><a></a></span>
+<span id="cb1-443"><a></a><span class="co">// --- 5. CHART RENDERING ---</span></span>
+<span id="cb1-444"><a></a>chart <span class="op">=</span> {</span>
+<span id="cb1-445"><a></a>  <span class="kw">const</span> svg <span class="op">=</span> d3<span class="op">.</span><span class="fu">create</span>(<span class="st">"svg"</span>)</span>
+<span id="cb1-446"><a></a>      <span class="op">.</span><span class="fu">attr</span>(<span class="st">"viewBox"</span><span class="op">,</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> width<span class="op">,</span> height])</span>
+<span id="cb1-447"><a></a>      <span class="op">.</span><span class="fu">attr</span>(<span class="st">"width"</span><span class="op">,</span> <span class="st">"100%"</span>)</span>
+<span id="cb1-448"><a></a>      <span class="op">.</span><span class="fu">attr</span>(<span class="st">"height"</span><span class="op">,</span> <span class="st">"auto"</span>)</span>
+<span id="cb1-449"><a></a>      <span class="op">.</span><span class="fu">style</span>(<span class="st">"font"</span><span class="op">,</span> <span class="st">"12px sans-serif"</span>)<span class="op">;</span></span>
+<span id="cb1-450"><a></a></span>
+<span id="cb1-451"><a></a>  <span class="kw">const</span> leaf <span class="op">=</span> svg<span class="op">.</span><span class="fu">selectAll</span>(<span class="st">"g"</span>)</span>
+<span id="cb1-452"><a></a>    <span class="op">.</span><span class="fu">data</span>(<span class="bu">root</span><span class="op">.</span><span class="fu">leaves</span>())</span>
+<span id="cb1-453"><a></a>    <span class="op">.</span><span class="fu">join</span>(<span class="st">"g"</span>)</span>
+<span id="cb1-454"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"transform"</span><span class="op">,</span> d <span class="kw">=&gt;</span> <span class="vs">`translate(</span><span class="sc">${</span>d<span class="op">.</span><span class="at">x0</span><span class="sc">}</span><span class="vs">,</span><span class="sc">${</span>d<span class="op">.</span><span class="at">y0</span><span class="sc">}</span><span class="vs">)`</span>)<span class="op">;</span></span>
+<span id="cb1-455"><a></a></span>
+<span id="cb1-456"><a></a>  <span class="kw">const</span> link <span class="op">=</span> leaf<span class="op">.</span><span class="fu">append</span>(<span class="st">"a"</span>)</span>
+<span id="cb1-457"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"xlink:href"</span><span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">url</span>)</span>
+<span id="cb1-458"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"target"</span><span class="op">,</span> <span class="st">"_blank"</span>)</span>
+<span id="cb1-459"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"cursor"</span><span class="op">,</span> <span class="st">"pointer"</span>)<span class="op">;</span></span>
+<span id="cb1-460"><a></a></span>
+<span id="cb1-461"><a></a>  link<span class="op">.</span><span class="fu">append</span>(<span class="st">"rect"</span>)</span>
+<span id="cb1-462"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> (d<span class="op">,</span> i) <span class="kw">=&gt;</span> d3<span class="op">.</span><span class="at">schemeTableau10</span>[i <span class="op">%</span> <span class="dv">10</span>])</span>
+<span id="cb1-463"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill-opacity"</span><span class="op">,</span> <span class="fl">0.7</span>)</span>
+<span id="cb1-464"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"width"</span><span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">x1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">x0</span>)</span>
+<span id="cb1-465"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"height"</span><span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">y1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">y0</span>)</span>
+<span id="cb1-466"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"stroke"</span><span class="op">,</span> <span class="st">"white"</span>)</span>
+<span id="cb1-467"><a></a>    <span class="op">.</span><span class="fu">on</span>(<span class="st">"mouseover"</span><span class="op">,</span> <span class="kw">function</span>(<span class="bu">event</span><span class="op">,</span> d) {</span>
+<span id="cb1-468"><a></a>      d3<span class="op">.</span><span class="fu">select</span>(<span class="kw">this</span>)<span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill-opacity"</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb1-469"><a></a>      tooltip<span class="op">.</span><span class="fu">style</span>(<span class="st">"visibility"</span><span class="op">,</span> <span class="st">"visible"</span>)</span>
+<span id="cb1-470"><a></a>             <span class="op">.</span><span class="fu">html</span>(<span class="vs">`&lt;strong&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs">&lt;/strong&gt;&lt;br/&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">desc</span><span class="sc">}</span><span class="vs">&lt;br/&gt;&lt;em&gt;Value: </span><span class="sc">${</span>(d<span class="op">.</span><span class="at">value</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">1</span>)<span class="sc">}</span><span class="vs">%&lt;/em&gt;`</span>)<span class="op">;</span></span>
+<span id="cb1-471"><a></a>    })</span>
+<span id="cb1-472"><a></a>    <span class="op">.</span><span class="fu">on</span>(<span class="st">"mousemove"</span><span class="op">,</span> <span class="kw">function</span>(<span class="bu">event</span>) {</span>
+<span id="cb1-473"><a></a>      tooltip<span class="op">.</span><span class="fu">style</span>(<span class="st">"top"</span><span class="op">,</span> (<span class="bu">event</span><span class="op">.</span><span class="at">pageY</span> <span class="op">-</span> <span class="dv">10</span>) <span class="op">+</span> <span class="st">"px"</span>)</span>
+<span id="cb1-474"><a></a>             <span class="op">.</span><span class="fu">style</span>(<span class="st">"left"</span><span class="op">,</span> (<span class="bu">event</span><span class="op">.</span><span class="at">pageX</span> <span class="op">+</span> <span class="dv">10</span>) <span class="op">+</span> <span class="st">"px"</span>)<span class="op">;</span></span>
+<span id="cb1-475"><a></a>    })</span>
+<span id="cb1-476"><a></a>    <span class="op">.</span><span class="fu">on</span>(<span class="st">"mouseout"</span><span class="op">,</span> <span class="kw">function</span>() {</span>
+<span id="cb1-477"><a></a>      d3<span class="op">.</span><span class="fu">select</span>(<span class="kw">this</span>)<span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill-opacity"</span><span class="op">,</span> <span class="fl">0.7</span>)<span class="op">;</span></span>
+<span id="cb1-478"><a></a>      tooltip<span class="op">.</span><span class="fu">style</span>(<span class="st">"visibility"</span><span class="op">,</span> <span class="st">"hidden"</span>)<span class="op">;</span></span>
+<span id="cb1-479"><a></a>    })<span class="op">;</span></span>
+<span id="cb1-480"><a></a></span>
+<span id="cb1-481"><a></a>  link<span class="op">.</span><span class="fu">append</span>(<span class="st">"text"</span>)</span>
+<span id="cb1-482"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"x"</span><span class="op">,</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">x1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">x0</span>) <span class="op">/</span> <span class="dv">2</span>)</span>
+<span id="cb1-483"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"y"</span><span class="op">,</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">y1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">y0</span>) <span class="op">/</span> <span class="dv">2</span>)</span>
+<span id="cb1-484"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"dy"</span><span class="op">,</span> <span class="st">"0.35em"</span>)</span>
+<span id="cb1-485"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"text-anchor"</span><span class="op">,</span> <span class="st">"middle"</span>)</span>
+<span id="cb1-486"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> <span class="st">"white"</span>)</span>
+<span id="cb1-487"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> <span class="st">"black"</span>) <span class="co">// &lt;--- CHANGED FONT COLOR TO BLACK</span></span>
+<span id="cb1-488"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"font-size"</span><span class="op">,</span> fontSize)</span>
+<span id="cb1-489"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"font-weight"</span><span class="op">,</span> <span class="st">"bold"</span>)</span>
+<span id="cb1-490"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"pointer-events"</span><span class="op">,</span> <span class="st">"none"</span>)</span>
+<span id="cb1-491"><a></a>    <span class="op">.</span><span class="fu">text</span>(d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">x1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">x0</span> <span class="op">&gt;</span> <span class="dv">50</span> <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">y1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">y0</span> <span class="op">&gt;</span> <span class="dv">25</span>) <span class="op">?</span> d<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">name</span> <span class="op">:</span> <span class="st">""</span>)<span class="op">;</span></span>
+<span id="cb1-492"><a></a></span>
+<span id="cb1-493"><a></a>  <span class="cf">return</span> svg<span class="op">.</span><span class="fu">node</span>()<span class="op">;</span></span>
+<span id="cb1-494"><a></a>}</span>
+<span id="cb1-495"><a></a>viewof redraw <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Anew"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- B2================================================================comment -->
+</section>
+<section id="la-dynamique" class="slide level2">
+<h2>la dynamique</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="../../www/img/A-A.jpg" width="200"></p>
+<figcaption>assimilation</figcaption>
+</figure>
+</div>
+<p>Respectant la logique</p>
+<ol type="1">
+<li>nous avons compris</li>
+<li>nous croyons</li>
+<li>nous expérimentons</li>
+</ol>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column smaller" style="width:55%;">
+<p><em>6 <strong>Grâce à toi<sup>4</sup></strong> nous renversons nos ennemis, grâce à ton nom nous écrasons nos adversaires,</em></p>
+<p><br> <em>7 car ce n’est pas en mon arc que je me confie, ce n’est <strong>pas mon épée<sup>5</sup></strong> qui me sauvera,</em></p>
+<p><br> <em>8 mais c’est toi qui nous délivres de nos ennemis et qui fais rougir de honte ceux qui nous détestent.</em></p>
+</div></div>
+<!-- B3================================================================comment -->
+</section>
+<section id="la-certitude-de-la-foi" class="slide level2">
+<h2>la certitude de la foi</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<ul>
+<li>nous anticipons la victoire de Christ</li>
+</ul>
+</div><div class="column" style="width:8%;">
+
+</div><div class="column smaller" style="width:55%;">
+<p><em>9 Nous chantons <strong>la louange<sup>6</sup></strong> de Dieu chaque jour,</em></p>
+<p><br> <em>et nous célébrerons éternellement ton nom.</em></p>
+</div></div>
+<!-- C1===============================================================comment -->
+</section>
+<section id="abandonnés" class="slide level2">
+<h2>abandonnés,</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p><img data-src="../../www/img/roseau.png" width="150"></p>
+</div><div class="column" style="width:8%;">
+
+</div><div class="column smaller" style="width:55%;">
+<p><em>– Pause.</em></p>
+<p><br> <em>10 Cependant <u>tu</u> nous as repoussés, <u>tu</u> nous as couverts de honte, <u>tu</u> ne sors plus avec nos armées.</em></p>
+<p><br> <em>11 <u>tu</u> nous fais reculer devant l’ennemi, et ceux qui nous détestent se partagent nos dépouilles.</em></p>
+</div></div>
+<!-- C2================================================================comment -->
+</section>
+<section id="vendus" class="slide level2">
+<h2>vendus,</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="../../www/img/argent.png" width="200"></p>
+<figcaption>30 pièces</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:8%;">
+
+</div><div class="column smaller" style="width:55%;">
+<p><em>12 <u>tu</u> nous livres comme des brebis de boucherie, <u>tu</u> nous disperses parmi les nations.</em></p>
+<p><br> <em>13 <u>tu</u> vends ton peuple pour rien, <u>tu</u> ne l’estimes pas à une grande valeur.</em></p>
+</div></div>
+<!-- C3================================================================comment -->
+</section>
+<section id="insultés" class="slide level2">
+<h2>insultés,</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+
+</div><div class="column" style="width:8%;">
+
+</div><div class="column smaller" style="width:55%;">
+<p><em>14 <u>tu</u> nous exposes aux insultes de nos voisins, à la moquerie et aux railleries de ceux qui nous entourent.</em></p>
+<p><br> <em>15 <u>tu</u> fais de nous le sujet d’un proverbe parmi les nations, on hoche la tête sur nous parmi les peuples.</em></p>
+</div></div>
+<!-- D1================================================================comment -->
+</section>
+<section id="honteux" class="slide level2">
+<h2>honteux</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+
+</div><div class="column" style="width:8%;">
+
+</div><div class="column smaller" style="width:55%;">
+<p><em>16 Mon humiliation est toujours devant moi, et la honte couvre mon visage</em></p>
+<p><br> <em>17 à la voix de celui qui m’insulte et me déshonore, à la vue de l’ennemi avide de vengeance.</em></p>
+</div></div>
 <!-- ================================================================comment -->
 </section>
 <section id="la-prière-dobjection" class="slide level2">
@@ -651,329 +975,6 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- ================================================================comment -->
-</section>
-<section id="type-2-la-prière-imitation" class="slide level2">
-<h2>type-2: la prière-imitation</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<p><img data-src="../../www/img/A-A.jpg" width="200"></p>
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-<p><em>5 O <strong>Dieu</strong><sup>1</sup>, tu es <strong>mon roi</strong><sup>2</sup>:</em></p>
-<p><br> <em>ordonne <strong>la délivrance</strong><sup>3</sup> de Jacob!</em></p>
-</div></div>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<!-- B2================================================================comment -->
-</section>
-<section id="type-2-fondements" class="slide level2">
-<h2>type-2: fondements</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-<p><em>6 <strong>Grâce à toi<sup>4</sup></strong> nous renversons nos ennemis, grâce à ton nom nous écrasons nos adversaires,</em></p>
-<p><br> <em>7 car ce n’est pas en mon arc que je me confie, ce n’est <strong>pas mon épée<sup>5</sup></strong> qui me sauvera,</em></p>
-<p><br> <em>8 mais c’est toi qui nous délivres de nos ennemis et qui fais rougir de honte ceux qui nous détestent.</em></p>
-</div></div>
-<!-- ================================================================comment -->
-</section>
-<section id="où-sont-les-ennemis" class="slide level2">
-<h2>où sont les ennemis ?</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="461" data-source-offset="-46"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 460;"><span id="cb1-461"><a></a>data <span class="op">=</span> {</span>
-<span id="cb1-462"><a></a>  redraw<span class="op">;</span> <span class="co">// Reactive dependency: re-runs when button is clicked</span></span>
-<span id="cb1-463"><a></a></span>
-<span id="cb1-464"><a></a>  <span class="kw">const</span> labels <span class="op">=</span> [<span class="st">'Guerre'</span><span class="op">,</span> <span class="st">'Maladie'</span><span class="op">,</span> <span class="st">'Finances'</span><span class="op">,</span> <span class="st">'Relations'</span><span class="op">,</span> <span class="st">'Moi'</span><span class="op">,</span> <span class="st">'Persécution'</span><span class="op">,</span> <span class="st">'Catastrophes'</span><span class="op">,</span> <span class="st">'Cqrd'</span><span class="op">,</span> <span class="st">'Spirituel'</span>]<span class="op">;</span></span>
-<span id="cb1-465"><a></a></span>
-<span id="cb1-466"><a></a>  <span class="kw">const</span> metadata <span class="op">=</span> {</span>
-<span id="cb1-467"><a></a>    <span class="st">'Guerre'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Impact des conflits et guerres'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/guerre'</span> }<span class="op">,</span></span>
-<span id="cb1-468"><a></a>    <span class="st">'Maladie'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Sujets liés à la santé et aux maladies'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/maladie'</span> }<span class="op">,</span></span>
-<span id="cb1-469"><a></a>    <span class="st">'Finances'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Gestion financière et épreuves économiques'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/finances'</span> }<span class="op">,</span></span>
-<span id="cb1-470"><a></a>    <span class="st">'Relations'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Défis relationnels et sociaux'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/relations'</span> }<span class="op">,</span></span>
-<span id="cb1-471"><a></a>    <span class="st">'Moi'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Développement personnel et état d</span><span class="sc">\'</span><span class="st">esprit'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/moi'</span> }<span class="op">,</span></span>
-<span id="cb1-472"><a></a>    <span class="st">'Persécution'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Expériences de discrimination ou de persécution'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/persecution'</span> }<span class="op">,</span></span>
-<span id="cb1-473"><a></a>    <span class="st">'Catastrophes'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Impact des événements naturels ou accidents'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/catastrophes'</span> }<span class="op">,</span></span>
-<span id="cb1-474"><a></a>    <span class="st">'Cqrd'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Catégorie CQRD'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/cqrd'</span> }<span class="op">,</span></span>
-<span id="cb1-475"><a></a>    <span class="st">'Spirituel'</span><span class="op">:</span> { <span class="dt">desc</span><span class="op">:</span> <span class="st">'Vie et action spirituelles'</span><span class="op">,</span> <span class="dt">url</span><span class="op">:</span> <span class="st">'https://example.com/spirituel'</span> }</span>
-<span id="cb1-476"><a></a>  }<span class="op">;</span></span>
-<span id="cb1-477"><a></a></span>
-<span id="cb1-478"><a></a><span class="kw">const</span> minRatio <span class="op">=</span> <span class="fl">0.10</span><span class="op">;</span> <span class="co">// 5% minimum floor per item</span></span>
-<span id="cb1-479"><a></a>  <span class="kw">const</span> count <span class="op">=</span> labels<span class="op">.</span><span class="at">length</span><span class="op">;</span></span>
-<span id="cb1-480"><a></a>  <span class="kw">const</span> remainingBudget <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> (minRatio)<span class="op">;</span> <span class="co">// Remaining weight to distribute (55% for 9 items)</span></span>
-<span id="cb1-481"><a></a></span>
-<span id="cb1-482"><a></a>  <span class="co">// 1. Generate random weights</span></span>
-<span id="cb1-483"><a></a>  <span class="kw">const</span> rawData <span class="op">=</span> labels<span class="op">.</span><span class="fu">map</span>(label <span class="kw">=&gt;</span> ({</span>
-<span id="cb1-484"><a></a>    label<span class="op">,</span></span>
-<span id="cb1-485"><a></a>    <span class="dt">random</span><span class="op">:</span> minRatio <span class="op">+</span> remainingBudget<span class="op">*</span><span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()</span>
-<span id="cb1-486"><a></a>  }))<span class="op">;</span></span>
-<span id="cb1-487"><a></a></span>
-<span id="cb1-488"><a></a>  <span class="kw">const</span> totalRandom <span class="op">=</span> rawData<span class="op">.</span><span class="fu">reduce</span>((acc<span class="op">,</span> d) <span class="kw">=&gt;</span> acc <span class="op">+</span> d<span class="op">.</span><span class="at">random</span><span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span>
-<span id="cb1-489"><a></a></span>
-<span id="cb1-490"><a></a>  <span class="cf">return</span> {</span>
-<span id="cb1-491"><a></a>    <span class="dt">name</span><span class="op">:</span> <span class="st">"root"</span><span class="op">,</span></span>
-<span id="cb1-492"><a></a>    <span class="dt">children</span><span class="op">:</span> [</span>
-<span id="cb1-493"><a></a>      {</span>
-<span id="cb1-494"><a></a>        <span class="dt">name</span><span class="op">:</span> <span class="st">"Categories"</span><span class="op">,</span></span>
-<span id="cb1-495"><a></a>        <span class="dt">children</span><span class="op">:</span> rawData<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> ({</span>
-<span id="cb1-496"><a></a>          <span class="dt">name</span><span class="op">:</span> d<span class="op">.</span><span class="at">label</span><span class="op">,</span></span>
-<span id="cb1-497"><a></a>          <span class="dt">value</span><span class="op">:</span> d<span class="op">.</span><span class="at">random</span> <span class="op">,</span></span>
-<span id="cb1-498"><a></a>          <span class="dt">desc</span><span class="op">:</span> metadata[d<span class="op">.</span><span class="at">label</span>]<span class="op">.</span><span class="at">desc</span><span class="op">,</span></span>
-<span id="cb1-499"><a></a>          <span class="dt">url</span><span class="op">:</span> metadata[d<span class="op">.</span><span class="at">label</span>]<span class="op">.</span><span class="at">url</span></span>
-<span id="cb1-500"><a></a>        }))</span>
-<span id="cb1-501"><a></a>      }</span>
-<span id="cb1-502"><a></a>    ]</span>
-<span id="cb1-503"><a></a>  }<span class="op">;</span></span>
-<span id="cb1-504"><a></a>}</span>
-<span id="cb1-505"><a></a></span>
-<span id="cb1-506"><a></a><span class="co">// --- 2. CONFIGURATION ---</span></span>
-<span id="cb1-507"><a></a>width <span class="op">=</span> <span class="dv">800</span></span>
-<span id="cb1-508"><a></a></span>
-<span id="cb1-509"><a></a>height <span class="op">=</span> <span class="dv">500</span></span>
-<span id="cb1-510"><a></a></span>
-<span id="cb1-511"><a></a>fontSize <span class="op">=</span> <span class="st">"24px"</span></span>
-<span id="cb1-512"><a></a></span>
-<span id="cb1-513"><a></a><span class="co">// --- 3. HIERARCHY CALCULATION ---</span></span>
-<span id="cb1-514"><a></a><span class="bu">root</span> <span class="op">=</span> {</span>
-<span id="cb1-515"><a></a>  <span class="kw">const</span> h <span class="op">=</span> d3<span class="op">.</span><span class="fu">hierarchy</span>(data)</span>
-<span id="cb1-516"><a></a>      <span class="op">.</span><span class="fu">sum</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">value</span>)</span>
-<span id="cb1-517"><a></a>      <span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> b<span class="op">.</span><span class="at">value</span> <span class="op">-</span> a<span class="op">.</span><span class="at">value</span>)<span class="op">;</span></span>
-<span id="cb1-518"><a></a>  </span>
-<span id="cb1-519"><a></a>  <span class="cf">return</span> d3<span class="op">.</span><span class="fu">treemap</span>()</span>
-<span id="cb1-520"><a></a>      <span class="op">.</span><span class="fu">size</span>([width<span class="op">,</span> height])</span>
-<span id="cb1-521"><a></a>      <span class="op">.</span><span class="fu">paddingInner</span>(<span class="dv">2</span>)</span>
-<span id="cb1-522"><a></a>      (h)<span class="op">;</span></span>
-<span id="cb1-523"><a></a>}</span>
-<span id="cb1-524"><a></a></span>
-<span id="cb1-525"><a></a><span class="co">// --- 4. TOOLTIP ELEMENT ---</span></span>
-<span id="cb1-526"><a></a>tooltip <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="st">"body"</span>)<span class="op">.</span><span class="fu">append</span>(<span class="st">"div"</span>)</span>
-<span id="cb1-527"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"position"</span><span class="op">,</span> <span class="st">"absolute"</span>)</span>
-<span id="cb1-528"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"visibility"</span><span class="op">,</span> <span class="st">"hidden"</span>)</span>
-<span id="cb1-529"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"background"</span><span class="op">,</span> <span class="st">"rgba(0, 0, 0, 0.85)"</span>)</span>
-<span id="cb1-530"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"color"</span><span class="op">,</span> <span class="st">"#fff"</span>)</span>
-<span id="cb1-531"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"padding"</span><span class="op">,</span> <span class="st">"8px 12px"</span>)</span>
-<span id="cb1-532"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"border-radius"</span><span class="op">,</span> <span class="st">"4px"</span>)</span>
-<span id="cb1-533"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"font-size"</span><span class="op">,</span> <span class="st">"12px"</span>)</span>
-<span id="cb1-534"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"pointer-events"</span><span class="op">,</span> <span class="st">"none"</span>)</span>
-<span id="cb1-535"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"z-index"</span><span class="op">,</span> <span class="st">"1000"</span>)</span>
-<span id="cb1-536"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"font-family"</span><span class="op">,</span> <span class="st">"sans-serif"</span>)</span>
-<span id="cb1-537"><a></a></span>
-<span id="cb1-538"><a></a><span class="co">// --- 5. CHART RENDERING ---</span></span>
-<span id="cb1-539"><a></a>chart <span class="op">=</span> {</span>
-<span id="cb1-540"><a></a>  <span class="kw">const</span> svg <span class="op">=</span> d3<span class="op">.</span><span class="fu">create</span>(<span class="st">"svg"</span>)</span>
-<span id="cb1-541"><a></a>      <span class="op">.</span><span class="fu">attr</span>(<span class="st">"viewBox"</span><span class="op">,</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> width<span class="op">,</span> height])</span>
-<span id="cb1-542"><a></a>      <span class="op">.</span><span class="fu">attr</span>(<span class="st">"width"</span><span class="op">,</span> <span class="st">"100%"</span>)</span>
-<span id="cb1-543"><a></a>      <span class="op">.</span><span class="fu">attr</span>(<span class="st">"height"</span><span class="op">,</span> <span class="st">"auto"</span>)</span>
-<span id="cb1-544"><a></a>      <span class="op">.</span><span class="fu">style</span>(<span class="st">"font"</span><span class="op">,</span> <span class="st">"12px sans-serif"</span>)<span class="op">;</span></span>
-<span id="cb1-545"><a></a></span>
-<span id="cb1-546"><a></a>  <span class="kw">const</span> leaf <span class="op">=</span> svg<span class="op">.</span><span class="fu">selectAll</span>(<span class="st">"g"</span>)</span>
-<span id="cb1-547"><a></a>    <span class="op">.</span><span class="fu">data</span>(<span class="bu">root</span><span class="op">.</span><span class="fu">leaves</span>())</span>
-<span id="cb1-548"><a></a>    <span class="op">.</span><span class="fu">join</span>(<span class="st">"g"</span>)</span>
-<span id="cb1-549"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"transform"</span><span class="op">,</span> d <span class="kw">=&gt;</span> <span class="vs">`translate(</span><span class="sc">${</span>d<span class="op">.</span><span class="at">x0</span><span class="sc">}</span><span class="vs">,</span><span class="sc">${</span>d<span class="op">.</span><span class="at">y0</span><span class="sc">}</span><span class="vs">)`</span>)<span class="op">;</span></span>
-<span id="cb1-550"><a></a></span>
-<span id="cb1-551"><a></a>  <span class="kw">const</span> link <span class="op">=</span> leaf<span class="op">.</span><span class="fu">append</span>(<span class="st">"a"</span>)</span>
-<span id="cb1-552"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"xlink:href"</span><span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">url</span>)</span>
-<span id="cb1-553"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"target"</span><span class="op">,</span> <span class="st">"_blank"</span>)</span>
-<span id="cb1-554"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"cursor"</span><span class="op">,</span> <span class="st">"pointer"</span>)<span class="op">;</span></span>
-<span id="cb1-555"><a></a></span>
-<span id="cb1-556"><a></a>  link<span class="op">.</span><span class="fu">append</span>(<span class="st">"rect"</span>)</span>
-<span id="cb1-557"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> (d<span class="op">,</span> i) <span class="kw">=&gt;</span> d3<span class="op">.</span><span class="at">schemeTableau10</span>[i <span class="op">%</span> <span class="dv">10</span>])</span>
-<span id="cb1-558"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill-opacity"</span><span class="op">,</span> <span class="fl">0.7</span>)</span>
-<span id="cb1-559"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"width"</span><span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">x1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">x0</span>)</span>
-<span id="cb1-560"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"height"</span><span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">y1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">y0</span>)</span>
-<span id="cb1-561"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"stroke"</span><span class="op">,</span> <span class="st">"white"</span>)</span>
-<span id="cb1-562"><a></a>    <span class="op">.</span><span class="fu">on</span>(<span class="st">"mouseover"</span><span class="op">,</span> <span class="kw">function</span>(<span class="bu">event</span><span class="op">,</span> d) {</span>
-<span id="cb1-563"><a></a>      d3<span class="op">.</span><span class="fu">select</span>(<span class="kw">this</span>)<span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill-opacity"</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
-<span id="cb1-564"><a></a>      tooltip<span class="op">.</span><span class="fu">style</span>(<span class="st">"visibility"</span><span class="op">,</span> <span class="st">"visible"</span>)</span>
-<span id="cb1-565"><a></a>             <span class="op">.</span><span class="fu">html</span>(<span class="vs">`&lt;strong&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs">&lt;/strong&gt;&lt;br/&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">desc</span><span class="sc">}</span><span class="vs">&lt;br/&gt;&lt;em&gt;Value: </span><span class="sc">${</span>(d<span class="op">.</span><span class="at">value</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">1</span>)<span class="sc">}</span><span class="vs">%&lt;/em&gt;`</span>)<span class="op">;</span></span>
-<span id="cb1-566"><a></a>    })</span>
-<span id="cb1-567"><a></a>    <span class="op">.</span><span class="fu">on</span>(<span class="st">"mousemove"</span><span class="op">,</span> <span class="kw">function</span>(<span class="bu">event</span>) {</span>
-<span id="cb1-568"><a></a>      tooltip<span class="op">.</span><span class="fu">style</span>(<span class="st">"top"</span><span class="op">,</span> (<span class="bu">event</span><span class="op">.</span><span class="at">pageY</span> <span class="op">-</span> <span class="dv">10</span>) <span class="op">+</span> <span class="st">"px"</span>)</span>
-<span id="cb1-569"><a></a>             <span class="op">.</span><span class="fu">style</span>(<span class="st">"left"</span><span class="op">,</span> (<span class="bu">event</span><span class="op">.</span><span class="at">pageX</span> <span class="op">+</span> <span class="dv">10</span>) <span class="op">+</span> <span class="st">"px"</span>)<span class="op">;</span></span>
-<span id="cb1-570"><a></a>    })</span>
-<span id="cb1-571"><a></a>    <span class="op">.</span><span class="fu">on</span>(<span class="st">"mouseout"</span><span class="op">,</span> <span class="kw">function</span>() {</span>
-<span id="cb1-572"><a></a>      d3<span class="op">.</span><span class="fu">select</span>(<span class="kw">this</span>)<span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill-opacity"</span><span class="op">,</span> <span class="fl">0.7</span>)<span class="op">;</span></span>
-<span id="cb1-573"><a></a>      tooltip<span class="op">.</span><span class="fu">style</span>(<span class="st">"visibility"</span><span class="op">,</span> <span class="st">"hidden"</span>)<span class="op">;</span></span>
-<span id="cb1-574"><a></a>    })<span class="op">;</span></span>
-<span id="cb1-575"><a></a></span>
-<span id="cb1-576"><a></a>  link<span class="op">.</span><span class="fu">append</span>(<span class="st">"text"</span>)</span>
-<span id="cb1-577"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"x"</span><span class="op">,</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">x1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">x0</span>) <span class="op">/</span> <span class="dv">2</span>)</span>
-<span id="cb1-578"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"y"</span><span class="op">,</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">y1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">y0</span>) <span class="op">/</span> <span class="dv">2</span>)</span>
-<span id="cb1-579"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"dy"</span><span class="op">,</span> <span class="st">"0.35em"</span>)</span>
-<span id="cb1-580"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"text-anchor"</span><span class="op">,</span> <span class="st">"middle"</span>)</span>
-<span id="cb1-581"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> <span class="st">"white"</span>)</span>
-<span id="cb1-582"><a></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> <span class="st">"black"</span>) <span class="co">// &lt;--- CHANGED FONT COLOR TO BLACK</span></span>
-<span id="cb1-583"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"font-size"</span><span class="op">,</span> fontSize)</span>
-<span id="cb1-584"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"font-weight"</span><span class="op">,</span> <span class="st">"bold"</span>)</span>
-<span id="cb1-585"><a></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"pointer-events"</span><span class="op">,</span> <span class="st">"none"</span>)</span>
-<span id="cb1-586"><a></a>    <span class="op">.</span><span class="fu">text</span>(d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">x1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">x0</span> <span class="op">&gt;</span> <span class="dv">50</span> <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">y1</span> <span class="op">-</span> d<span class="op">.</span><span class="at">y0</span> <span class="op">&gt;</span> <span class="dv">25</span>) <span class="op">?</span> d<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">name</span> <span class="op">:</span> <span class="st">""</span>)<span class="op">;</span></span>
-<span id="cb1-587"><a></a></span>
-<span id="cb1-588"><a></a>  <span class="cf">return</span> svg<span class="op">.</span><span class="fu">node</span>()<span class="op">;</span></span>
-<span id="cb1-589"><a></a>}</span>
-<span id="cb1-590"><a></a>viewof redraw <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Anew"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-3" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-4" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-5" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-6" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-7" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-8" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-</div>
-</div></div>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<!-- B3================================================================comment -->
-</section>
-<section id="suite" class="slide level2">
-<h2>suite</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-<p><em>9 Nous chantons <strong>la louange<sup>6</sup></strong> de Dieu chaque jour,</em></p>
-<p><br> <em>et nous célébrerons éternellement ton nom.</em></p>
-</div></div>
-<!-- C1===============================================================comment -->
-</section>
-<section id="abandonnés" class="slide level2">
-<h2>abandonnés,</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<p><img data-src="../../www/img/roseau.png" width="150"></p>
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-<p><em>– Pause.</em></p>
-<p><br> <em>10 Cependant <u>tu</u> nous as repoussés, <u>tu</u> nous as couverts de honte, <u>tu</u> ne sors plus avec nos armées.</em></p>
-<p><br> <em>11 <u>tu</u> nous fais reculer devant l’ennemi, et ceux qui nous détestent se partagent nos dépouilles.</em></p>
-</div></div>
-<!-- C2================================================================comment -->
-</section>
-<section id="vendus" class="slide level2">
-<h2>vendus,</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="../../www/img/argent.png" width="200"></p>
-<figcaption>30 pièces</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-<p><em>12 <u>tu</u> nous livres comme des brebis de boucherie, <u>tu</u> nous disperses parmi les nations.</em></p>
-<p><br> <em>13 <u>tu</u> vends ton peuple pour rien, <u>tu</u> ne l’estimes pas à une grande valeur.</em></p>
-</div></div>
-<!-- C3================================================================comment -->
-</section>
-<section id="insultés" class="slide level2">
-<h2>insultés,</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-<p><em>14 <u>tu</u> nous exposes aux insultes de nos voisins, à la moquerie et aux railleries de ceux qui nous entourent.</em></p>
-<p><br> <em>15 <u>tu</u> fais de nous le sujet d’un proverbe parmi les nations, on hoche la tête sur nous parmi les peuples.</em></p>
-</div></div>
-<!-- D1================================================================comment -->
-</section>
-<section id="honteux" class="slide level2">
-<h2>honteux</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-<p><em>16 Mon humiliation est toujours devant moi, et la honte couvre mon visage</em></p>
-<p><br> <em>17 à la voix de celui qui m’insulte et me déshonore, à la vue de l’ennemi avide de vengeance.</em></p>
-</div></div>
 <!-- ================================================================comment -->
 </section>
 <section id="lagent-de-la-défaite" class="slide level2">
@@ -1345,57 +1346,9 @@ A child calling out in the night—not because they doubt the parent’s love, b
 </div><div class="column smaller" style="width:55%;">
 
 </div></div>
-<!-- B3================================================================comment -->
-</section>
-<section id="je-crois-pareillement-2" class="slide level2">
-<h2>je crois pareillement</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-
-</div></div>
-<!-- C1===============================================================comment -->
-</section>
-<section id="pourquoi1" class="slide level2">
-<h2>pourquoi1 ?</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-
-</div></div>
-<!-- C2================================================================comment -->
-</section>
-<section id="pourquoi1-1" class="slide level2">
-<h2>pourquoi1 ?</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-
-</div></div>
-<!-- C3================================================================comment -->
-</section>
-<section id="pourquoi-2" class="slide level2">
-<h2>pourquoi 2?</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-
-</div><div class="column" style="width:8%;">
-
-</div><div class="column smaller" style="width:55%;">
-
-</div></div>
 <!-- D1================================================================comment -->
 </section>
-<section id="pourquoi-2-1" class="slide level2">
+<section id="pourquoi-2" class="slide level2">
 <h2>pourquoi 2?</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
@@ -1408,8 +1361,8 @@ A child calling out in the night—not because they doubt the parent’s love, b
 </div></div>
 <!-- D2================================================================comment -->
 </section>
-<section id="une-injustice" class="slide level2">
-<h2>une injustice</h2>
+<section id="linjustice-écartée" class="slide level2">
+<h2>l’injustice écartée</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
 
@@ -1448,12 +1401,12 @@ A child calling out in the night—not because they doubt the parent’s love, b
 <p><em>Réveille-toi, ne nous repousse pas pour toujours!</em></p>
 <p><em>25 Pourquoi te caches-tu?</em></p>
 <p><em>Pourquoi oublies-tu notre misère et notre oppression</em></p>
-<p><em>26 quand nous sommes affalés dans la poussière,quand nous rampons par terre?</em></p>
+<p><em>26 quand nous sommes affalés dans la poussière, quand nous rampons par terre?</em></p>
 </div></div>
 <!-- E2================================================================comment -->
 </section>
-<section id="lultime-pétition-1" class="slide level2">
-<h2>l’ultime pétition</h2>
+<section id="lultime-raison" class="slide level2">
+<h2>l’ultime raison</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
 
