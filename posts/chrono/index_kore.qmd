@@ -1,0 +1,65 @@
+---
+title: "Epoques de Koré"
+subtitle: "Visual Timeline"
+format:
+  revealjs:
+    theme: solarized
+    css: styles.css
+---
+
+# Présence des descendants de Koré
+
+
+```{r}
+library(highcharter)
+library(dplyr)
+library(tibble)
+
+timeline_israel <- tibble::tribble(
+  ~name,                         ~label,                      ~description,                                           ~x,
+  "<span style='background-color: lightgreen;'>Séjour en Égypte & Exode</span>",       "1600–1200 av. J.-C.", "MOÏSE, Koré et Israêl sortent d'Égypte",               -1400,
+  "<span style='background-color: lightgreen;'>Monarchie unifiée</span>",              "1020–930 av. J.-C.",        "DAVID instaure les 24 classes du service lévitique",                       -975,
+  "<span style='background-color: lightgreen;'>Monarchie divisée</span>",              "930–586 av. J.-C.",         "JOSAPHAT & EZECHIAS  Israël & Juda; Élie; Isaïe; Jérémie",                -758,
+  "Exil à Babylone",                "586–538 av. J.-C.",         "Destruction du Temple; Ézéchiel; Daniel",            -562,
+  "<span style='background-color: lightgreen;'>Retour d'exil & période perse</span>",  "538–332 av. J.-C.",         "CYRUS; reconstruction du Temple; Esdras; NEHEMIE",   -435,
+  "Période hellénistique",          "332–164 av. J.-C.",         "Alexandre; Séleucides; tensions religieuses",        -248,
+  "Période hasmonéenne",            "164–63 av. J.-C.",          "MACCABEES; indépendance; Hasmonéens",                -113.5,
+  "Période romaine",                "63 av. J.-C.–70 ap. J.-C.", "Pompée; Hérode; naissance et ministère de Jésus",     3.5
+)
+
+# 2. Build the Highcharter Timeline
+highchart() %>%
+  hc_chart(type = "timeline") %>%
+  hc_title(text = "Présence des descendants de Koré") %>%
+  hc_subtitle(text = "figures fidèles du peuple de Dieu à travers les siècles !") %>%
+  hc_add_series(
+    data = timeline_israel,
+    type = "timeline",
+    hcaes(x = x, name = name, label = label, description = description),
+    dataLabels = list(
+      useHTML = TRUE,
+      allowOverlap = FALSE,
+      format = '<b>{point.name}</b><br>{point.label}'
+    )
+  ) %>%
+  hc_tooltip(
+    useHTML = TRUE,
+    headerFormat = "",
+    pointFormat = '<b>({point.x})</b><br>{point.description}'
+  ) %>%
+  hc_xAxis(
+    type = "linear"
+##    title = list(text = "Year (Negative = BCE, Positive = CE)")
+  )
+
+```
+
+::: notes
+du temps de Moise, de Samuel/David, de Josaphat, d Ezechias, de retour d exil a Babylone
+
+1. Moïse (L'Exode) :  autour de 1250 av. J.-C. au temps du règne du pharaon Ramsès II.
+​2. Le roi David : ~1010 à 970 av. J.-C.
+​3. Le roi Josaphat : ~873 à 849 av. J.-C.
+​4. Le roi Ézéchias : ~716 à 687 av. J.-C. célèbre pour ses réformes religieuses et pour avoir résiste au siège du roi assyrien Sennachérib en 701 av. J.-C.
+​5. Le retour d'exil : ~538 av. J.-C. par l edit du roi Cyrus
+:::

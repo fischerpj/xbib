@@ -1,0 +1,46 @@
+---
+title: "entendre"
+author: "String H8085"
+date: "2026-07-20"
+categories: [news]
+---
+
+This is the first post in a Quarto blog. Welcome!
+
+![écoute](/www/img/ear.jpg){fig-align="left" width="200"}
+entendre par ses oreilles avec la capacité d'entendre mieux que les statues pour concentrer son intérêt sur le langage spirituel nouveau, certes inconnu mais au sens parfaitement intelligible à l'esprit.
+
+
+### to hear, listen to, obey
+
+1. (Qal)
+<ol type="A">
+<li>to hear (**perceive by ear**)</li>
+<li>to hear of or concerning</li>
+<li> to hear (**have power to hear**)</li>
+<li>to hear **with attention or interest**, listen to</li>
+<li>to **understand (language)**</li>
+<li>to hear (of judicial cases)</li>
+<li>to listen, give heed</li>
+    to consent, agree
+    to grant request
+<li>to listen to, yield to</li>
+<li>**to obey**, be obedient</li>
+</ol>
+
+2. (Niphal)
+<ol type="A">
+<li> to be heard (of voice or sound)</li>
+<li>to be heard of</li>
+<li> to be regarded, be obeyed</li>
+</ol>
+
+3. (Piel) to cause to hear, call to hear, summon
+
+4. (Hiphil)
+<ol type="A">
+<li>to cause to hear, tell, proclaim, utter a sound</li>
+<li>to sound aloud (musical term)</li>
+<li>to make proclamation, summon</li>
+<li>to cause to be heard</li>
+</ol>

@@ -123,7 +123,7 @@ highchart() %>%
 
 
 
-```{r}
+```{r eval=FALSE}
 library(highcharter)
 library(dplyr)
 
@@ -178,6 +178,65 @@ highchart() %>%
   )
 
 
+
+```
+
+```{r}
+library(highcharter)
+library(dplyr)
+
+string <- "Période	Dates approximatives	Événements / Figures clés
+Patriarches	2000–1600 av. J.-C.	Abraham, Isaac, Jacob ; installation en Canaan ; Joseph en Égypte
+Séjour en Égypte & Exode	1600–1200 av. J.-C.	Esclavage ; Moïse ; sortie d’Égypte ; Sinaï ; conquête de Canaan (Josué)
+Juges	1200–1020 av. J.-C.	Organisation tribale 
+; Débora, Gédéon, Samson ; instabilité
+Monarchie unifiée	1020–930 av. J.-C.	Saül ; David ; Salomon ; construction du Temple
+Monarchie divisée (Israël & Juda)	930–586 av. J.-C.	Royaumes séparés ; prophètes (Élie, Isaïe, Jérémie…)
+Exil à Babylone	586–538 av. J.-C.	Destruction du Temple ; déportation ; Ézéchiel, Daniel
+Retour d’exil & période perse	538–332 av. J.-C.	Édit de Cyrus ; reconstruction du Temple ; Esdras, Néhémie
+Période hellénistique	332–164 av. J.-C.	Alexandre le Grand ; domination grecque ; tensions religieuses
+Période hasmonéenne	164–63 av. J.-C.	Révolte des Maccabées ; indépendance juive ; dynastie hasmonéenne
+Période romaine	63 av. J.-C. – 70 ap. J.-C.	Pompée ; Hérode ; naissance et ministère de Jésus ; destruction du Temple"
+
+library(tibble)
+
+timeline_israel <- tibble::tribble(
+  ~name,                         ~label,                      ~description,                                           ~x,
+  "Patriarches",                    "2000–1600 av. J.-C.",       "Abraham, Isaac, Jacob; Joseph en Égypte",            -1800,
+  "Séjour en Égypte & Exode",       "1600–1200 av. J.-C.",       "Moïse; sortie d'Égypte; Sinaï; Josué",               -1400,
+  "Juges",                          "1200–1020 av. J.-C.",       "Organisation tribale; Débora; Gédéon; Samson",       -1110,
+  "Monarchie unifiée",              "1020–930 av. J.-C.",        "Saül; David; Salomon; Temple",                       -975,
+  "Monarchie divisée",              "930–586 av. J.-C.",         "Israël & Juda; Élie; Isaïe; Jérémie",                -758,
+  "Exil à Babylone",                "586–538 av. J.-C.",         "Destruction du Temple; Ézéchiel; Daniel",            -562,
+  "Retour d'exil & période perse",  "538–332 av. J.-C.",         "Cyrus; reconstruction du Temple; Esdras; Néhémie",   -435,
+  "Période hellénistique",          "332–164 av. J.-C.",         "Alexandre; Séleucides; tensions religieuses",        -248,
+  "Période hasmonéenne",            "164–63 av. J.-C.",          "Maccabées; indépendance; Hasmonéens",                -113.5,
+  "Période romaine",                "63 av. J.-C.–70 ap. J.-C.", "Pompée; Hérode; naissance et ministère de Jésus",     3.5
+)
+
+# 2. Build the Highcharter Timeline
+highchart() %>%
+  hc_chart(type = "timeline") %>%
+  hc_title(text = "World History Timeline (-3000 to 2100)") %>%
+  hc_subtitle(text = "Interactive chronological blocks across millennia") %>%
+  hc_add_series(
+    data = timeline_israel,
+    type = "timeline",
+    hcaes(x = x, name = name, label = label, description = description),
+    dataLabels = list(
+      allowOverlap = TRUE,
+      format = '<b>{point.name}</b><br>{point.label}'
+    )
+  ) %>%
+  hc_tooltip(
+    useHTML = TRUE,
+    headerFormat = "",
+    pointFormat = '<b>{point.name} ({point.x})</b><br>{point.description}'
+  ) %>%
+  hc_xAxis(
+    type = "linear",
+    title = list(text = "Year (Negative = BCE, Positive = CE)")
+  )
 
 ```
 

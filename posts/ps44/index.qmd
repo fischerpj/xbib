@@ -16,6 +16,51 @@ editor:
 ---
 
 <!-- ================================================================comment -->
+## template
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+:::
+::::::
+::: notes
+:::
+
+<!-- ================================================================comment -->
+## lecture et progression
+:::::: columns
+::: {.column width="35%"}
+<ol type="A">
+  <li>1-4</li>
+  <li>5-9</li>
+  <li>10-17</li>
+  <li>18-23</li>
+  <li>24-27</li>
+</ol>
+
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+```{mermaid}
+flowchart TD
+   AA["<div title="1-4">AUTREFOIS, les miracles (A)</div>"]  --> BB["<div title="5-9">A PRESENT, l'urgence (B)</div>"] 
+   BB --> CC["<div title="9-17">LA DEFAITE, inexplicable (C)</div>"]
+   CC --> DD["<div title="18-23">EXPLICATIONS, divines (D)</div>"]
+   DD --> EE["<div title="24-27">LA PETITION, en fin (E)</div>"]
+```
+:::
+::::::
+::: notes
+:::
+
+
+
+<!-- ================================================================comment -->
 
 ## la défaite du chrétien priant
 
@@ -45,6 +90,7 @@ editor:
 FCF: lorsqu'à notre prière sincère, Dieu répond négativement, notre grand désarroi va-t-il éteindre notre prière et notre foi?
 :::
 
+
 <!-- ================================================================comment -->
 
 ## la grande idée
@@ -63,10 +109,10 @@ après la pause, les explications divines
 ::: {.column .smaller width="62%"}
 <!-- ![](/www/img/ressort.jpg){width="250"} -->
 
-le passage du souvenir des délivrances divines du passé et de la situation de détresse présente au plaidoyer audacieux pour le secours de Dieu s'explique
+le passage du souvenir des délivrances passées et de la situation présente de détresse au plaidoyer audacieux pour le secours de Dieu s'explique
 
-- par la souveraineté de Dieu qui nous **associe à Christ** jusqu'à l'ignominie. 
-- par l'argument de **Sa propre bonté** pour nous secourir encore
+- par la souveraineté de Dieu qui nous **associe à Christ** jusqu'à l'ignominie 
+- par l'argument de **Sa propre bonté** qui perdure pour nous secourir encore
 
 :::
 ::::::
@@ -84,7 +130,15 @@ Explain how the psalm moves from memory of God’s past deliverance to present s
 :::::: columns
 ::: {.column width="35%"}
 ![repérage difficile?](/www/img/geolocalisation.png){width="125"}
-Un **maskil** est un psaume didactique, c’est‑à‑dire un chant conçu pour instruire, enseigner.
+
+Pour les fils de Koré
+
+<ol type="1">
+  <li>PS 42-49</li>
+  <li>PS 84-89</li>
+</ol>
+
+
 :::
 
 ::: {.column width="8%"}
@@ -94,7 +148,7 @@ Un **maskil** est un psaume didactique, c’est‑à‑dire un chant conçu pour
 *44 Au chef de chœur. Des descendants de Koré, cantique.*
 
 <br><br>
-
+_Un **maskil** est un psaume didactique, c’est‑à‑dire un chant conçu pour instruire, enseigner._
 :::
 ::::::
 
@@ -105,11 +159,10 @@ Un **maskil** est un psaume didactique, c’est‑à‑dire un chant conçu pour
 
 
 <!-- ================================================================comment -->
-## généalogie de Lévi
+## généalogie de Lévi et Koré
 :::::: columns
 ::: {.column width="25%"}
-- Moïse et Koré 
-- cousins au service de Dieu.
+- Moïse et Koré, cousins au service de Dieu
 - comme Jean-Baptiste et Jésus ?
 :::
 
@@ -130,15 +183,15 @@ flowchart TD
       C --> H(Uziel)
 
       E --> I(Aaron)
-      E --> J(**MOÏSE**)
+      E --> J["<div title="9-17" style="color: red">MOISE</div>"]
       E --> K(Myriam)
 
-      F --> N(**KORE&dagger;**)
+      F --> N["<div title="9-17" style="color: red">KORE&dagger;</div>"]
       N --> O(Assir)
       N --> P(Elkana)
       N --> Q(Abiasaph)
 
-      P --> R(   ...   )
+      P --> R["<div style="color: red">? ? ?</div>"]
 
    %% --- Sous-graph Merari ---
 %%      D --> L(Machli)
@@ -180,7 +233,7 @@ du temps de Moise, de Samuel/David, de Josaphat, d Ezechias, de retour d exil a 
 :::
 
 <!-- ================================================================comment -->
-## descendants de Koré
+## une lignée exemplaire
 :::::: columns
 ::: {.column width="10%"}
 :::
@@ -198,46 +251,145 @@ Ils forment un groupe solidaire d'hommes de prière relevant le défi de l'inter
 :::
 
 <!-- ================================================================comment -->
+## A travers les siècles
+
+```{r}
+library(highcharter)
+library(dplyr)
+library(tibble)
+
+timeline_israel <- tibble::tribble(
+  ~name,                         ~label,                      ~description,                                           ~x,
+  "<span style='background-color: lightgreen;'>Séjour en Égypte, Exode</span>",       "1600–1200 av. J.-C.", " <b>MOÏSE, Koré</b> et Israêl sortent d'Égypte",               -1400,
+  "<span style='background-color: lightgreen;'>Monarchie unifiée</span>",              "1020–930 av. J.-C.",        " <b>DAVID</b> instaure les 24 classes du service lévitique",                       -975,
+  "<span style='background-color: lightgreen;'>Monarchie divisée</span>",              "930–586 av. J.-C.",         " <b>JOSAPHAT & EZECHIAS</b>  Israël & Juda; Élie; Isaïe; Jérémie",                -758,
+  "Exil à Babylone",                "586–538 av. J.-C.",         "Destruction du Temple; Ézéchiel; Daniel",            -562,
+  "<span style='background-color: lightgreen;'>Retour d'exil & période perse</span>",  "538–332 av. J.-C.",         "CYRUS; reconstruction du Temple; Esdras;  <b>NEHEMIE</b>",   -435,
+  "Période hellénistique",          "332–164 av. J.-C.",         "Alexandre; Séleucides; tensions religieuses",        -248,
+  "Période hasmonéenne",            "164–63 av. J.-C.",          " <b>MACCABEES</b>; indépendance; Hasmonéens",                -113.5,
+  "<span style='background-color: lightgreen;'>Période romaine</span>",                "63 av. J.-C.–70 ap. J.-C.", "Pompée; Hérode; naissance et ministère de <b>Jésus</b>",     3.5,
+  "Eglise Primitive",                "70 -313 ap. J.-C.", "Pères de l'Eglise",     190
+)
+
+# 2. Build the Highcharter Timeline
+highchart() %>%
+  hc_chart(type = "timeline") %>%
+  hc_title(text = "Présence des descendants de Koré") %>%
+  hc_subtitle(text = "figures fidèles du peuple de Dieu !") %>%
+  hc_add_series(
+    data = timeline_israel,
+    type = "timeline",
+    hcaes(x = x, name = name, label = label, description = description),
+    dataLabels = list(
+      useHTML = TRUE,
+      allowOverlap = FALSE,
+      format = '<b>{point.name}</b><br>{point.label}'
+    )
+  ) %>%
+  hc_tooltip(
+    useHTML = TRUE,
+    headerFormat = "",
+    pointFormat = '<b>({point.x})</b><br>{point.description}'
+  ) %>%
+  hc_xAxis(
+    type = "linear"
+##    title = list(text = "Year (Negative = BCE, Positive = CE)")
+  )
+
+```
+
+::: notes
+du temps de Moise, de Samuel/David, de Josaphat, d Ezechias, de retour d exil a Babylone
+
+1. Moïse (L'Exode) :  autour de 1250 av. J.-C. au temps du règne du pharaon Ramsès II.
+​2. Le roi David : ~1010 à 970 av. J.-C.
+​3. Le roi Josaphat : ~873 à 849 av. J.-C.
+​4. Le roi Ézéchias : ~716 à 687 av. J.-C. célèbre pour ses réformes religieuses et pour avoir résiste au siège du roi assyrien Sennachérib en 701 av. J.-C.
+​5. Le retour d'exil : ~538 av. J.-C. par l edit du roi Cyrus
+:::
+
+
+<!-- A :4================================================================comment -->
+## A:4
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+:::
+::::::
+::: notes
+:::
+
+<!-- ================================================================comment -->
 
 ## type-1: la prière d'apprentissage
 
 :::::: columns
-::: {.column width="43%"}
+::: {.column width="40%"}
 
 ![Reconnaître](/www/img/boucle_feedback.jpg){fig-align="left"
 width="175"}
 
-- Dieu écrit l'Histoire que
-- nous racontons à nos enfants
 :::
 
 ::: {.column width="3%"}
 :::
 
-::: {.column .smaller width="54%"}
-<br> *2 **O Dieu<sup>1</sup>**, ... nous avons entendu de **nos oreilles<sup>2</sup>**, **nos pères<sup>3</sup>** nous ont raconté
-tout ce que **tu as accompli<sup>4</sup>** à leur époque, par le passé.*
+::: {.column .smaller width="57%"}
+<br> *2 **O Dieu<sup>a</sup>**, ... nous avons entendu de **nos oreilles<sup>b</sup>**, **nos pères<sup>c</sup>** nous ont raconté
+tout ce que **tu as accompli<sup>d</sup>** à leur époque, par le passé.*
 
+<br>
+_la vraie prière s'adresse au **seul Dieu vivant**_
 
 :::
 ::::::
 
 ::: notes
-la vraie prière
 
-1. s'adresse au seul Dieu vivant
-2. à des oreilles pour entendre 3. le témoignage des pères
-4. et des yeux pour voir la main de Dieu dans l'histoire"
+- à des oreilles pour entendre le témoignage des pères
+- et des yeux pour voir la main de Dieu dans l'histoire
 
 - calibrons notre compréhension avec les histoires de la Bible et créons les occasions de témoignage pour raconter ce que Dieu a fait pour nous.
 
 - histoire que Dieu a écrite: Paque / Cene / Réforme, réveils;
+
 2. mon âme a soif du Dieu vivant, je tends mes mains vers Toi, du fond de la détresse, jour et nuit
 :::
 
+<!-- A2================================================================comment -->
+
+## b: Nous avons entendu ...
+
+:::::: columns
+::: {.column width="40%"}
+![](/www/img/eureka.png){fig-align="left"
+width="120"}
+
+_« Alors il leur ouvrit l’intelligence, afin qu’ils comprennent les Écritures. »_
+
+- petit Samuel
+- veuve de Sarepta
+- eunuque éthiopien
+- marchande Lydie
+
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="50%"}
+
+les descendants de Koré possédaient mieux que les statues, cette capacité d'entendre par les oreilles en concentrant leur attention sur un langage spirituel nouveau, une voix jusque là inconnue, mais dont le sens parfaitement intelligible s'impose à leur esprit jusqu'à dire **"maintenant, je comprends"**
+:::
+::::::
+
 <!-- ================================================================comment -->
 
-## où sont les pères ?
+## c: où sont les pères ?
 
 :::::: columns
 ::: {.column width="30%"}
@@ -252,31 +404,34 @@ la vraie prière
 :::
 
 ::: {.column .smaller width="60%"}
-« Lorsque ton fils te demandera un jour : Que signifient ces préceptes, ... »  Deut6:20
+_« Comment croiront‑ils en celui dont ils n’ont pas entendu parler ? Et comment entendront‑ils parler, **si personne ne l’annonce** ? »_ Rom10:14
 
 <br>
 «Nous **ne le cacherons point** à leurs enfants; nous raconterons **à la génération future les louanges de l’Éternel**, sa puissance et les merveilles qu’il a faites. » Ps78:4
 :::
 ::::::
 
-<!-- ================================================================comment -->
-
-## les interventions passées
+## d: les interventions passées
 
 :::::: columns
-::: {.column width="40%"}
+::: {.column width="52%"}
 - pour Israël, arraché à l'Egypte, transplanté comme une vigne en Canaan
-- pour l'Europe, libérée des indulgences par les réformateurs et de l'athéisme par les revivalistes
-- où sont pour nous, les miracles d'antan ?
+- pour l'Europe, libérée des indulgences par les réformateurs et de l'athéisme désséché par les _revivalistes_
+- où sont pour nous, les miracles d'antan, d'aujourd'hui et de demain? raconte les!
 
 :::
 
 ::: {.column width="8%"}
 :::
 
-::: {.column .smaller width="50%"}
+::: {.column .smaller width="40%"}
 <br> *3 De ta main tu as **chassé** des nations pour qu’ils puissent
 s’établir, tu as frappé des peuples pour qu’ils puissent **s’étendre** *
+
+<span style="font-size: 1.6rem;">
+« Personne ne peut entrer dans la maison de l’homme fort et piller ses biens, sans avoir auparavant lié cet homme fort. » Marc3:27 nous parle de Jésus qui a vaincu la Satan, le dominateur de notre coeur.
+</span>
+
 :::
 
 ::: notes
@@ -286,7 +441,7 @@ libéré de la vie insoutenable en Egypte, transplanté comme une vigne du meill
 
 <!-- ================================================================comment -->
 
-## par quelle puissance ?
+## e: par quelle puissance ?
 
 :::::: columns
 ::: {.column width="35%"}
@@ -295,7 +450,7 @@ libéré de la vie insoutenable en Egypte, transplanté comme une vigne du meill
 Le **salut** est le fruit
 
 - non pas de nos efforts
-- mais de Sa faveur imméritée
+- mais de La faveur imméritée
 - de Jésus qui pardonne les péchés
 
 :::
@@ -309,8 +464,27 @@ ce n’est **pas leur bras<sup>5</sup>** qui les a sauvés,*
 
 <br> *mais c’est ta main droite, c’est ton bras, c’est la lumière de ton
 visage, **parce que tu les aimais<sup>6</sup>**.*
+
+<span style="font-size: 1.6rem;">
+La bonté de Dieu demeure la 'cause première' qui ne dépend d'aucune autre; la seule explication de tout ce qui nous arrive, dans le respect de son indiscutable souveraineté.
+</span>
 :::
 ::::::
+
+
+<!-- B :9================================================================comment -->
+## B:9
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+:::
+::::::
+::: notes
+:::
 
 <!-- ================================================================comment -->
 
@@ -322,7 +496,7 @@ visage, **parce que tu les aimais<sup>6</sup>**.*
 
 la vraie prière
 
-- s'adresse au Dieu-Roi
+- s'adresse au Souverain
 - devient personnelle
 - détecte la détresse
 - appelle à l'aide
@@ -346,11 +520,13 @@ délivré de la vie insoutenable en Egypte, transplanté comme une vigne du meil
 
 <!-- ================================================================comment -->
 
-## où sont les ennemis ?
+## que vois-tu ?
 
 :::::: columns
 ::: {.column width="35%"}
+Fuyant devant Absalom, son fils David s"écrie:
 
+_« Éternel, que mes ennemis sont **nombreux !**  Beaucoup se lèvent contre moi. »_ Ps3:2
 :::
 
 ::: {.column width="8%"}
@@ -359,6 +535,8 @@ délivré de la vie insoutenable en Egypte, transplanté comme une vigne du meil
 ::: {.column .smaller width="55%"}
 
 <br>
+
+#### Jérémie, Amos, ...
 
 ```{ojs}
 // --- 1. REDRAW BUTTON & DATA GENERATOR ---
@@ -376,8 +554,8 @@ data = {
     'Moi': { desc: 'Développement personnel et état d\'esprit', url: 'https://example.com/moi' },
     'Persécution': { desc: 'Expériences de discrimination ou de persécution', url: 'https://example.com/persecution' },
     'Catastrophes': { desc: 'Impact des événements naturels ou accidents', url: 'https://example.com/catastrophes' },
-    'Cqrd': { desc: 'Catégorie CQRD', url: 'https://example.com/cqrd' },
-    'Spirituel': { desc: 'Vie et action spirituelles', url: 'https://example.com/spirituel' }
+    'Cqrd': { desc: 'Ce Qui Reste Pour Dieu', url: 'https://example.com/cqrd' },
+    'Spirituel': { desc: 'Vie et Batailles dans sphères invisibles', url: 'https://example.com/spirituel' }
   };
 
 const minRatio = 0.10; // 5% minimum floor per item
@@ -467,7 +645,7 @@ chart = {
     .on("mouseover", function(event, d) {
       d3.select(this).attr("fill-opacity", 1);
       tooltip.style("visibility", "visible")
-             .html(`<strong>${d.data.name}</strong><br/>${d.data.desc}<br/><em>Value: ${(d.value * 100).toFixed(1)}%</em>`);
+             .html(`<span style="font-size: 2rem;">${d.data.desc}<br/></span>`);
     })
     .on("mousemove", function(event) {
       tooltip.style("top", (event.pageY - 10) + "px")
@@ -496,6 +674,9 @@ viewof redraw = Inputs.button("Anew")
 
 ```
 
+<span style="font-size: 1.6rem;">
+une marmite bouillonante, une branche d'amandier, un fil à plomb, un panier de figues
+</span>
 :::
 ::::::
 
@@ -504,11 +685,11 @@ viewof redraw = Inputs.button("Anew")
 
 <!-- B2================================================================comment -->
 
-## la dynamique
+## le recours à la foi
 
 :::::: columns
 ::: {.column width="40%"}
-![assimilation](/www/img/A-A.jpg){fig-align="left" width="200"}
+![imitation](/www/img/A-A.jpg){fig-align="left" width="200"}
 
 Respectant la logique
 
@@ -534,11 +715,12 @@ rougir de honte ceux qui nous détestent.*
 
 <!-- B3================================================================comment -->
 
-## la certitude de la foi
+## avec certitude
 
 :::::: columns
 ::: {.column width="35%"}
 - nous anticipons la victoire de Christ
+- avant l'heure
 :::
 
 ::: {.column width="8%"}
@@ -551,20 +733,36 @@ rougir de honte ceux qui nous détestent.*
 :::
 ::::::
 
+<!-- C :17================================================================comment -->
+## C:17
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+:::
+::::::
+::: notes
+:::
+
 <!-- C1===============================================================comment -->
 
-## abandonnés,
+## Type-3: la prière déçue
 
 :::::: columns
 ::: {.column width="35%"}
-![](/www/img/roseau.png){width="150"}
+![sans raison](/www/img/roseau.png){width="150"}
+
+l'ennemi redoutable qui te paralyse
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column .smaller width="55%"}
-*– Pause.*
+**– PAUSE**
 
 <br> *10 Cependant <u>tu</u> nous as repoussés, <u>tu</u> nous as couverts de honte, <u>tu</u>
 ne sors plus avec nos armées.*
@@ -576,7 +774,7 @@ détestent se partagent nos dépouilles.*
 
 <!-- C2================================================================comment -->
 
-## vendus,
+## ... vendus,
 
 :::::: columns
 ::: {.column width="35%"}
@@ -597,13 +795,16 @@ valeur.*
 
 <!-- C3================================================================comment -->
 
-## insultés,
+## l'agent de la défaite
 
 :::::: columns
-::: {.column width="35%"}
+::: {.column width="37%"}
+![](/www/img/couronne.png){width="175"}
+
+la souveraineté incontestée de Dieu
 :::
 
-::: {.column width="8%"}
+::: {.column width="6%"}
 :::
 
 ::: {.column .smaller width="55%"}
@@ -615,9 +816,12 @@ hoche la tête sur nous parmi les peuples.*
 :::
 ::::::
 
+::: notes
+:::
+
 <!-- D1================================================================comment -->
 
-## honteux
+## la honte ne m'épargne pas
 
 :::::: columns
 ::: {.column width="35%"}
@@ -635,8 +839,8 @@ l’ennemi avide de vengeance.*
 :::
 ::::::
 
-<!-- ================================================================comment -->
-## la prière d'objection
+<!-- D :23================================================================comment -->
+## D:23
 :::::: columns
 ::: {.column width="35%"}
 :::
@@ -649,8 +853,107 @@ l’ennemi avide de vengeance.*
 ::: notes
 :::
 
-<!-- ================================================================comment -->
+<!-- D2================================================================comment -->
+
+## Type-4: la prière d'objection
+
+:::::: columns
+::: {.column width="35%"}
+![](/www/img/balance.png){width="175"}
+
+la cause du péché et de l'infidélité est écartée
+
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+*18 Tout cela nous arrive alors que nous ne t’avons pas oublié et que
+nous n’avons pas violé ton alliance.*
+
+*19 Nous n’avons pas fait marche arrière dans notre cœur, nous ne nous
+sommes pas écartés de ton sentier.*
+
+*20 Pourtant, tu nous as écrasés dans le territoire des chacals et tu
+nous as couverts de l’ombre de la mort.*
+:::
+::::::
+
+<!-- D3================================================================comment -->
+
 ## la clarification de Dieu
+
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column .smaller width="55%"}
+*21 Si nous avions oublié le nom de notre Dieu et tendu nos mains vers
+un dieu étranger,*
+
+*22 Dieu ne le saurait-il pas, lui qui connaît les secrets du cœur?*
+
+<br> *23 Mais c’est à cause de toi qu’on nous met à mort à longueur de
+journée, qu’on nous considère comme des brebis destinées à la
+boucherie.*
+:::
+::::::
+
+<!-- ================================================================comment -->
+## faisons le point
+
+:::::: columns
+::: {.column width="35%"}
+_« Que nul de vous ne souffre comme meurtrier, voleur, ou malfaiteur
+mais si quelqu’un souffre comme chrétien, qu’il n’en ait pas honte »_  1Pi4:15 
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+1. l'Eternel nous conduit à la victoire mais nos faits d'armes n'y sont pour rien, même quand ils y participent.
+2. l'Eternel conduit le justifié par la défaite mais ses échecs n'y contribuent pas.
+3. être défait pour la cause de Christ n'a rien à voir avec nos faillites, si ce n'est de donner un argument à l'accusateur
+:::
+::::::
+::: notes
+:::
+
+<!-- ================================================================comment -->
+## associé es qualité de Christ
+:::::: columns
+::: {.column .smaller width="29%"}
+<span style="font-size: 1.6rem;">
+Autrement dit un associé
+<ol>
+<li>qui agit ou existe dans la qualité que Christ lui confère</li>  
+<li>par union avec Christ</li>
+<li>dans la position ou le statut que Christ donne</li>
+</ol></span>
+
+CQFD
+:::
+
+::: {.column width="6%"}
+:::
+::: {.column .smaller width="63%"}
+<span style="font-size: 1.6rem;">
+35 Qui nous séparera de l'amour de Christ? Serait-ce la détresse, l'angoisse, la persécution, la faim, le dénuement, le danger ou l'épée? 36 De fait, il est écrit: C'est à cause de toi qu'on nous met à mort à longueur de journée, qu'on nous considère comme des brebis destinées à la boucherie. 37 Au contraire, **dans tout cela nous sommes plus que vainqueurs grâce à celui qui nous a aimés**. 38 En effet, j'ai l'assurance que ni la mort ni la vie, ni les anges ni les dominations, ni le présent ni l'avenir, ni les puissances, 39 ni la hauteur, ni la profondeur, ni aucune autre créature ne pourra nous séparer de l'amour de Dieu manifesté en Jésus-Christ notre Seigneur. Segond 21
+</span>
+:::
+::::::
+
+::: notes
+comprendre ce que comprends d'être l'associé de Christ: mort au péché; mort à soi, mort au monde, rené pour Dieu 
+:::
+
+
+<!-- E:27================================================================comment -->
+## E:27
 :::::: columns
 ::: {.column width="35%"}
 :::
@@ -662,6 +965,51 @@ l’ennemi avide de vengeance.*
 ::::::
 ::: notes
 :::
+
+
+<!-- ================================================================comment -->
+## template
+:::::: columns
+::: {.column width="35%"}
+:::
+
+::: {.column width="8%"}
+:::
+::: {.column .smaller width="55%"}
+:::
+::::::
+::: notes
+:::
+
+
+
+
+
+
+
+
+
+<!-- ================================================================comment -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- ================================================================comment -->
 ## la prière de plaidoyer
 :::::: columns
@@ -691,13 +1039,7 @@ l’ennemi avide de vengeance.*
 ::: notes
 4. descendant de Koré ils ne sont pas des gens d'armes, ni fonctionnaire, ni mercenaire mais des portiers-gardiens du temple et de ses trésors, et des chantres , des hommes du Dieu de leur vie,  guidés par la fidélité à leur seigneur, habités du souvenir des oeuvres de l'Eternel, des hommes de coeur, émotionnels, des artistes maniant la harpe, la flute, le chant et la poésie,  épris de vérité et de justice, sensibles à la soif spirituelle, interrogés par les paradoxes, insultés par ses contemporains irreligieux,  mais concernés par le sort désastreux échu à leur peuple, un groupe solidaire d'hommes de prière relevant le défi de l'intercession pour une cause apparement perdue, soucieux de transmettre à la génération suivante la véritable connaissance de Dieu, et qui s accroche à conserver toujours l' espérance du salut parce qu'ils ont reconnu l'amour indéfectible de D pour son peuple.
 
-du temps de Moise, de Samuel/David, de Josaphat, d Ezechias, de retour d exil a Babylone
 
-1. Moïse (L'Exode) :  autour de 1250 av. J.-C. au temps du règne du pharaon Ramsès II.
-​2. Le roi David : ~1010 à 970 av. J.-C.
-​3. Le roi Josaphat : ~873 à 849 av. J.-C.
-​4. Le roi Ézéchias : ~716 à 687 av. J.-C. célèbre pour ses réformes religieuses et pour avoir résiste au siège du roi assyrien Sennachérib en 701 av. J.-C.
-​5. Le retour d'exil : ~538 av. J.-C. par l edit du roi Cyrus
 :::
 
 
@@ -716,46 +1058,8 @@ du temps de Moise, de Samuel/David, de Josaphat, d Ezechias, de retour d exil a 
 
 
 
-<!-- ================================================================comment -->
-
-## 3. l'agent de la défaite
-
-:::::: columns
-::: {.column width="37%"}
-![](/www/img/couronne.png){width="175"}
-:::
-
-::: {.column width="6%"}
-:::
-
-::: {.column .smaller width="55%"}
-la souveraineté divine
-:::
-::::::
-
-::: notes
-:::
 
 
-<!-- ================================================================comment -->
-
-## 4. la protestation
-
-:::::: columns
-::: {.column width="35%"}
-![](/www/img/balance.png){width="175"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-l'injustice écartée
-:::
-::::::
-
-::: notes
-:::
 
 <!-- ================================================================comment -->
 
@@ -850,9 +1154,11 @@ flowchart TD
    B(URGENCE PRESENTE) --> C
    C --> D(L'ABERRATION EXPLIQUEE)
    C --> E(LE SEUL RECOURS)
+
    
    click A callback "hello"
 ```
+
 :::
 
 ::: {.column width="8%"}
@@ -1027,100 +1333,6 @@ Cry out boldly for His help. Psalm 44 teaches that mature faith is not
 silent, stoic, or simplistic—it remembers, wrestles, and pleads.
 :::
 
-<!-- A1================================================================comment -->
-
-## Difficile repérage
-
-:::::: columns
-::: {.column width="35%"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-
-:::
-::::::
-
-::: notes
-speaker notes here
-:::
-
-<!-- A2================================================================comment -->
-
-## Nous avons entendu ...
-
-:::::: columns
-::: {.column width="35%"}
-<br>
-
-- qui a des oreilles ?
-
-- où sont les pères ?
-
-- où vont les conversations ?
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-
-:::
-::::::
-
-<!-- A3================================================================comment -->
-
-## pourquoi ?
-
-:::::: columns
-::: {.column width="35%"}
-### Left Column (1/3)
-
-- Key point one
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-
-:::
-::::::
-
-<!-- B1================================================================comment -->
-
-## je crois pareillement
-
-:::::: columns
-::: {.column width="35%"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-
-:::
-::::::
-
-<!-- B2================================================================comment -->
-
-## je crois pareillement
-
-:::::: columns
-::: {.column width="35%"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-:::
-::::::
-
-
 <!-- D1================================================================comment -->
 
 ## pourquoi 2?
@@ -1141,51 +1353,8 @@ l’ennemi avide de vengeance.*
 :::
 ::::::
 
-<!-- D2================================================================comment -->
 
-## l'injustice écartée
 
-:::::: columns
-::: {.column width="35%"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-*18 Tout cela nous arrive alors que nous ne t’avons pas oublié et que
-nous n’avons pas violé ton alliance.*
-
-*19 Nous n’avons pas fait marche arrière dans notre cœur, nous ne nous
-sommes pas écartés de ton sentier.*
-
-*20 Pourtant, tu nous as écrasés dans le territoire des chacalset tu
-nous as couverts de l’ombre de la mort.*
-:::
-::::::
-
-<!-- D3================================================================comment -->
-
-## la cause
-
-:::::: columns
-::: {.column width="35%"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-*21 Si nous avions oublié le nom de notre Dieu et tendu nos mains vers
-un dieu étranger,*
-
-*22 Dieu ne le saurait-il pas, lui qui connaît les secrets du cœur?*
-
-<br> *23 Mais c’est à cause de toi qu’on nous met à mort à longueur de
-journée, qu’on nous considère comme des brebis destinées à la
-boucherie.*
-:::
-::::::
 
 <!-- E1================================================================comment -->
 
