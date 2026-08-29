@@ -4,6 +4,8 @@ subtitle: "une exposition du Psaume 44"
 image: "France_road_sign_A4.svg.png"
 format:
   revealjs:
+    include-after-body: pen-remote.js
+    slide-number: true
     ignore-empty-slides: true
     multiplex:
       secret: "17860396705995074245"
@@ -937,6 +939,10 @@ mais si quelqu’un souffre comme chrétien, qu’il n’en ait pas honte »_  1
 ## associé es qualité de Christ
 :::::: columns
 ::: {.column .smaller width="29%"}
+![](/www/img/croix.png){width="150"}
+
+la cause première
+
 <span style="font-size: 1.6rem;">
 Autrement dit un associé
 <ol>
@@ -946,6 +952,7 @@ Autrement dit un associé
 </ol></span>
 
 CQFD
+
 :::
 
 ::: {.column width="6%"}
@@ -963,9 +970,12 @@ comprendre ce que comprends d'être l'associé de Christ: mort au péché; mort 
 
 
 <!-- E:27================================================================comment -->
-## E:27
+## LA PETITION ultime
 :::::: columns
 ::: {.column width="35%"}
+### Section E
+
+Ps44:24-27
 :::
 
 ::: {.column width="8%"}
@@ -976,61 +986,63 @@ comprendre ce que comprends d'être l'associé de Christ: mort au péché; mort 
 ::: notes
 :::
 
+<!-- E1================================================================comment -->
 
-<!-- ================================================================comment -->
-## template
+## réveillez Dieu
+
 :::::: columns
 ::: {.column width="35%"}
+![](/www/img/reveilmatin.png){width="175"}
+
+<div style="font-size: 1.6rem;">
+qui ne sommeille, ni ne dort ! Ps 121
+</div>
 :::
 
 ::: {.column width="8%"}
 :::
+
 ::: {.column .smaller width="55%"}
+*24 Lève-toi* *Pourquoi dors-tu, Seigneur?*
+
+*Réveille-toi, ne nous repousse pas pour toujours!*
+
+*25 Pourquoi te caches-tu?*
+
+*Pourquoi oublies-tu notre misère et notre oppression*
+
+*26 quand nous sommes affalés dans la poussière, quand nous rampons par
+terre?*
 :::
 ::::::
+
 ::: notes
 :::
 
 
+<!-- E2================================================================comment -->
 
+## type-5: la prière-plaidoyer
 
-
-
-
-
-
-<!-- ================================================================comment -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ================================================================comment -->
-## la prière de plaidoyer
 :::::: columns
 ::: {.column width="35%"}
+![](/www/img/hands.webp){width="175"}
+
+<div style="font-size: 1.6rem;">
+à l'ultime argument de Sa propre bonté, Dieu ne peut qu'y être sensible parce que'Il ne donnera pas Sa gloire à un autre.
+</div>
 :::
 
 ::: {.column width="8%"}
 :::
+
 ::: {.column .smaller width="55%"}
+*27 Lève-toi pour nous secourir,*
+
+<br> *délivre-nous à cause de ta bonté!*
 :::
 ::::::
+
 ::: notes
 :::
 
@@ -1048,88 +1060,6 @@ comprendre ce que comprends d'être l'associé de Christ: mort au péché; mort 
 ::::::
 ::: notes
 4. descendant de Koré ils ne sont pas des gens d'armes, ni fonctionnaire, ni mercenaire mais des portiers-gardiens du temple et de ses trésors, et des chantres , des hommes du Dieu de leur vie,  guidés par la fidélité à leur seigneur, habités du souvenir des oeuvres de l'Eternel, des hommes de coeur, émotionnels, des artistes maniant la harpe, la flute, le chant et la poésie,  épris de vérité et de justice, sensibles à la soif spirituelle, interrogés par les paradoxes, insultés par ses contemporains irreligieux,  mais concernés par le sort désastreux échu à leur peuple, un groupe solidaire d'hommes de prière relevant le défi de l'intercession pour une cause apparement perdue, soucieux de transmettre à la génération suivante la véritable connaissance de Dieu, et qui s accroche à conserver toujours l' espérance du salut parce qu'ils ont reconnu l'amour indéfectible de D pour son peuple.
-
-
-:::
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ================================================================comment -->
-
-## 5. la cause première
-
-:::::: columns
-::: {.column width="35%"}
-![](/www/img/croix.png){width="150"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-en Christ!
-:::
-::::::
-
-::: notes
-:::
-
-<!-- ================================================================comment -->
-
-## 6. réveillez Dieu
-
-:::::: columns
-::: {.column width="35%"}
-![](/www/img/reveilmatin.png){width="175"}
-
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-qui ne dort pas!
-:::
-::::::
-
-::: notes
-:::
-
-<!-- ================================================================comment -->
-
-## 7. type-3: la prière-plaidoyer
-
-:::::: columns
-::: {.column width="35%"}
-![](/www/img/hands.webp){width="175"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-de Sa propre bonté
-:::
-::::::
-
-::: notes
 :::
 
 <!-- ================================================================comment -->
@@ -1144,39 +1074,6 @@ de Sa propre bonté
 :::
 
 ::: {.column .smaller width="55%"}
-:::
-::::::
-
-::: notes
-:::
-
-<!-- ================================================================comment -->
-
-## la grande idée
-
-:::::: columns
-::: {.column width="35%"}
-![](France_road_sign_A4.svg.png){width="100"}
-
-```{mermaid}
-flowchart TD
-   A["<div title=" en souvenir **de la fidélité divine** prouvée par l\\'histoire passée,">RAPPEL D'AUTREFOIS</div>"] --> C(CHOC DE LA DISCORDANCE)
-   B(URGENCE PRESENTE) --> C
-   C --> D(L'ABERRATION EXPLIQUEE)
-   C --> E(LE SEUL RECOURS)
-
-   
-   click A callback "hello"
-```
-
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-
-
 :::
 ::::::
 
@@ -1342,86 +1239,4 @@ Remain faithful even in confusion.
 Cry out boldly for His help. Psalm 44 teaches that mature faith is not
 silent, stoic, or simplistic—it remembers, wrestles, and pleads.
 :::
-
-<!-- D1================================================================comment -->
-
-## pourquoi 2?
-
-:::::: columns
-::: {.column width="35%"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-*16 Mon humiliation est toujours devant moi, et la honte couvre mon
-visage*
-
-<br> *17 à la voix de celui qui m’insulte et me déshonore, à la vue de
-l’ennemi avide de vengeance.*
-:::
-::::::
-
-
-
-
-<!-- E1================================================================comment -->
-
-## l'ultime pétition
-
-:::::: columns
-::: {.column width="35%"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-*24 Lève-toi* *Pourquoi dors-tu, Seigneur?*
-
-*Réveille-toi, ne nous repousse pas pour toujours!*
-
-*25 Pourquoi te caches-tu?*
-
-*Pourquoi oublies-tu notre misère et notre oppression*
-
-*26 quand nous sommes affalés dans la poussière, quand nous rampons par
-terre?*
-:::
-::::::
-
-<!-- E2================================================================comment -->
-
-## l'ultime raison
-
-:::::: columns
-::: {.column width="35%"}
-:::
-
-::: {.column width="8%"}
-:::
-
-::: {.column .smaller width="55%"}
-*27 Lève-toi pour nous secourir,*
-
-<br> *délivre-nous à cause de ta bonté!*
-:::
-::::::
-
-<!-- ================================================================comment -->
-<!-- ## template -->
-:::::: columns
-::: {.column width="35%"}
-some content
-:::
-
-::: {.column width="8%"}
-:::
-::: {.column .smaller width="55%"}
-:::
-::::::
-::: notes
-:::
-
 
