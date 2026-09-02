@@ -51,6 +51,9 @@ plot_ly() %>%
   )
 
 
+
+```
+```{r}
 # Updated labels
 x_desc <- c(
   "fièvre",
