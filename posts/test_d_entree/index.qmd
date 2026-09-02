@@ -30,7 +30,10 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
     });
 </script>
 
-### notes pertinentes
+
+**Soyez donc prudents comme les serpents, et simples comme les colombes.** Mat 10:16; voici le conseil de notre Maître. Ne le suivrions-nous pas ?
+
+### les notes pertinentes
 
 Les quatre questions clés qu'il faut poser à ceux qui veulent s'allier à nous se résument ainsi:
 
@@ -49,6 +52,12 @@ l'étude de cas des Gabaonites, qui est donnée pour notre enseignement, permet 
 - il fallait bien s'attendre à ce que les membres murmurent de cette mauvaise décision de la direction  v18
 - mais désormais, ils sont intouchables ! v19
 - trop tard aussi, l'amer regret: pourquoi nous avez vous trompés? v22
+
+### la marche à suivre
+
+1. Poser absolûment les quatre questions pour obtenir les réponses. En celà, il n'y a aucun procès d'intention, c'est la prudence qui doit s'imposer, le dialogue explicite doit être ouvert.
+2. Tirer les conséquences des réponses et de leur vérification.
+3. Prier avec tous les frères et soeurs concernées par la décision des responsables.
 
 ### le cas historique des Gabaonites
 
