@@ -1,0 +1,155 @@
+---
+title: "Multiplied"
+date: "2026-07-20"
+categories: [news]
+---
+
+```{r echo=FALSE, message=FALSE}
+library(plotly)
+
+# Data
+x_vals <- seq(0, 5, length.out = 400)
+y_vals <- exp(x_vals)
+df <- data.frame(x = x_vals, y = y_vals)
+
+# Label positions
+x_points <- c(0, 1, 2, 3, 4, 5)
+y_points <- exp(x_points)
+y_points[length(y_points)] <- y_points[length(y_points)-1]*0.8
+
+# Your data
+y <- c(1.000000, 2.718282, 7.389056, 20.085537, 54.598150, 43.678520)
+x <- 0:5
+
+# Fit a smooth curve (loess)
+lo <- loess(y_points ~ x_points)
+x_smooth <- seq(min(x_points), max(x_points), length.out = 400)
+y_smooth <- predict(lo, x_smooth)
+
+# Plotly interactive plot
+plot_ly() %>%
+  add_trace(
+    x = x_smooth,
+    y = y_smooth,
+    type = "scatter",
+    mode = "lines",
+    line = list(width = 4, color = "#1B4F72"),
+    name = "Smooth fit"
+  ) %>%
+  add_trace(
+    x = x,
+    y = y,
+    type = "scatter",
+    mode = "markers",
+    marker = list(size = 10, color = "#2A6F9E"),
+    name = "Data points"
+  ) %>%
+  layout(
+    title = "Curve fit to provided values",
+    xaxis = list(title = "x"),
+    yaxis = list(title = "y")
+  )
+
+
+# Updated labels
+x_desc <- c(
+  "fièvre",
+  "pas de fruits",
+  "petit reste",
+  "guerre",
+  "exil",
+  "repentance"
+)
+
+# Hover text boxes (can be different or richer)
+hover_desc <- c(
+  "Symptôme initial : fièvre",
+  "Absence de fruits, ciel fermé",
+  "Un petit reste subsiste",
+  "Conflits, guerre",
+  "Exil final",
+  "Sabbat forcé"
+)
+
+# Curve segments (uniform thickness)
+solid_part      <- subset(df, x <= 3)
+intermittent_1  <- subset(df, x > 3 & x <= 3.5)
+intermittent_2  <- subset(df, x > 3.5)
+
+# Build plot
+p <- plot_ly() %>%
+  
+  # Solid curve (uniform thickness)
+  add_lines(
+    data = solid_part,
+    x = ~x, y = ~y,
+    line = list(width = 2, color = "#2A6F9E"),
+    name = "solid"
+  ) %>%
+  
+  # Intermittent dashed
+  add_lines(
+    data = intermittent_1,
+    x = ~x, y = ~y,
+    line = list(width = 4, color = "#2A6F9E", dash = "dash"),
+    name = "dash"
+  ) %>%
+  
+  # Intermittent dotted
+  add_lines(
+    data = intermittent_2,
+    x = ~x, y = ~y,
+    line = list(width = 4, color = "#2A6F9E", dash = "dot"),
+    name = "dot"
+  )  %>%
+  
+# Invisible points carrying hover text
+  add_markers(
+    x = x_points,
+    y = y_points,
+    text = hover_desc,
+    hoverinfo = "text",
+    marker = list(size = 20, opacity = 0),   # invisible
+    showlegend = FALSE
+  ) %>%
+  
+# Layout with integer x ticks and y ticks at multiples of 20
+  layout(
+  title = "Loi des malédictions divines",
+  xaxis = list(
+    title = "degré de désobéissance",
+    tickmode = "array",
+    tickvals = c(0, 1, 2, 3, 4, 5)
+  ),
+  yaxis = list(
+    title = "niveau de sanction",
+    range = c(0, 70),
+    tickmode = "array",
+    tickvals = seq(0, 60, by = 20)
+  ),
+  showlegend = FALSE
+)
+
+
+# Add labels at (x, exp(x))
+for (i in seq_along(x_points)) {
+  p <- p %>% add_annotations(
+    x = x_points[i],
+    y = y_points[i],
+    text = x_desc[i],
+    showarrow = FALSE,
+    align = "center",
+    xanchor = "center",
+    yanchor = "bottom",
+    bgcolor = "white",
+    bordercolor = "#2A6F9E",
+    borderwidth = 2,
+    borderpad = 4,
+    font = list(size = 14)
+  )
+}
+
+p
+
+```
+

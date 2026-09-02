@@ -1755,13 +1755,12 @@ A child calling out in the night—not because they doubt the parent’s love, b
       });
     </script>
     document.addEventListener("pointerdown", event =&gt; {
-      // Pen button pressed
       if (event.pointerType === "pen") {
-        // Button 1 → next slide
+        // Primary pen button (often "2")
         if (event.buttons === 2) {
           Reveal.next();
         }
-        // Button 2 → previous slide
+        // Secondary pen button (often "4")
         if (event.buttons === 4) {
           Reveal.prev();
         }
