@@ -31,9 +31,9 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 </script>
 
 
-**Soyez donc prudents comme les serpents, et simples comme les colombes.** Mat 10:16; voici le conseil de notre Maître. Ne le suivrions-nous pas ?
+**Soyez donc prudents comme les serpents, et simples comme les colombes.** Mat 10:16; ne suivrions-nous pas le conseil de notre Seigneur et Maître?
 
-### les notes pertinentes
+### l'observation textuelle pertinente
 
 Les quatre questions clés qu'il faut poser à ceux qui veulent s'allier à nous se résument ainsi:
 
@@ -49,15 +49,16 @@ l'étude de cas des Gabaonites, qui est donnée pour notre enseignement, permet 
 - ils mentaient à dessein v12-13
 - la triple erreur de la précipitation consiste: **à accepter leurs provisions dérisoires, ne pas consulter l'Eternel et s'engager inconsidérement** v14
 - hélas, il est juste un peu trop tard quand la vérité éclate, trois jours après v16
-- il fallait bien s'attendre à ce que les membres murmurent de cette mauvaise décision de la direction  v18
+- il fallait bien s'attendre à ce que les membres murmurent de cette mauvaise décision des chefs  v18
 - mais désormais, ils sont intouchables ! v19
 - trop tard aussi, l'amer regret: pourquoi nous avez vous trompés? v22
 
 ### la marche à suivre
 
+0. Comme un seul témoin n'est jamais suffisant et que la sagesse est dans le grand nombre de conseillers, il serait judicieux de prendre l'avis des trois pasteurs présents.
 1. Poser absolûment les quatre questions pour obtenir les réponses. En celà, il n'y a aucun procès d'intention, c'est la prudence qui doit s'imposer, le dialogue explicite doit être ouvert.
 2. Tirer les conséquences des réponses et de leur vérification.
-3. Prier avec tous les frères et soeurs concernées par la décision des responsables.
+3. Prier avec tous les frères et soeurs concernés par la décision des responsables.
 
 ### le cas historique des Gabaonites
 
