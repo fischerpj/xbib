@@ -1,0 +1,48 @@
+---
+title: "CodeMirror Editor"
+author: "Your Name"
+date: "2026-09-04"
+format: html
+---
+
+## Interactive Editor
+
+```{=html}
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+    }
+    /* Style the editor container */
+    #editor-container {
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      overflow: hidden;
+      max-width: 600px;
+    }
+    /* Give the CM editor a default height */
+    .cm-editor {
+      height: 300px;
+    }
+  </style>
+
+
+  <h2>CodeMirror 6 Live Demo</h2>
+  <div id="editor-container"></div>
+
+  <!-- Load CodeMirror 6 natively via ESM CDN -->
+  <script type="module">
+    import { EditorView, basicSetup } from "https://esm.sh/codemirror";
+    import { javascript } from "https://esm.sh/@codemirror/lang-javascript";
+
+    const view = new EditorView({
+      doc: "// You are running CodeMirror 6 live!\nfunction test() {\n  return true;\n}",
+      extensions: [
+        basicSetup,
+        javascript()
+      ],
+      parent: document.querySelector("#editor-container")
+    });
+  </script>
+
+```

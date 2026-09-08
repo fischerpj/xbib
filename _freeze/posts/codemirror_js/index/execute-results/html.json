@@ -1,0 +1,15 @@
+{
+  "hash": "4ef63b18bb4afd69b202aa8d5251d60e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"WASM CodeMirror Markdown Editor\"\nauthor: \"Your Name\"\ndate: \"2026-09-04\"\nengine: knitr\nformat: html\n---\n\n\n\n## Interactive CodeMirror Editor\n\n<div id=\"editor-target\" style=\"border: 1px solid #cbd5e1; border-radius: 6px; margin: 10px 0;\"></div>\n<div style=\"margin-bottom: 1rem;\">\n  <button id=\"get-btn\" style=\"padding: 6px 12px; cursor: pointer; margin-right: 6px;\">Get Content</button>\n  <button id=\"set-btn\" style=\"padding: 6px 12px; cursor: pointer;\">Set Content</button>\n</div>\n\n<script type=\"module\">\n  import { basicSetup } from \"https://esm.sh/codemirror@6.0.1\";\n  import { EditorView } from \"https://esm.sh/@codemirror/view@6.28.0\";\n\n  const view = new EditorView({\n    doc: \"Start document - native Quarto HTML block.\",\n    parent: document.querySelector(\"#editor-target\"),\n    extensions: [\n      basicSetup,\n      EditorView.updateListener.of(update => {\n        if (update.docChanged) {\n          console.log(\"Document updated dynamically.\");\n        }\n      })\n    ]\n  });\n\n  document.querySelector(\"#get-btn\").addEventListener(\"click\", () => {\n    alert(\"Current Text:\\n\\n\" + view.state.doc.toString());\n  });\n\n  document.querySelector(\"#set-btn\").addEventListener(\"click\", () => {\n    view.dispatch({\n      changes: {\n        from: 0,\n        to: view.state.doc.length,\n        insert: \"# Programmatic Update\\n\\nContent replaced via view.dispatch().\"\n      }\n    });\n  });\n</script>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,142 @@
+---
+title: "CodeMirror Markdown"
+subtitle: "with autosave"
+date: "2026-09-04"
+format: html
+---
+
+```{=html}
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 2rem;
+  }
+  #editor-container {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 600px;
+  }
+  .cm-editor {
+    height: 300px;
+  }
+  /* Styles for transformed inline elements */
+  .cm-rendered-bold {
+    font-weight: bold;
+    color: #0f172a;
+  }
+  .cm-rendered-italic {
+    font-style: italic;
+    color: #334155;
+  }
+  .cm-rendered-heading {
+    font-size: 1.35em;
+    font-weight: bold;
+    color: #2563eb;
+  }
+</style>
+
+<h2>Live Transformed Markdown (With Auto-Save)</h2>
+<div id="editor-container"></div>
+
+<!-- Load CodeMirror 6 natively via ESM CDN -->
+<script type="module">
+  import { EditorView, basicSetup } from "https://esm.sh/codemirror";
+  import { markdown } from "https://esm.sh/@codemirror/lang-markdown";
+  import { ViewPlugin, MatchDecorator, Decoration } from "https://esm.sh/@codemirror/view";
+
+  const STORAGE_KEY = "cm6_markdown_content";
+  const SAVE_DELAY_MS = 500;
+  const defaultDoc = "# Live Formatting\n\nTry editing **bold text**, *italic text*, or # Headings!\n\nWhen your cursor is on a formatted word, the raw syntax appears. Move away, and it transforms automatically.";
+
+  const savedDoc = localStorage.getItem(STORAGE_KEY) ?? defaultDoc;
+
+  // 1. Create decorators for transformed syntax matching
+  const boldDecorator = new MatchDecorator({
+    regexp: /\*\*([^*]+)\*\*/g,
+    decoration: (match) =>
+      Decoration.replace({
+        widget: new (class {
+          toDOM() {
+            const span = document.createElement("span");
+            span.className = "cm-rendered-bold";
+            span.textContent = match[1];
+            return span;
+          }
+        })()
+      })
+  });
+
+  const italicDecorator = new MatchDecorator({
+    regexp: /(?<!\*)\*([^*]+)\*(?!\*)/g,
+    decoration: (match) =>
+      Decoration.replace({
+        widget: new (class {
+          toDOM() {
+            const span = document.createElement("span");
+            span.className = "cm-rendered-italic";
+            span.textContent = match[1];
+            return span;
+          }
+        })()
+      })
+  });
+
+  // 2. Build ViewPlugin that skips transformations on the active line
+  const liveTransformPlugin = ViewPlugin.fromClass(
+    class {
+      constructor(view) {
+        this.decorations = this.getDecorations(view);
+      }
+
+      update(update) {
+        if (update.docChanged || update.selectionSet || update.viewportChanged) {
+          this.decorations = this.getDecorations(update.view);
+        }
+      }
+
+      getDecorations(view) {
+        const selection = view.state.selection.main;
+        const activeLine = view.state.doc.lineAt(selection.head).number;
+
+        // Collect decorations across visible viewport ranges
+        let bDeco = boldDecorator.createDeco(view);
+        let iDeco = italicDecorator.createDeco(view);
+
+        // Filter out decorations on the line currently being edited
+        const activeRange = view.state.doc.line(activeLine);
+        
+        return bDeco.update({
+          filter: (from, to) => to < activeRange.from || from > activeRange.to
+        });
+      }
+    },
+    {
+      decorations: (v) => v.decorations
+    }
+  );
+
+  // 3. Debounced Auto-Save
+  let saveTimeout;
+  const debouncedAutoSave = EditorView.updateListener.of((update) => {
+    if (update.docChanged) {
+      clearTimeout(saveTimeout);
+      saveTimeout = setTimeout(() => {
+        localStorage.setItem(STORAGE_KEY, update.state.doc.toString());
+      }, SAVE_DELAY_MS);
+    }
+  });
+
+  // 4. Initialize CodeMirror
+  const view = new EditorView({
+    doc: savedDoc,
+    extensions: [
+      basicSetup,
+      markdown(),
+      liveTransformPlugin,
+      debouncedAutoSave
+    ],
+    parent: document.querySelector("#editor-container")
+  });
+</script>
+```

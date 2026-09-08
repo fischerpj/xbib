@@ -1,0 +1,15 @@
+{
+  "hash": "787785f4c462e1b01e80cffb1c697609",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Interactive Pyodide in RStudio Quarto\"\nengine: knitr\nformat: live-html\nfilters:\n  - live\n---\n\n\n\n<!-- {{< include ./_extensions/r-wasm/live/_knitr.qmd >}} -->\n\n# Running Python via Pyodide in RStudio\n\nWrite or execute Python code directly in the browser using an interactive Pyodide code block:\n\n\n\n::: {.cell}\n\n```{.pyodide .cell-code}\nimport js\n\nmessage = \"Hello, World from Pyodide managed via RStudio!\"\nprint(message)\n\n```\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

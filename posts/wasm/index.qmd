@@ -1,0 +1,21 @@
+---
+title: "Interactive Pyodide in RStudio Quarto"
+engine: knitr
+format: live-html
+filters:
+  - live
+---
+
+<!-- {{< include ./_extensions/r-wasm/live/_knitr.qmd >}} -->
+
+# Running Python via Pyodide in RStudio
+
+Write or execute Python code directly in the browser using an interactive Pyodide code block:
+
+```{pyodide}
+import js
+
+message = "Hello, World from Pyodide managed via RStudio!"
+print(message)
+
+```

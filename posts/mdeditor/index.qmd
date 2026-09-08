@@ -1,0 +1,44 @@
+---
+title: "JS CodeMirror Editor"
+author: "PF"
+date: "2026-09-04"
+engine: knitr
+format: html
+---
+
+   <style>
+      #editor {
+        border: 1px solid #ccc;
+        height: 300px;
+      }
+    </style>
+    
+<div id="editor">palceholder</div>
+
+```{=html}
+
+
+ 
+
+    <script type="module">
+      window.addEventListener("DOMContentLoaded", async () => {
+        const [{ EditorView, basicSetup }, { EditorState }, { javascript }] =
+          await Promise.all([
+            import("https://esm.sh/@codemirror/basic-setup"),
+            import("https://esm.sh/@codemirror/state"),
+            import("https://esm.sh/@codemirror/lang-javascript")
+          ]);
+
+        new EditorView({
+          state: EditorState.create({
+            doc: "Type here…",
+            extensions: [basicSetup, javascript()]
+          }),
+          parent: document.getElementById("editor")
+        });
+      });
+    </script>
+
+
+```
+

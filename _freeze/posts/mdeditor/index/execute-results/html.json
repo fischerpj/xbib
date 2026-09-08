@@ -1,0 +1,15 @@
+{
+  "hash": "e9f320bf8b35155692c445629545dcfd",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"JS CodeMirror Editor\"\nauthor: \"PF\"\ndate: \"2026-09-04\"\nengine: knitr\nformat: html\n---\n\n\n\n   <style>\n      #editor {\n        border: 1px solid #ccc;\n        height: 300px;\n      }\n    </style>\n    \n<div id=\"editor\">palceholder</div>\n\n\n\n```{=html}\n\n\n \n\n    <script>\n      window.addEventListener(\"DOMContentLoaded\", async () => {\n        const [{ EditorView, basicSetup }, { EditorState }, { javascript }] =\n          await Promise.all([\n            import(\"https://esm.sh/@codemirror/basic-setup\"),\n            import(\"https://esm.sh/@codemirror/state\"),\n            import(\"https://esm.sh/@codemirror/lang-javascript\")\n          ]);\n\n        new EditorView({\n          state: EditorState.create({\n            doc: \"Type here…\",\n            extensions: [basicSetup, javascript()]\n          }),\n          parent: document.getElementById(\"editor\")\n        });\n      });\n    </script>\n\n\n```\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
