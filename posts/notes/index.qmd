@@ -1,0 +1,64 @@
+---
+title: "bibNote"
+date: "2026-09-08"
+format: html
+---
+
+```{=html}
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 2rem;
+  }
+  /* Style the editor container */
+  #editor-container {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 600px;
+  }
+  /* Give the CM editor a default height */
+  .cm-editor {
+    height: 300px;
+  }
+</style>
+
+<div id="editor-container"></div>
+
+<!-- Load CodeMirror 6 natively via ESM CDN -->
+<script type="module">
+  import { EditorView, basicSetup } from "https://esm.sh/codemirror";
+  import { markdown } from "https://esm.sh/@codemirror/lang-markdown";
+
+  const STORAGE_KEY = "cm6_markdown_bibnote";
+  const SAVE_DELAY_MS = 500; // Delay before writing to storage
+  const defaultDoc = "#BIBNote\n";
+
+  // Load saved document from localStorage or fallback to default
+  const savedDoc = localStorage.getItem(STORAGE_KEY) ?? defaultDoc;
+
+  // Debounced auto-save logic
+  let saveTimeout;
+
+  const debouncedAutoSave = EditorView.updateListener.of((update) => {
+    if (update.docChanged) {
+      clearTimeout(saveTimeout);
+      saveTimeout = setTimeout(() => {
+        const docString = update.state.doc.toString();
+        localStorage.setItem(STORAGE_KEY, docString);
+      }, SAVE_DELAY_MS);
+    }
+  });
+
+  // Initialize CodeMirror
+  const view = new EditorView({
+    doc: savedDoc,
+    extensions: [
+      basicSetup,
+      markdown(),
+      debouncedAutoSave
+    ],
+    parent: document.querySelector("#editor-container")
+  });
+</script>
+```

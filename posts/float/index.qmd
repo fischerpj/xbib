@@ -1,10 +1,10 @@
 ---
-title: "Floating Callout Hover"
-subtitle: "Quarto RevealJS Presentation"
+title: "RevealJS Hovering"
 format:
   revealjs:
     theme: solarized
     css: styles.css
+category: "techno"
 ---
 
 # Floating Callout on Hover

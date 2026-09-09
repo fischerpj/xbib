@@ -1,11 +1,11 @@
 ---
-title: "CodeMirror Editor"
-author: "Your Name"
+title: "CodeMirror JS-Editor"
 date: "2026-09-04"
 format: html
+category: techno
 ---
 
-## Interactive Editor
+## Interactive JS Editor
 
 ```{=html}
   <style>
