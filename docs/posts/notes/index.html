@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-09-08">
 
 <title>bibNote – xbib</title>
 <style>
@@ -122,12 +121,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta">
 
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">September 8, 2026</p>
-      </div>
-    </div>
     
       
     </div>
@@ -195,7 +188,8 @@ ul.task-list li input[type="checkbox"] {
     extensions: [
       basicSetup,
       markdown(),
-      debouncedAutoSave
+      debouncedAutoSave,
+      EditorView.lineWrapping
     ],
     parent: document.querySelector("#editor-container")
   });

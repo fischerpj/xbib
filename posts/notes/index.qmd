@@ -1,6 +1,5 @@
 ---
 title: "bibNote"
-date: "2026-09-08"
 format: html
 ---
 
@@ -56,7 +55,8 @@ format: html
     extensions: [
       basicSetup,
       markdown(),
-      debouncedAutoSave
+      debouncedAutoSave,
+      EditorView.lineWrapping
     ],
     parent: document.querySelector("#editor-container")
   });
