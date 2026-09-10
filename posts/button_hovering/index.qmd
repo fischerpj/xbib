@@ -1,5 +1,5 @@
 ---
-title: "RevealJS Hovering"
+title: "RevealJS Button Hovering"
 format:
   revealjs:
     theme: solarized

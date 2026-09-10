@@ -1,13 +1,11 @@
 ---
-title: "entendre"
-author: "String H8085"
+title: "entendre H8085"
+author: "String "
 date: "2026-07-20"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
-
-![écoute](/www/img/ear.jpg){fig-align="left" width="200"}
+![écoute](/www/img/ear.jpg){fig-align="left" width="150"}
 entendre par ses oreilles avec la capacité d'entendre mieux que les statues pour concentrer son intérêt sur le langage spirituel nouveau, certes inconnu mais au sens parfaitement intelligible à l'esprit.
 
 

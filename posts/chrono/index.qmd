@@ -1,6 +1,6 @@
 ---
-title: "Chronologie"
-subtitle: "Visual Timeline"
+title: "Sample Chronologie"
+subtitle: "Highcharter Timeline"
 format:
   revealjs:
     theme: solarized

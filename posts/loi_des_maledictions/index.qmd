@@ -4,6 +4,8 @@ date: "2026-07-20"
 categories: [bib]
 ---
 
+Selon Lévitique chapter 26
+
 ```{r echo=FALSE, message=FALSE}
 library(plotly)
 
