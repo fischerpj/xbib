@@ -1,12 +1,17 @@
 ---
-title: "Welcome To My Blog"
+title: "ecmwf"
 author: "Tristan O'Malley"
 date: "2026-07-20"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+```{=html}
+<iframe 
+    src="https://wetterzentrale.de/en/panels.php?model=ecm&var=1&map=1&lid=OP" 
+    width="100%" 
+    height="700px" 
+    style="border:none;" 
+    title="ECMWF 500hPa and T850 Chart">
+</iframe>
+```
 
-![](thumbnail.jpg)
-
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.

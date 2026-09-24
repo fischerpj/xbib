@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2026-07-20">
 
-<title>Welcome To My Blog – xbib</title>
+<title>random2 – xbib</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -68,6 +100,17 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#3367D6">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js');
+    });
+  }
+</script>
 
 
 <link rel="stylesheet" href="../../styles/styles.css">
@@ -115,29 +158,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-              </div>
-                  </div>
+      <h1 class="title">random2</h1>
+                      </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
-            </div>
-    </div>
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">July 20, 2026</p>
-      </div>
-    </div>
     
       
     </div>
@@ -154,13 +182,89 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<section id="welcome-to-my-pwa" class="level2">
+<h2 class="anchored" data-anchor-id="welcome-to-my-pwa">Welcome to My PWA</h2>
+<p>This Quarto document works offline and can be installed to your home screen or desktop.</p>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="25" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 24;"><span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>viewof n <span class="op">=</span> Inputs<span class="op">.</span><span class="at">select</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>            (d3<span class="op">.</span><span class="fu">range</span>(<span class="dv">0</span><span class="op">,</span> <span class="dv">21</span><span class="op">,</span> <span class="dv">5</span>)<span class="op">,</span> </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>              {<span class="dt">label</span><span class="op">:</span> <span class="st">"Length:"</span><span class="op">,</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>              <span class="dt">value</span><span class="op">:</span> <span class="dv">5</span>}</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>            )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="38" data-source-offset="-164"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 37;"><span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getStrictUniformFloat</span>() {</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> buffer <span class="op">=</span> <span class="kw">new</span> <span class="bu">Uint32Array</span>(<span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  crypto<span class="op">.</span><span class="fu">getRandomValues</span>(buffer)<span class="op">;</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Extract 53 random bits (53-bit mantissa precision for JS numbers)</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> high <span class="op">=</span> buffer[<span class="dv">0</span>] <span class="op">&amp;</span> <span class="bn">0x1FFFFF</span><span class="op">;</span> <span class="co">// 21 bits</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> low <span class="op">=</span> buffer[<span class="dv">1</span>]<span class="op">;</span>             <span class="co">// 32 bits</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> combined53BitInt <span class="op">=</span> (high <span class="op">*</span> <span class="bn">0x100000000</span>) <span class="op">+</span> low<span class="op">;</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Divide by 2^53 (9007199254740992)</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> combined53BitInt <span class="op">/</span> <span class="dv">9007199254740992</span><span class="op">;</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>side <span class="op">=</span> {</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> iteration <span class="op">=</span> <span class="op">!</span>n <span class="op">?</span> <span class="dv">1</span> <span class="op">:</span> n<span class="op">;</span> </span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(iteration)<span class="op">;</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> randomNumbers <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> iteration<span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    randomNumbers<span class="op">.</span><span class="fu">push</span>(<span class="bu">Number</span>((<span class="fu">getStrictUniformFloat</span>()<span class="op">*</span><span class="dv">150</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)))<span class="op">;</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(randomNumbers)<span class="op">;</span></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> randomNumbers</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>side</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBuID0gSW5wdXRzLnNlbGVjdFxuICAgICAgICAgICAgKGQzLnJhbmdlKDAsIDIxLCA1KSwgXG4gICAgICAgICAgICAgIHtsYWJlbDogXCJMZW5ndGg6XCIsXG4gICAgICAgICAgICAgIHZhbHVlOiA1fVxuICAgICAgICAgICAgKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLyoqXG4gKiBTdHJpY3QgVW5pZm9ybSBGbG9hdCBpbiBbMCwgMSkgdXNpbmcgNTMgYml0cyBvZiBjcnlwdG9ncmFwaGljYWxseSBwdXJlIGVudHJvcHkuXG4gKiBNYXRjaGVzIElFRUUtNzU0IGRvdWJsZSBwcmVjaXNpb24gbGltaXQgd2l0aG91dCB1bmlmb3JtIGRlbnNpdHkgbG9zcy5cbiAqL1xuZnVuY3Rpb24gZ2V0U3RyaWN0VW5pZm9ybUZsb2F0KCkge1xuICBjb25zdCBidWZmZXIgPSBuZXcgVWludDMyQXJyYXkoMik7XG4gIGNyeXB0by5nZXRSYW5kb21WYWx1ZXMoYnVmZmVyKTtcblxuICAvLyBFeHRyYWN0IDUzIHJhbmRvbSBiaXRzICg1My1iaXQgbWFudGlzc2EgcHJlY2lzaW9uIGZvciBKUyBudW1iZXJzKVxuICBjb25zdCBoaWdoID0gYnVmZmVyWzBdICYgMHgxRkZGRkY7IC8vIDIxIGJpdHNcbiAgY29uc3QgbG93ID0gYnVmZmVyWzFdOyAgICAgICAgICAgICAvLyAzMiBiaXRzXG5cbiAgY29uc3QgY29tYmluZWQ1M0JpdEludCA9IChoaWdoICogMHgxMDAwMDAwMDApICsgbG93O1xuXG4gIC8vIERpdmlkZSBieSAyXjUzICg5MDA3MTk5MjU0NzQwOTkyKVxuICByZXR1cm4gY29tYmluZWQ1M0JpdEludCAvIDkwMDcxOTkyNTQ3NDA5OTI7XG59XG5cbnNpZGUgPSB7XG4gIGNvbnN0IGl0ZXJhdGlvbiA9ICFuID8gMSA6IG47IFxuICBjb25zb2xlLmxvZyhpdGVyYXRpb24pO1xuICBcbiAgbGV0IHJhbmRvbU51bWJlcnMgPSBbXTtcblxuICBmb3IgKGxldCBpID0gMDsgaSA8IGl0ZXJhdGlvbjsgaSsrKSB7XG4gICAgcmFuZG9tTnVtYmVycy5wdXNoKE51bWJlcigoZ2V0U3RyaWN0VW5pZm9ybUZsb2F0KCkqMTUwKS50b0ZpeGVkKDIpKSk7XG4gIH1cblxuICBjb25zb2xlLmxvZyhyYW5kb21OdW1iZXJzKTtcbiAgcmV0dXJuIHJhbmRvbU51bWJlcnNcbn1cblxuc2lkZVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCduJykifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../posts/random2";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "../..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
