@@ -13,21 +13,22 @@ format:
             });
           }
         </script>
-image: dice.jpg
+image: mountain-512.png
 execute:
   echo: false
 ---
 
-## Welcome to My PWA
-
-This Quarto document works offline and can be installed to your home screen or desktop.
+> Return a Random Series
 
 ```{ojs}
+viewof recalc = Inputs.button("Get")
+
 viewof n = Inputs.select
             (d3.range(0, 21, 5), 
               {label: "Length:",
               value: 5}
             )
+            
 ```
 
 ```{ojs}
@@ -50,17 +51,20 @@ function getStrictUniformFloat() {
 }
 
 side = {
+
+  recalc;
+  
   const iteration = !n ? 1 : n; 
   console.log(iteration);
   
   let randomNumbers = [];
 
   for (let i = 0; i < iteration; i++) {
-    randomNumbers.push(Number((getStrictUniformFloat()*150).toFixed(2)));
+    randomNumbers.push(Number((getStrictUniformFloat()*150).toFixed(0)));
   }
 
   console.log(randomNumbers);
-  return randomNumbers
+  return JSON.stringify(randomNumbers, null, 2);
 }
 
 side

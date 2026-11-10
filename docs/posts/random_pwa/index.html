@@ -182,51 +182,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="welcome-to-my-pwa" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-to-my-pwa">Welcome to My PWA</h2>
-<p>This Quarto document works offline and can be installed to your home screen or desktop.</p>
+<blockquote class="blockquote">
+<p>Return a Random Series</p>
+</blockquote>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="25" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 24;"><span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>viewof n <span class="op">=</span> Inputs<span class="op">.</span><span class="at">select</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>            (d3<span class="op">.</span><span class="fu">range</span>(<span class="dv">0</span><span class="op">,</span> <span class="dv">21</span><span class="op">,</span> <span class="dv">5</span>)<span class="op">,</span> </span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>              {<span class="dt">label</span><span class="op">:</span> <span class="st">"Length:"</span><span class="op">,</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>              <span class="dt">value</span><span class="op">:</span> <span class="dv">5</span>}</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>            )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="24" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 23;"><span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>viewof recalc <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Get"</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>viewof n <span class="op">=</span> Inputs<span class="op">.</span><span class="at">select</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>            (d3<span class="op">.</span><span class="fu">range</span>(<span class="dv">0</span><span class="op">,</span> <span class="dv">21</span><span class="op">,</span> <span class="dv">5</span>)<span class="op">,</span> </span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>              {<span class="dt">label</span><span class="op">:</span> <span class="st">"Length:"</span><span class="op">,</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>              <span class="dt">value</span><span class="op">:</span> <span class="dv">5</span>}</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>            )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="declaration">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="38" data-source-offset="-164"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 37;"><span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getStrictUniformFloat</span>() {</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> buffer <span class="op">=</span> <span class="kw">new</span> <span class="bu">Uint32Array</span>(<span class="dv">2</span>)<span class="op">;</span></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  crypto<span class="op">.</span><span class="fu">getRandomValues</span>(buffer)<span class="op">;</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Extract 53 random bits (53-bit mantissa precision for JS numbers)</span></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> high <span class="op">=</span> buffer[<span class="dv">0</span>] <span class="op">&amp;</span> <span class="bn">0x1FFFFF</span><span class="op">;</span> <span class="co">// 21 bits</span></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> low <span class="op">=</span> buffer[<span class="dv">1</span>]<span class="op">;</span>             <span class="co">// 32 bits</span></span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> combined53BitInt <span class="op">=</span> (high <span class="op">*</span> <span class="bn">0x100000000</span>) <span class="op">+</span> low<span class="op">;</span></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Divide by 2^53 (9007199254740992)</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> combined53BitInt <span class="op">/</span> <span class="dv">9007199254740992</span><span class="op">;</span></span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>side <span class="op">=</span> {</span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> iteration <span class="op">=</span> <span class="op">!</span>n <span class="op">?</span> <span class="dv">1</span> <span class="op">:</span> n<span class="op">;</span> </span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(iteration)<span class="op">;</span></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> randomNumbers <span class="op">=</span> []<span class="op">;</span></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> iteration<span class="op">;</span> i<span class="op">++</span>) {</span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    randomNumbers<span class="op">.</span><span class="fu">push</span>(<span class="bu">Number</span>((<span class="fu">getStrictUniformFloat</span>()<span class="op">*</span><span class="dv">150</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)))<span class="op">;</span></span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>  }</span>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="39" data-source-offset="-164"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 38;"><span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getStrictUniformFloat</span>() {</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> buffer <span class="op">=</span> <span class="kw">new</span> <span class="bu">Uint32Array</span>(<span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  crypto<span class="op">.</span><span class="fu">getRandomValues</span>(buffer)<span class="op">;</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Extract 53 random bits (53-bit mantissa precision for JS numbers)</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> high <span class="op">=</span> buffer[<span class="dv">0</span>] <span class="op">&amp;</span> <span class="bn">0x1FFFFF</span><span class="op">;</span> <span class="co">// 21 bits</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> low <span class="op">=</span> buffer[<span class="dv">1</span>]<span class="op">;</span>             <span class="co">// 32 bits</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> combined53BitInt <span class="op">=</span> (high <span class="op">*</span> <span class="bn">0x100000000</span>) <span class="op">+</span> low<span class="op">;</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Divide by 2^53 (9007199254740992)</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> combined53BitInt <span class="op">/</span> <span class="dv">9007199254740992</span><span class="op">;</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>side <span class="op">=</span> {</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>  recalc<span class="op">;</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> iteration <span class="op">=</span> <span class="op">!</span>n <span class="op">?</span> <span class="dv">1</span> <span class="op">:</span> n<span class="op">;</span> </span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(iteration)<span class="op">;</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> randomNumbers <span class="op">=</span> []<span class="op">;</span></span>
 <span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(randomNumbers)<span class="op">;</span></span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> randomNumbers</span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> iteration<span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>    randomNumbers<span class="op">.</span><span class="fu">push</span>(<span class="bu">Number</span>((<span class="fu">getStrictUniformFloat</span>()<span class="op">*</span><span class="dv">150</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)))<span class="op">;</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>side</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(randomNumbers)<span class="op">;</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>(randomNumbers<span class="op">,</span> <span class="kw">null</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>side</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-1" data-nodetype="declaration">
@@ -251,15 +265,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBuID0gSW5wdXRzLnNlbGVjdFxuICAgICAgICAgICAgKGQzLnJhbmdlKDAsIDIxLCA1KSwgXG4gICAgICAgICAgICAgIHtsYWJlbDogXCJMZW5ndGg6XCIsXG4gICAgICAgICAgICAgIHZhbHVlOiA1fVxuICAgICAgICAgICAgKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLyoqXG4gKiBTdHJpY3QgVW5pZm9ybSBGbG9hdCBpbiBbMCwgMSkgdXNpbmcgNTMgYml0cyBvZiBjcnlwdG9ncmFwaGljYWxseSBwdXJlIGVudHJvcHkuXG4gKiBNYXRjaGVzIElFRUUtNzU0IGRvdWJsZSBwcmVjaXNpb24gbGltaXQgd2l0aG91dCB1bmlmb3JtIGRlbnNpdHkgbG9zcy5cbiAqL1xuZnVuY3Rpb24gZ2V0U3RyaWN0VW5pZm9ybUZsb2F0KCkge1xuICBjb25zdCBidWZmZXIgPSBuZXcgVWludDMyQXJyYXkoMik7XG4gIGNyeXB0by5nZXRSYW5kb21WYWx1ZXMoYnVmZmVyKTtcblxuICAvLyBFeHRyYWN0IDUzIHJhbmRvbSBiaXRzICg1My1iaXQgbWFudGlzc2EgcHJlY2lzaW9uIGZvciBKUyBudW1iZXJzKVxuICBjb25zdCBoaWdoID0gYnVmZmVyWzBdICYgMHgxRkZGRkY7IC8vIDIxIGJpdHNcbiAgY29uc3QgbG93ID0gYnVmZmVyWzFdOyAgICAgICAgICAgICAvLyAzMiBiaXRzXG5cbiAgY29uc3QgY29tYmluZWQ1M0JpdEludCA9IChoaWdoICogMHgxMDAwMDAwMDApICsgbG93O1xuXG4gIC8vIERpdmlkZSBieSAyXjUzICg5MDA3MTk5MjU0NzQwOTkyKVxuICByZXR1cm4gY29tYmluZWQ1M0JpdEludCAvIDkwMDcxOTkyNTQ3NDA5OTI7XG59XG5cbnNpZGUgPSB7XG4gIGNvbnN0IGl0ZXJhdGlvbiA9ICFuID8gMSA6IG47IFxuICBjb25zb2xlLmxvZyhpdGVyYXRpb24pO1xuICBcbiAgbGV0IHJhbmRvbU51bWJlcnMgPSBbXTtcblxuICBmb3IgKGxldCBpID0gMDsgaSA8IGl0ZXJhdGlvbjsgaSsrKSB7XG4gICAgcmFuZG9tTnVtYmVycy5wdXNoKE51bWJlcigoZ2V0U3RyaWN0VW5pZm9ybUZsb2F0KCkqMTUwKS50b0ZpeGVkKDIpKSk7XG4gIH1cblxuICBjb25zb2xlLmxvZyhyYW5kb21OdW1iZXJzKTtcbiAgcmV0dXJuIHJhbmRvbU51bWJlcnNcbn1cblxuc2lkZVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCduJykifV19
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiByZWNhbGMgPSBJbnB1dHMuYnV0dG9uKFwiR2V0XCIpXG5cbnZpZXdvZiBuID0gSW5wdXRzLnNlbGVjdFxuICAgICAgICAgICAgKGQzLnJhbmdlKDAsIDIxLCA1KSwgXG4gICAgICAgICAgICAgIHtsYWJlbDogXCJMZW5ndGg6XCIsXG4gICAgICAgICAgICAgIHZhbHVlOiA1fVxuICAgICAgICAgICAgKVxuICAgICAgICAgICAgXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiIvKipcbiAqIFN0cmljdCBVbmlmb3JtIEZsb2F0IGluIFswLCAxKSB1c2luZyA1MyBiaXRzIG9mIGNyeXB0b2dyYXBoaWNhbGx5IHB1cmUgZW50cm9weS5cbiAqIE1hdGNoZXMgSUVFRS03NTQgZG91YmxlIHByZWNpc2lvbiBsaW1pdCB3aXRob3V0IHVuaWZvcm0gZGVuc2l0eSBsb3NzLlxuICovXG5mdW5jdGlvbiBnZXRTdHJpY3RVbmlmb3JtRmxvYXQoKSB7XG4gIGNvbnN0IGJ1ZmZlciA9IG5ldyBVaW50MzJBcnJheSgyKTtcbiAgY3J5cHRvLmdldFJhbmRvbVZhbHVlcyhidWZmZXIpO1xuXG4gIC8vIEV4dHJhY3QgNTMgcmFuZG9tIGJpdHMgKDUzLWJpdCBtYW50aXNzYSBwcmVjaXNpb24gZm9yIEpTIG51bWJlcnMpXG4gIGNvbnN0IGhpZ2ggPSBidWZmZXJbMF0gJiAweDFGRkZGRjsgLy8gMjEgYml0c1xuICBjb25zdCBsb3cgPSBidWZmZXJbMV07ICAgICAgICAgICAgIC8vIDMyIGJpdHNcblxuICBjb25zdCBjb21iaW5lZDUzQml0SW50ID0gKGhpZ2ggKiAweDEwMDAwMDAwMCkgKyBsb3c7XG5cbiAgLy8gRGl2aWRlIGJ5IDJeNTMgKDkwMDcxOTkyNTQ3NDA5OTIpXG4gIHJldHVybiBjb21iaW5lZDUzQml0SW50IC8gOTAwNzE5OTI1NDc0MDk5Mjtcbn1cblxuc2lkZSA9IHtcblxuICByZWNhbGM7XG4gIFxuICBjb25zdCBpdGVyYXRpb24gPSAhbiA/IDEgOiBuOyBcbiAgY29uc29sZS5sb2coaXRlcmF0aW9uKTtcbiAgXG4gIGxldCByYW5kb21OdW1iZXJzID0gW107XG5cbiAgZm9yIChsZXQgaSA9IDA7IGkgPCBpdGVyYXRpb247IGkrKykge1xuICAgIHJhbmRvbU51bWJlcnMucHVzaChOdW1iZXIoKGdldFN0cmljdFVuaWZvcm1GbG9hdCgpKjE1MCkudG9GaXhlZCgwKSkpO1xuICB9XG5cbiAgY29uc29sZS5sb2cocmFuZG9tTnVtYmVycyk7XG4gIHJldHVybiBKU09OLnN0cmluZ2lmeShyYW5kb21OdW1iZXJzLCBudWxsLCAyKTtcbn1cblxuc2lkZVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdyZWNhbGMnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnbicpIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-window._ojs.paths.runtimeToDoc = "../../posts/random2";
+window._ojs.paths.runtimeToDoc = "../../posts/random_pwa";
 window._ojs.paths.runtimeToRoot = "../..";
 window._ojs.paths.docToRoot = "../..";
 window._ojs.selfContained = false;

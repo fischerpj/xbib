@@ -1,14 +1,9 @@
 {
-  "short_name": "QuartoPWA",
+  "short_name": "randomPwa",
   "name": "Minimal Quarto PWA",
   "icons": [
     {
-      "src": "icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "icon-512.png",
+      "src": "mountain-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
